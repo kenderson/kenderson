@@ -2,59 +2,32 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
   %head
     %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"keywords", :content=>"lawyer,attorney,law firm,legal,law office,legal services,fairfax,fredericksburg,virgina,criminal law"}
-    %title= "Spencer, Mayoras, Henderson, & Koch, PLC Attorneys at Law"
+    %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/images/favicon.ico"}
     = javascript_include_tag('jquery-1.3.1.js', 'jquery-ui-personalized-1.6rc6.js', "facebox.js", 'jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'application.js', 'langchange.js', 'jquery.validate.js', "btn.js", "purple_include.js")
     = stylesheet_link_tag("ui.all.css","facebox.css","btn.css","application.css",:media => 'screen, projection')
     /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
-    %script{"src"=>"http://codinginparadise.org/projects/purple-include/purple-include.js"}
 %body
-  #body_wrap
-    #page_frame
-      - if flash[:notice]
-        .flash_notice
-          %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
-            %span Close
-          .flash_notice_text
-            = h(flash[:notice])
-      .page_wrap
-        .top_header
-        .top_menu
-          %ul.clearfix
-            %li 
-              %a{"href"=>"/"} Home
-            %li.partners_menu{"onmouseover"=>"$('.partners_menu_flyout').show();","onmouseout"=>"$('.partners_menu_flyout').hide();"} 
-              %a{"href"=>"/partners"} Partners
-              .partners_menu_flyout{"style"=>"display:none;"}
-                .menu_sub_div 
-                  %a{"href"=>"/partners?partner_name=johnspencer"} John Spencer
-                .menu_sub_div
-                  %a{"href"=>"/partners?partner_name=johnmayoras"} John Mayoras
-                .menu_sub_div
-                  %a{"href"=>"/partners?partner_name=ashleyhenderson"} Ashley Henderson
-                .menu_sub_div
-                  %a{"href"=>"/partners?partner_name=pricekoch"} Price Koch
-            %li 
-              %a{"href"=>"/services"} Services
-            %li 
-              %a{"href"=>"/locations"} Locations
-
-        .content_wrap.clearfix
-          = yield
+  #page_frame
+    - if flash[:notice]
+      .flash_notice
+        %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
+          %span Close
+        .flash_notice_text
+          = h(flash[:notice])
+    .page_wrap
+      .top_header
+      .content_wrap.clearfix
+        = yield
+      .page_footer_wrap
         .page_footer
-          .languages
-            .lang-choice
-              %span{ "id"=>"lang-en"} English 
-              or 
-              %span{ "id"=>"lang-fr"} Spanish 
-          .small_icon
-            %img{"src"=>"/images/mini_icon.png", "height"=>"30"}
-        .copy_right
-          %p 
-            %a{"href"=>"mailto:ken@ashleyandken.com"}Kenderson
-            &copy; 
-            = DateTime.now.year
+      .tail
+      .copy_right
+        %p 
+          %a{"href"=>"mailto:ken@ashleyandken.com"}Kenderson
+          &copy; 
+          = DateTime.now.year
         
 %script{"type"=>"text/javascript"}
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
