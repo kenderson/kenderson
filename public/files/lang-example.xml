@@ -1,0 +1,7 @@
+<content>	
+	<text id="description">
+		<fr>Voici une page d'exemple pour mon plug-in jQuery: "LangChange". Il offre la possibilité de changer la langue de votre page en un seule clic et sans rafraîchissement de la page. Il suffit s'avoir un fichier xml contenant les textes dans les langues désirés. Regardez l'exemple pour plus d'information et essayez le en choisissant le language de votre choix.</fr>
+		<en>Here's an example page of my jQuery plug-in: "LangChange". With it, you can  change the language of your website in a click and without reloading your page. Simply create an xml file with all your texts in the desired languages. See the example for more information and try it now by selecting the language of your choise.</en>
+	</text>
+		
+</content>

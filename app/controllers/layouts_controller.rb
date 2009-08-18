@@ -1,0 +1,3 @@
+class LayoutsController < ApplicationController
+
+end
