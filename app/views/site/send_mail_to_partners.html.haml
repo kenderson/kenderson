@@ -1,8 +1,8 @@
 #mailer_wrap
   %img.small_mailer_icon{"src"=>"/images/small_dark_icon.png", "height"=>"50"}
-  %h1 Send an email to the Partners
+  %h1 Send me an email
   
-  %form{"name"=>"smhkform", "id"=>"smhkform", "action"=>"/send_mail_to_partners", "method"=>"POST"}
+  %form{"name"=>"kenderson", "id"=>"kenderson", "action"=>"/send_mail_to_partners", "method"=>"POST"}
     %table
       %tr
         %td{"valign"=>"top"}
@@ -22,4 +22,4 @@
         %td{"valign"=>"top"}
           %textarea{"type"=>"text", "name"=>"message_body", "class"=>"required"}
           .div_spacer
-    %input{"class"=>"submit", "value"=>"Send", "type"=>"submit", "onClick" =>"$(\"#smhkform\").validate();" }
+    %input{"class"=>"submit", "value"=>"Send", "type"=>"submit", "onClick" =>"$(\"#kenderson\").validate();" }

@@ -7,10 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
-  map.connect '/contact_us', :controller => 'site', :action => 'contact_us'
-  map.connect '/partners', :controller => 'site', :action => 'partners'
-  map.connect '/locations', :controller => 'site', :action => 'locations'
-  map.connect '/services', :controller => 'site', :action => 'services'
+  map.connect '/cross_browser', :controller => 'site', :action => 'cross_browser'
   map.connect '/send_mail_to_partners', :controller => 'site', :action => 'send_mail_to_partners'
   map.connect '/send_mail_to_friend', :controller => 'site', :action => 'send_mail_to_friend'
 

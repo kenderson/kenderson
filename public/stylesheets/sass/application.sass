@@ -1,9 +1,10 @@
 /* Color Swatches
 
 !text_color = #333
-!a_color = #62c562
-!a_hover_color = #e1d400
-!header1_color = #333
+!a_color = #6494ad
+!a_hover_color = #4e7385
+!accent_color = orange
+!header1_color = #adb167
 !main_background_color = #808080
 !error_color = #d94e4e
 !green = #64b764
@@ -51,6 +52,7 @@ h2
   margin: 10px 0px 5px 0px
   padding: 0px
   font-size: 20px
+  color = !header1_color
 h3
   margin: 10px 0px 5px 0px
   padding: 0px
@@ -75,8 +77,7 @@ h3
   background: #fff url(/images/header.jpg) top left no-repeat
 .content_wrap
   background: #fff url(/images/content_body_bg.jpg) top left repeat-y
-  padding: 15px 15px 0px 15px
-  height: 600px
+  padding: 0px
   color = !text_color
 
 /*
@@ -91,8 +92,8 @@ h3
 .page_footer_wrap
   height: 40px
   width: 966px
-  margin: 0px auto
-  padding: 0px
+  margin: 0px auto 0px auto
+  padding: 30px 0px 0px 0px
   background: #363636 url(/images/content_body_bg.jpg) top left repeat-y
 .page_footer
   height: 40px
@@ -117,23 +118,110 @@ h3
 /* Index CSS
 /*
 
-.main_head
-  margin-top: 0px
+.index_wrap
+  padding: 15px 30px 0px 30px
 .right_content
   float: right
   width: 220px
-  border-left: 1px solid #efefef 
-  padding: 0px 20px
+  padding: 0px 0px 0px 20px
 .left_content
-  margin: 0px 290px 0px 0px
-.index_text
-  margin: 0px 0px 0px 210px
-  padding: 0px
+  margin: 0px 240px 0px 0px
+  padding: 0px 30px 0px 0px
+  border-right: 1px solid #efefef 
 .datepicker_wrap
   font-size: 10px
   margin-bottom: 20px
+.art_subheader
+  background: url(/images/sub_header.gif) top left no-repeat
+.xbv_subheader
+  background: url(/images/xbv_sub_header.gif) top left no-repeat
+.gd_subheader
+  background: url(/images/gd_sub_header.gif) top left no-repeat
 
+.subheader
+  height: 25px
+  width: 600px
+  color = !header1_color
+.subheader span
+  display: none
+  font-style: italic
+  font-weight: bold
+  font-size: 19px
+  color = !header1_color
+  padding: 10px 0px 10px 10px
+  border-bottom: 1px solid #dedede
 
+.header_rule
+  background: url(/images/header_rule.gif) top center no-repeat
+  margin: 10px 0px 0px 0px
+  height: 2px
+  width: 600px
+.header_rule span
+  display: none
+  margin: 0px auto
+  background-color: #dedede
+.good_stuff_links h2
+  background: url(/images/good_stuff.gif) top left no-repeat
+.articles_links h2
+  background: url(/images/articles.gif) top left no-repeat
+.inspiration_links h2
+  background: url(/images/inspiration_links.gif) top left no-repeat
+.right_header h2
+  width: 150px
+  height: 22px
+  margin: 0px
+  padding: 0px
+.right_header h2 span
+  display: none
+.right_header ul
+  list-style: none
+  padding: 0px 0px 20px 0px
+  margin: 0px
+.right_header li
+  padding: 4px 20px
+.portfolio_wrap
+  height: 150px
+  width: 952px
+  margin: 50px auto 0px auto
+  background: #000
+  text-align: center
+.portfolio_selector
+  width: 50px
+  padding: 70px 0px 0px 0px
+.portfolio_div
+  margin: 0px auto
+#prev
+  float: left
+  height: 20px
+  cursor: pointer
+  z-index: 100
+#next   
+  float: right
+  height: 20px
+  cursor: pointer
+.portfolio_content
+  width: 830px
+  padding: 0px
+  margin: 20px auto 0px auto
+.portfolio
+  width: 340px
+  height: 120px
+  padding: 5px
+  margin: 0px 30px
+  float: left
+  background: #333
+.portfolio_image
+  float: left
+  height: 100px
+  width: 170px
+  margin: 0px 10px 0px 0px
+.portfolio_text
+  color: #fff
+  text-align: left
+  font-size: 10px
+  margin: 0px 0px 0px 160px
+  padding: 5px
+  
 /*
 /* Mailer CSS
 /*
