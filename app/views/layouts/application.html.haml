@@ -22,10 +22,16 @@
         = yield
       .page_footer_wrap
         .page_footer
+          .contact_me
+            %a{"href"=>"/send_mail_to_partners", "class"=>"facebox"}
+              %span Contact Me 
+          .small_logo
+            %img{"src"=>"/images/logo_small_a.png"}
+            
       .tail
       .copy_right
         %p 
-          %a{"href"=>"mailto:ken@ashleyandken.com"}Kenderson
+          %a{"href"=>"mailto:ken@kenderson.net"} Kenderson Consulting
           &copy; 
           = DateTime.now.year
         

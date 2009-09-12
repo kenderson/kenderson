@@ -12,7 +12,7 @@
 .btn.green { background: #62c562; }
 .btn.pink { background: #e1a; }
 .btn.grey { background: #666; }
-.btn:hover { background-color: #666; }
+.btn:hover { background-color: #333; }
 .btn:active { background-color: #444; }
 .btn[class] {  background-image: url(/images/shade.png); background-position: bottom; }
 
