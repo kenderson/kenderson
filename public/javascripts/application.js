@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
   $("#kenderson").validate();
-  $(".portfolio_wrap").animate({ opacity: 0.85 }, 1 );
+  // $(".portfolio_wrap").animate({ opacity: 0.85 }, 1 );
   $('#facebox').bgiframe();
   $("a.facebox").facebox();
   $("#datepicker").datepicker();
