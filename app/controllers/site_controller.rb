@@ -1,8 +1,19 @@
 class SiteController < ApplicationController
-  def contact
+  def html_emails
+    render :layout => "facebox"
   end
-  def partners
-    @partner_name = params[:partner_name]
+  def smhklaw
+    render :layout => "facebox"
+  end
+  def coyne
+    render :layout => "facebox"
+  end
+  def protegus
+    render :layout => "facebox"
+  end
+
+  def sag_minis
+    render :layout => "facebox"
   end
   def send_mail_to_partners
     if request.post?

@@ -10,7 +10,11 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/cross_browser', :controller => 'site', :action => 'cross_browser'
   map.connect '/send_mail_to_partners', :controller => 'site', :action => 'send_mail_to_partners'
   map.connect '/send_mail_to_friend', :controller => 'site', :action => 'send_mail_to_friend'
-
+  map.connect '/sag_minis', :controller => 'site', :action => 'sag_minis'
+  map.connect '/coyne', :controller => 'site', :action => 'coyne'
+  map.connect '/smhklaw', :controller => 'site', :action => 'smhklaw'
+  map.connect '/protegus', :controller => 'site', :action => 'protegus'
+  map.connect '/html_emails', :controller => 'site', :action => 'html_emails'
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
