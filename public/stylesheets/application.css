@@ -75,16 +75,17 @@ h3 {
   padding: 0px;
   margin: 0px;
   height: 250px;
-  background: #fff url(/images/header.jpg) top left no-repeat; }
+  background: #fff url(/images/header.jpg) top left no-repeat;
+  font-size: 24px; }
+
+.top_header span {
+  display: none; }
 
 .content_wrap {
   background: #fff url(/images/content_body_bg.jpg) top left repeat-y;
   padding: 0px;
   color: #333333; }
 
-/*  */
-/* Menu CSS */
-/*  */
 /*  */
 /* Footer CSS */
 /*  */
@@ -97,7 +98,7 @@ h3 {
 
 .page_footer {
   height: 40px;
-  width: 951px;
+  width: 952px;
   margin: 0px auto;
   padding: 0px;
   background: #363636; }
@@ -109,20 +110,23 @@ h3 {
   display: block;
   width: 125px;
   height: 19px;
-  padding: 8px 0px;
-  background: url(/images/contact_me.jpg) top 127px;
-  margin: 3px 0px;
-  color: #fff;
-  border: none; }
+  padding: 8px 0px 8px 0px;
+  background-image: url(/images/contact_me.jpg);
+  background-position: 125px top;
+  border: none;
+  margin: 4px 0px 3px 0px;
+  color: #fff; }
 
 .contact_me a:hover {
-  background: url(/images/contact_me.jpg) top 257px; }
+  border: none;
+  background-image: url(/images/contact_me.jpg);
+  background-position: 255px top; }
 
 .contact_me span {
   display: none; }
 
 .small_logo {
-  padding: 3px 5px; }
+  padding: 0px 5px; }
 
 .tail {
   background: url(/images/tail.jpg) top left no-repeat;
@@ -130,7 +134,7 @@ h3 {
   height: 13px; }
 
 .copy_right {
-  color: #efefef;
+  color: #333;
   font-size: 10px;
   text-align: center;
   margin: 0px;
@@ -138,7 +142,11 @@ h3 {
 
 .copy_right a {
   text-decoration: none;
-  color: #fff; }
+  color: #333;
+  border: none; }
+
+.copy_right a:hover {
+  color: #999; }
 
 /*  */
 /* Index CSS */
@@ -222,8 +230,8 @@ h3 {
 
 .portfolio_head {
   height: 37px;
-  width: 955px;
-  margin: 20px auto 0px auto;
+  width: 952px;
+  margin: 10px auto 0px auto;
   background: #262626 url(/images/recent_work.jpg) top left no-repeat; }
 
 .portfolio_head .hide {
@@ -244,7 +252,7 @@ h3 {
   text-align: center; }
 
 .portfolio_selector {
-  width: 50px;
+  width: 30px;
   padding: 20px 0px 0px 0px; }
 
 .portfolio_div {
@@ -253,8 +261,7 @@ h3 {
 #prev {
   float: left;
   height: 20px;
-  cursor: pointer;
-  z-index: 100; }
+  cursor: pointer; }
 
 #next {
   float: right;
@@ -262,15 +269,15 @@ h3 {
   cursor: pointer; }
 
 .portfolio_content {
-  width: 830px;
+  width: 850px;
   padding: 0px;
   margin: 10px auto 0px auto; }
 
 .portfolio {
-  width: 330px;
+  width: 335px;
   height: 110px;
   padding: 10px 10px;
-  margin: 0px 30px;
+  margin: 0px 25px 0px 30px;
   float: left;
   background: #333; }
 
@@ -280,12 +287,16 @@ h3 {
   width: 170px;
   margin: 0px 10px 0px 0px; }
 
+.portfolio_image img, .portfolio_image a {
+  border: none;
+  text-decoration: none; }
+
 .portfolio_text {
   color: #fff;
   text-align: left;
   font-size: 10px;
   margin: 0px 0px 0px 160px;
-  padding: 5px; }
+  padding: 0px 5px; }
 
 .Portfolio_text_head {
   font-weight: bold;
