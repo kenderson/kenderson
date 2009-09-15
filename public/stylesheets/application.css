@@ -3,19 +3,26 @@
 /* Error Handling */
 /*  */
 .flash_notice {
-  background: orange url(/images/content_fade_b.png) top left repeat-x; }
+  background: #fff url(/images/content_body_bg.jpg) top left repeat-y; }
 
-.flash_notice span {
+.flash_notice_wrap {
+  background: #666 url(/images/entry_fade.gif) top left repeat-x;
+  margin: 0px 8px;
+  padding: 10px 3px 10px 8px;
+  border-bottom: 1px solid #dedede; }
+
+.flash_notice_wrap span {
   float: left;
-  padding: 5px 3px 5px 8px; }
+  padding: 5px 3px 0px 3px;
+  border-bottom: 1px dotted #6494ad; }
 
-.flash_notice a {
-  color: #fff; }
+.flash_notice_wrap a {
+  color: #6494ad; }
 
 .flash_notice_text {
-  margin: 0px 0px 0px 50px;
+  margin: 0px 0px 0px 90px;
   padding: 5px;
-  color: #fff; }
+  color: #6494ad; }
 
 /*  */
 /* Body and Main CSS */

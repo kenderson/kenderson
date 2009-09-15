@@ -10,15 +10,17 @@
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 %body
   #page_frame
-    - if flash[:notice]
-      .flash_notice
-        %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
-          %span Close
-        .flash_notice_text
-          = h(flash[:notice])
     .page_wrap
       .top_header
         %span Kenderson Consulting: HTML, CSS and JavaScript Consulting
+      - if flash[:notice]
+        .flash_notice
+          .flash_notice_wrap
+            %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
+              %span Close
+            .flash_notice_text
+              = h(flash[:notice])
+      
       .content_wrap.clearfix
         = yield
       .page_footer_wrap
