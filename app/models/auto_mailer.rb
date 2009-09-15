@@ -1,7 +1,7 @@
 class AutoMailer < ActionMailer::Base
   
   def partner_mailer(name, contact, message_body)
-   @recipients   = "admin@smhklaw.com"
+   @recipients   = "ken@kenderson.net"
    @from         = contact
    headers         "Reply-to" => "#{contact}"
    @subject      = "Online Message from a Client"
