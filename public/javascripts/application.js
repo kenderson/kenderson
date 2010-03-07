@@ -6,10 +6,13 @@ jQuery(document).ready(function($) {
   $("#datepicker").datepicker();
   $('.portfolio_div').cycle({ 
     fx:     'scrollHorz', 
-    speed:  'fast',
-    timeout: 0, 
+    speedOut:  'fast',
+    speedIn:  'slow',
+    easeIn:  'bouncein', 
+    easeOut: 'easeout',
+    delay:  3000,
     next:   '#next', 
-    prev:   '#prev' 
+    prev:   '#prev'
   });  
   $.fn.wait = function(time, type) {
       time = time || 1000;
