@@ -6,11 +6,8 @@ jQuery(document).ready(function($) {
   $("#datepicker").datepicker();
   $('.portfolio_div').cycle({ 
     fx:     'scrollHorz', 
-    speedOut:  'fast',
-    speedIn:  'slow',
-    easeIn:  'bouncein', 
-    easeOut: 'easeout',
-    delay:  3000,
+    speed:  'fast',
+    delay:  '5000',
     next:   '#next', 
     prev:   '#prev'
   });  
