@@ -7,14 +7,12 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
-  map.connect '/cross_browser', :controller => 'site', :action => 'cross_browser'
+  map.connect '/process', :controller => 'site', :action => 'process'
+  map.connect '/portfolio', :controller => 'site', :action => 'portfolio'
+  map.connect '/lab', :controller => 'site', :action => 'lab'
+  map.connect '/connect', :controller => 'site', :action => 'connect'
   map.connect '/send_mail_to_partners', :controller => 'site', :action => 'send_mail_to_partners'
-  map.connect '/send_mail_to_friend', :controller => 'site', :action => 'send_mail_to_friend'
-  map.connect '/sag_minis', :controller => 'site', :action => 'sag_minis'
-  map.connect '/coyne', :controller => 'site', :action => 'coyne'
-  map.connect '/smhklaw', :controller => 'site', :action => 'smhklaw'
-  map.connect '/protegus', :controller => 'site', :action => 'protegus'
-  map.connect '/html_emails', :controller => 'site', :action => 'html_emails'
+  map.connect '/send_mail_for_rfq', :controller => 'site', :action => 'send_mail_for_rfq'
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

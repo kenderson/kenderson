@@ -1,27 +1,40 @@
 !!!
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
   %head
-    %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"keywords", :content=>"web design, css,design,html"}
+    %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"keywords", :content=>"web design, css,design,html,front end,virginia,fairfax,richmond,washington dc,maryland"}
     %meta{:name=>"google-site-verification", :content=>"Q9IgUhV24gYaOLqFzT5Mxp8_1F-j8obg9Ru2dmvqfAQ"}
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/images/favicon.ico"}
-    = javascript_include_tag('jquery-1.3.1.js', 'jquery-ui-personalized-1.6rc6.js', 'facebox.js', 'jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'application.js', 'jquery.validate.js', 'jquery.cycle.all.min.js', 'jquery.cycle.trans.min.js', 'jquery.easing.1.3.js')
+    = javascript_include_tag('jquery-1.4.2.js','application.js','facebox.js', 'jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js')
     = stylesheet_link_tag("ui.all.css","facebox.css","btn.css","application.css",:media => 'screen, projection')
     /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 %body
+  - if flash[:notice]
+    .flash_notice
+      .flash_notice_wrap
+        %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
+          %span Close
+        .flash_notice_text
+          = h(flash[:notice])
   #page_frame
     .page_wrap
       .top_header
         %span Kenderson Consulting: HTML, CSS and JavaScript Consulting
-      - if flash[:notice]
-        .flash_notice
-          .flash_notice_wrap
-            %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
-              %span Close
-            .flash_notice_text
-              = h(flash[:notice])
-      
+      .navigation.clearfix
+        %ul.clearfix
+          %li 
+            %a{"href"=>"/"} Home
+          %li
+            %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : "")} Process
+          %li
+            %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : "")} Portfolio
+          %li
+            %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : "")} Lab
+          %li
+            %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : "")} Connect
+          %li
+            %a{"href"=>"http://blog.kenderson.net"} Blog      
       .content_wrap.clearfix
         = yield
       .page_footer_wrap
