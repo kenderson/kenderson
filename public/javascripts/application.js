@@ -22,11 +22,70 @@
 })(jQuery);
 
 jQuery(document).ready(function($) {
-  // $('#source').quicksand( $('#destination li') );
+  $("a[rel=fancybox]").fancybox({
+    	'autoScale'		: false,
+      'width' : 500,
+  		'transitionIn'		: 'elastic',
+  		'transitionOut'		: 'elastic',
+  		'titlePosition' 	: 'over',
+  });
+  $('[tooltip]').each(function() {
+    $(this).qtip({
+      content: $(this).attr('tooltip'),
+      position: {
+        corner: {
+          target: 'topRight',
+          tooltip: 'bottomLeft'
+        }
+      },
+      style: {
+        border: {
+          width: 5,
+          radius: 10
+        },
+        padding: 10, 
+        textAlign: 'center',
+        tip: true, // Give it a speech bubble tip with automatic corner detection
+        name: 'dark' // Style it according to the preset 'cream' style
+      }
+    });
+  });
+	$('.backgound_color_select').ColorPicker({
+		color: '#fff',
+		onShow: function (colpkr) {
+			$(colpkr).fadeIn(500);
+			return false;
+		},
+		onHide: function (colpkr) {
+			$(colpkr).fadeOut(500);
+			return false;
+		},
+		onChange: function (hsb, hex, rgb) {
+			$('.color_changer').css('backgroundColor', '#' + hex);
+		}
+	});
+	$('.text_color_select').ColorPicker({
+		color: '#000',
+		onShow: function (colpkr) {
+			$(colpkr).fadeIn(500);
+			return false;
+		},
+		onHide: function (colpkr) {
+			$(colpkr).fadeOut(500);
+			return false;
+		},
+		onChange: function (hsb, hex, rgb) {
+			$('.color_changer p').css('color', '#' + hex);
+		}
+	});
+	
+  $("#accordion").accordion();
   $("#kenderson").validate();
-  $('#facebox').bgiframe();
-  $("a.facebox").facebox();
-  $('a[rel*=facebox]').facebox() 
+  // $('#facebox').bgiframe();
+  // $("a.facebox").facebox();
+  $('a[rel*=fancybox]').live("click", function(){
+    $.fancybox($("#"+this.href.split("#")[1]).html());
+  }); 
   $.fn.wait = function(time, type) {
       time = time || 1000;
       type = type || "fx";

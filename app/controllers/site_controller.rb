@@ -1,4 +1,11 @@
 class SiteController < ApplicationController
+  def modwedding_home
+    render :layout => "modwedding"
+  end
+  def modwedding_events
+    render :layout => "modwedding"
+  end
+
   def send_mail_to_partners
     if request.post?
       # note the deliver_ prefix, this is IMPORTANT

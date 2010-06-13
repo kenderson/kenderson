@@ -10,6 +10,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/process', :controller => 'site', :action => 'process'
   map.connect '/portfolio', :controller => 'site', :action => 'portfolio'
   map.connect '/lab', :controller => 'site', :action => 'lab'
+  map.connect '/modwedding_home', :controller => 'site', :action => 'modwedding_home'
+  map.connect '/modwedding_events', :controller => 'site', :action => 'modwedding_events'
   map.connect '/connect', :controller => 'site', :action => 'connect'
   map.connect '/send_mail_to_partners', :controller => 'site', :action => 'send_mail_to_partners'
   map.connect '/send_mail_for_rfq', :controller => 'site', :action => 'send_mail_for_rfq'

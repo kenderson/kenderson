@@ -15,127 +15,143 @@
           %input{ :name => "type", :value => "email", :type => "radio" } HTML Emails
     %ul#applications.image-grid
       %li{ "data-type" => "web", "data-id" => "id-1" }
-        %a{:href=>"#facebox_coyne", :rel=>"facebox"}
+        %a{:href=>"#facebox_coyne", :rel=>"fancybox"}
           %img{ :src => "/images/coyne_thumb.png", :height => "100", :alt => "", :width => "170" }
           %strong Craig Coyne Jewelers
           %span Website
       %li{ "data-type" => "app", "data-id" => "id-2" }
-        %a{:href=>"#facebox_legalruled", :rel=>"facebox"}
+        %a{:href=>"#facebox_legalruled", :rel=>"fancybox"}
           %img{ :src => "/images/legalruled_thumb.jpg", :height => "100", :alt => "", :width => "170" }
           %strong LegalRuled
           %span Application
       %li{ "data-type" => "web", "data-id" => "id-3" }
-        %a{:href=>"#facebox_protegus", :rel=>"facebox"}
+        %a{:href=>"#facebox_protegus", :rel=>"fancybox"}
           %img{ :src => "/images/protegus_thumb.png", :height => "100", :alt => "", :width => "170" }
           %strong Protegus Website
           %span Website
       %li{ "data-type" => "web", "data-id" => "id-4" }
-        %a{:href=>"#facebox_sag_web", :rel=>"facebox"}
+        %a{:href=>"#facebox_sag_web", :rel=>"fancybox"}
           %img{ :src => "/images/sag_west_thumb.png", :height => "100", :alt => "", :width => "170" }
           %strong Software AG
           %span Websites
       %li{ "data-type" => "email", "data-id" => "id-5" }
-        %a{:href=>"#facebox_sag_emails", :rel=>"facebox"}
+        %a{:href=>"#facebox_sag_emails", :rel=>"fancybox"}
           %img{ :src => "/images/html_email_thumb.png", :height => "100", :alt => "", :width => "170" }
           %strong Software AG
           %span Email Templates
       %li{ "data-type" => "web", "data-id" => "id-6" }
-        %a{:href=>"#facebox_smhklaw", :rel=>"facebox"}
+        %a{:href=>"#facebox_smhklaw", :rel=>"fancybox"}
           %img{ :src => "/images/smhklaw_thumb.png", :height => "100", :alt => "", :width => "170" }
           %strong SMHK Law Website
           %span Website
       %li{ "data-type" => "app", "data-id" => "id-7" }
-        %a{:href=>"#facebox_modwedding", :rel=>"facebox"}
+        %a{:href=>"#facebox_modwedding", :rel=>"fancybox"}
           %img{ :src => "/images/modwedding_thumb.jpg", :height => "100", :alt => "", :width => "170" }
           %strong ModWedding
           %span Application
       %li{ "data-type" => "web", "data-id" => "id-8" }
-        %a{:href=>"#facebox_socialbuzzpr", :rel=>"facebox"}
+        %a{:href=>"#facebox_socialbuzzpr", :rel=>"fancybox"}
           %img{ :src => "/images/socialbuzzpr_thumb.jpg", :height => "100", :alt => "", :width => "170" }
           %strong SocialBuzzPR
           %span Website
-#facebox_coyne.facebox_port{:style=>"display:none;"}
-  %h2 Criag Coyne Jewelers
-  %p 
-    As part of consulting through Iterative Designs I handled the graphic design conversion for the
-    %i refreshed
-    Craig Coyne website. We worked with Frank Strategic Marketing (FSM) for the design of the site. This design was built on a very early version of rails. It used rails to construct an email system, where the users could submit their emails from the front end of the application, and the administrator could log-into the back-end, collect those email, and send a common mailer. The site also uses rails for the blog and "favorite links" sections. It also highlights the use JavaScript in a number of different ways; the image slideshow on the front page, the "flyout" menu bars, the "slideshow" type style on the "Our Wares" page. I also assisted with the shopping cart integration into the rails app. We used Shopify to provide the client with an affordable, low cost, easy to use, and well integrated solution.
-  %a{"href"=>"http://www.craigcoyne.com"} 
-    %img{"src"=>"/images/coyne.png", "width"=>"500px"}
-    %span Click to view the site
-#facebox_legalruled.facebox_port{:style=>"display:none;"}
-  %h2 LegalRuled - Legal Case Management
-  %p 
-    Coming soon
-    %a{"href"=>"http://www.legalruled.com"} 
-    %img{"src"=>"/images/legalruled.png", "width"=>"500px"}
-    %span Click to view the site
-#facebox_protegus.facebox_port{:style=>"display:none;"}
-  %h2 Protegus
-  %p 
-    As part of consulting to Iterative Designs, I handled the Graphic Design conversion for the 
-    %i refreshed 
-    Protegus website. By request of the client, the back-end of this site was constructed using Expression Engine (a PHP driven Content management system). This site highlights the use of JavaScript to create the slideshow/top menu on the front page of the site. We also incorporated a few touches of JavaScript into the hover effects of the menu and the front page tabbed section.
-    %a{"href"=>"http://www.protegus.com"} 
-      %img{"src"=>"/images/protegus.png", "width"=>"500px"}
-      %span Click to view the site
-#facebox_sag_web.facebox_port{:style=>"display:none;"}
-  %h2 Software AG Mini-Sites
-  %p As part of consulting through Iterative Designs to Perphic, I have assisted in the Graphic design conversion and rails integration for a whole series of Mini Sites. These sites were specifically designed to target certain demographics for events that were sponsored by Software AG. 
-  %table{"cellpadding"=>"0", "cellspacing"=>"20", "border"=>"0", "valign"=>"top", "align"=>"center", "width"=>"600px"}
-    %tr
-      %td
-        %a{"href"=>"http://central.supplychainforum2009.com"} 
-          %img{"src"=>"/images/sag_central.png", "width"=>"250px"}
+#div{:style=>"display:none;"}
+  #facebox_coyne
+    .box_port
+      %h2 Criag Coyne Jewelers
+      %p 
+        As part of consulting through Iterative Designs I handled the graphic design conversion for the
+        %i refreshed
+        Craig Coyne website. We worked with Frank Strategic Marketing (FSM) for the design of the site. This design was built on a very early version of rails. It used rails to construct an email system, where the users could submit their emails from the front end of the application, and the administrator could log-into the back-end, collect those email, and send a common mailer. The site also uses rails for the blog and "favorite links" sections. It also highlights the use JavaScript in a number of different ways; the image slideshow on the front page, the "flyout" menu bars, the "slideshow" type style on the "Our Wares" page. I also assisted with the shopping cart integration into the rails app. We used Shopify to provide the client with an affordable, low cost, easy to use, and well integrated solution.
+      %a{"href"=>"http://www.craigcoyne.com"} 
+        %img{"src"=>"/images/coyne.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_legalruled
+    .box_port
+      %h2 LegalRuled - Legal Case Management
+      %p 
+        Coming soon
+        %a{"href"=>"http://www.legalruled.com"} 
+        %img{"src"=>"/images/legalruled.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_protegus
+    .box_port
+      %h2 Protegus
+      %p 
+        As part of consulting to Iterative Designs, I handled the Graphic Design conversion for the 
+        %i refreshed 
+        Protegus website. By request of the client, the back-end of this site was constructed using Expression Engine (a PHP driven Content management system). This site highlights the use of JavaScript to create the slideshow/top menu on the front page of the site. We also incorporated a few touches of JavaScript into the hover effects of the menu and the front page tabbed section.
+        %a{"href"=>"http://www.protegus.com"} 
+          %img{"src"=>"/images/protegus.png", "width"=>"500px"}
           %span Click to view the site
-      %td
-        %a{"href"=>"http://west.supplychainforum2009.com"} 
-          %img{"src"=>"/images/sag_west.png", "width"=>"250px"}  
+#div{:style=>"display:none;"}
+  #facebox_sag_web
+    .box_port
+      %h2 Software AG Mini-Sites
+      %p As part of consulting through Iterative Designs to Perphic, I have assisted in the Graphic design conversion and rails integration for a whole series of Mini Sites. These sites were specifically designed to target certain demographics for events that were sponsored by Software AG. 
+      %table{"cellpadding"=>"0", "cellspacing"=>"20", "border"=>"0", "valign"=>"top", "align"=>"center", "width"=>"600px"}
+        %tr
+          %td
+            %a{"href"=>"http://central.supplychainforum2009.com"} 
+              %img{"src"=>"/images/sag_central.png", "width"=>"250px"}
+              %span Click to view the site
+          %td
+            %a{"href"=>"http://west.supplychainforum2009.com"} 
+              %img{"src"=>"/images/sag_west.png", "width"=>"250px"}  
+              %span Click to view the site
+        %tr
+          %td
+            %a{"href"=>"http://www.supplychainforum2009.com"} 
+              %img{"src"=>"/images/sag_soa.png", "width"=>"250px"}
+              %span Click to view the site
+          %td
+            %a{"href"=>"http://www.soasummit2009.com"} 
+              %img{"src"=>"/images/sag_soa.png", "width"=>"250px"}
+              %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_sag_emails
+    .box_port
+      %h2 HTML Emails
+      %p As part of consulting through Iterative Designs to Perphic, I have assisted in the Graphic design conversion and multi-application verification of many HTML email campaigns. The design and verification of HMTL emails are very different from a website. There are so many different desktop email applications (Outlook 2003, 2007, & Express, Mac Mail, Thunderbird, etc.) and browser-based email applications (gmail, hotmail, yahoomail, etc.), that the verification aspects become crucial.
+      %table{"cellpadding"=>"0", "cellspacing"=>"20", "border"=>"0", "valign"=>"top", "align"=>"center", "width"=>"600px"}
+        %tr
+          %td
+            %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/9/"} 
+              %img{"src"=>"/images/sag_ipod_email.png", "width"=>"250px"}
+              %span Click to see full email image
+          %td
+            %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/8/"} 
+              %img{"src"=>"/images/sag_starbucks_email.png", "width"=>"250px"}  
+              %span Click to see full email image
+        %tr
+          %td{"colspan"=>"2"}
+            %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/7/"} 
+              %img{"src"=>"/images/sag_webinar_email.png", "width"=>"250px"}
+              %span Click to see full email image
+#div{:style=>"display:none;"}
+  #facebox_smhklaw
+    .box_port
+      %h2 SMHK Law Website
+      %p On this project, I constructed the graphic design, wrote the rails app, managed the hosting, and last but not least, I handled the Graphic Design conversion. This site utilizes rails for the back-end email system. It also uses a very JS touches like the auto-styled buttons on the front page, FaceBox pop-ups, and language changing.
+      %a{"href"=>"http://www.smhklaw.com"} 
+        %img{"src"=>"/images/smhklaw.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_modwedding
+    .box_port
+      %h2 ModWedding - Wedding Website Application
+      %p 
+        Coming soon
+        %a{"href"=>"http://www.legalruled.com"} 
+          %img{"src"=>"/images/legalruled.png", "width"=>"500px"}
           %span Click to view the site
-    %tr
-      %td
-        %a{"href"=>"http://www.supplychainforum2009.com"} 
-          %img{"src"=>"/images/sag_soa.png", "width"=>"250px"}
+#div{:style=>"display:none;"}
+  #facebox_socialbuzzpr
+    .box_port
+      %h2 SocialBuzzPR
+      %p 
+        Coming soon
+        %a{"href"=>"http://www.socialbuzzpr.com"} 
+          %img{"src"=>"/images/socialbuzzpr.png", "width"=>"500px"}
           %span Click to view the site
-      %td
-        %a{"href"=>"http://www.soasummit2009.com"} 
-          %img{"src"=>"/images/sag_soa.png", "width"=>"250px"}
-          %span Click to view the site
-#facebox_sag_emails.facebox_port{:style=>"display:none;"}
-  %h2 HTML Emails
-  %p As part of consulting through Iterative Designs to Perphic, I have assisted in the Graphic design conversion and multi-application verification of many HTML email campaigns. The design and verification of HMTL emails are very different from a website. There are so many different desktop email applications (Outlook 2003, 2007, & Express, Mac Mail, Thunderbird, etc.) and browser-based email applications (gmail, hotmail, yahoomail, etc.), that the verification aspects become crucial.
-  %table{"cellpadding"=>"0", "cellspacing"=>"20", "border"=>"0", "valign"=>"top", "align"=>"center", "width"=>"600px"}
-    %tr
-      %td
-        %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/9/"} 
-          %img{"src"=>"/images/sag_ipod_email.png", "width"=>"250px"}
-          %span Click to see full email image
-      %td
-        %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/8/"} 
-          %img{"src"=>"/images/sag_starbucks_email.png", "width"=>"250px"}  
-          %span Click to see full email image
-    %tr
-      %td{"colspan"=>"2"}
-        %a{"href"=>"http://www.perphic.com/software_ag_usa?p=1&s=UA-851709-3#/7/"} 
-          %img{"src"=>"/images/sag_webinar_email.png", "width"=>"250px"}
-          %span Click to see full email image
-#facebox_smhklaw.facebox_port{:style=>"display:none;"}
-  %h2 SMHK Law Website
-  %p On this project, I constructed the graphic design, wrote the rails app, managed the hosting, and last but not least, I handled the Graphic Design conversion. This site utilizes rails for the back-end email system. It also uses a very JS touches like the auto-styled buttons on the front page, FaceBox pop-ups, and language changing.
-  %a{"href"=>"http://www.smhklaw.com"} 
-    %img{"src"=>"/images/smhklaw.png", "width"=>"500px"}
-    %span Click to view the site
-#facebox_modwedding.facebox_port{:style=>"display:none;"}
-  %h2 ModWedding - Wedding Website Application
-  %p 
-    Coming soon
-    %a{"href"=>"http://www.legalruled.com"} 
-      %img{"src"=>"/images/legalruled.png", "width"=>"500px"}
-      %span Click to view the site
-#facebox_socialbuzzpr.facebox_port{:style=>"display:none;"}
-  %h2 SocialBuzzPR
-  %p 
-    Coming soon
-    %a{"href"=>"http://www.socialbuzzpr.com"} 
-      %img{"src"=>"/images/socialbuzzpr.png", "width"=>"500px"}
-      %span Click to view the site

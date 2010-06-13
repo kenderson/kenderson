@@ -5,8 +5,14 @@
     %meta{:name=>"google-site-verification", :content=>"Q9IgUhV24gYaOLqFzT5Mxp8_1F-j8obg9Ru2dmvqfAQ"}
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/images/favicon.ico"}
-    = javascript_include_tag('jquery-1.4.2.js','application.js','facebox.js', 'jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js')
-    = stylesheet_link_tag("ui.all.css","facebox.css","btn.css","application.css",:media => 'screen, projection')
+    = stylesheet_link_tag("facebox.css","jquery.fancybox-1.3.1.css","btn.css","application.css",:media => 'screen, projection')
+    %link{:href=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css",:rel=>"stylesheet",:type=>"text/css"}
+    %link{:href=>"javascripts/colorpicker/css/colorpicker.css",:rel=>"stylesheet",:type=>"text/css"}
+
+    = javascript_include_tag('jquery-1.4.2.js','fancybox/jquery.fancybox-1.3.1.js','fancybox/jquery.mousewheel-3.0.2.pack.js','application.js','facebox.js','jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js','jquery.qtip-1.0.0-rc3.d.min.js')
+    %script{:src=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"}
+    %script{:src=>"javascripts/colorpicker/js/colorpicker.js", :type=>"text/javascript"}
+    
     /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 %body
@@ -36,15 +42,14 @@
           %li
             %a{"href"=>"http://blog.kenderson.net"} Blog      
       .content_wrap.clearfix
+        %a{:href=>"#",:tooltip => "<strong>Assault & Battery: </strong>Assault is the threat of violence and battery is physical violence.  Assault is saying that you are going to hit someone and battery is doing it.  Assault & Battery is a Class 1 Misdemeanor."}Assault & Battery
+      
         = yield
       .page_footer_wrap
         .page_footer
           .contact_me
             %a{"href"=>"/send_mail_to_partners", "class"=>"facebox"}
-              %span Contact Me 
-          .small_logo
-            %img{"src"=>"/images/logo_small_a.jpg"}
-            
+              %span Contact Me             
       .tail
       .copy_right
         %p 
