@@ -41,14 +41,12 @@
             %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : "")} Connect
           %li
             %a{"href"=>"http://blog.kenderson.net"} Blog      
-      .content_wrap.clearfix
-        %a{:href=>"#",:tooltip => "<strong>Assault & Battery: </strong>Assault is the threat of violence and battery is physical violence.  Assault is saying that you are going to hit someone and battery is doing it.  Assault & Battery is a Class 1 Misdemeanor."}Assault & Battery
-      
+      .content_wrap.clearfix      
         = yield
       .page_footer_wrap
         .page_footer
           .contact_me
-            %a{"href"=>"/send_mail_to_partners", "class"=>"facebox"}
+            %a{"href"=>"/send_mail_to_partners", :rel=>"fancybox"}
               %span Contact Me             
       .tail
       .copy_right

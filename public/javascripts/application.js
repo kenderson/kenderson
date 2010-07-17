@@ -98,17 +98,13 @@ jQuery(document).ready(function($) {
   };
   // DOMContentLoaded
   $(function() {
-
     // bind radiobuttons in the form
     var $filterType = $('#filter input[name="type"]');
     var $filterSort = $('#filter input[name="sort"]');
-
     // get the first collection
     var $applications = $('#applications');
-
     // clone applications to get a second collection
     var $data = $applications.clone();
-
     // attempt to call Quicksand on every form change
     $filterType.add($filterSort).change(function(e) {
       if ($($filterType+':checked').val() == 'all') {
@@ -116,7 +112,6 @@ jQuery(document).ready(function($) {
       } else {
         var $filteredData = $data.find('li[data-type=' + $($filterType+":checked").val() + ']');
       }
-
       // if sorted by size
       if ($('#filter input[name="sort"]:checked').val() == "size") {
         var $sortedData = $filteredData.sorted({
@@ -132,15 +127,12 @@ jQuery(document).ready(function($) {
           }
         });
       }   
-
       // finally, call quicksand
       $applications.quicksand($sortedData, {
         adjustHeight: 'dynamic',
         duration: 800,
-        easing: 'easeInOutQuad'
-        
+        easing: 'easeInOutQuad'      
       });
     });
   });
-  
 });
