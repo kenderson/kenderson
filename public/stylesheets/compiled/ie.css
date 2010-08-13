@@ -1,0 +1,40 @@
+/* line 1, ../../../app/stylesheets/ie.sass */
+#ie_flash {
+  background: black;
+  padding: 5px auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 9, ../../../app/stylesheets/ie.sass */
+#ie_flash_wrap {
+  width: 900px;
+  margin: 0px auto;
+}
+
+/* line 12, ../../../app/stylesheets/ie.sass */
+#ie_flash h2, #ie_flash span, #ie_flash a {
+  color: white;
+}
+
+/* line 14, ../../../app/stylesheets/ie.sass */
+#ie_flash a {
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+/* line 17, ../../../app/stylesheets/ie.sass */
+#ie_flash span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 20, ../../../app/stylesheets/ie.sass */
+.ie_close {
+  text-align: right;
+  display: block;
+  padding: 0px 20px 5px 10px;
+}

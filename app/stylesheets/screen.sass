@@ -1,0 +1,288 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset"
+@import "shared"
+@import "compass/css3/gradient"    
+
+// Color Swatches
+
+$text_color: #333
+$a_color: #6494ad
+$a_hover_color: #4e7385
+$accent_color: #ffa200
+$header_1_color: #adb167
+$error_color: #d94e4e
+$green: #64b764
+$body_color: #333
+$radial_start: #666
+$content_bg_color: #C2C2A3
+
+// Error Handling
+
+.flash_notice
+  background: #fff
+.flash_notice_wrap
+  background: #666
+  margin: 0px 8px
+  padding: 10px 3px 10px 8px
+  border-bottom: 1px solid #dedede
+.flash_notice_wrap span
+  float: left
+  padding: 5px 3px 0px 3px
+  border-bottom: 1px dotted #6494ad
+.flash_notice_wrap a
+  color: #6494ad
+.flash_notice_text
+  margin: 0px 0px 0px 90px
+  padding: 5px
+  color: #6494ad
+	
+// Body and Main CSS
+
+body
+  color: $text_color
+  font-family: helvetica
+  background: #010810 no-repeat
+  font-size: 13px
+  padding: 0px
+  margin: 0px
+  font-weight: normal
+  background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 706, color-stop(0%, $radial_start), color-stop(100%, $body_color))
+  background-image: -moz-radial-gradient(75% 0%, circle, $radial_start 0%, $body_color 100%)
+  min-height: 800px
+a
+  color: $a_color
+  text-decoration: none
+  border-bottom: 1px dotted
+p
+  padding: 10px 0px
+  margin: 0px
+  line-height: 1.3
+a:hover
+  color: $a_hover_color
+h1
+  color: $header_1_color
+  margin: 10px 0px 10px 0px
+  padding: 0px
+  font-size: 22px
+h2
+  margin: 10px 0px 5px 0px
+  padding: 0px
+  font-size: 18px
+  color: $header_1_color
+  font-style: italic
+h3
+  margin: 10px 0px 5px 0px
+  padding: 0px
+  font-size: 16px
+.accent
+  color: $accent_color
+#page_frame
+  width: 966px
+  margin: 0px auto 0px auto
+  padding: 0px
+#top_header
+  padding: 0px
+  margin: 0px
+  height: 50px
+  font-size: 24px
+#top_header span
+  display: none
+#home_twitter_feed
+
+#content_wrap
+  padding: 0px
+  color: $text_color
+  background: $content_bg_color
+  -webkit-border-radius: 12px
+  -moz-border-radius: 12px
+  border-radius: 12px
+  -webkit-box-shadow: -2px -2px 2px #000
+  -moz-box-shadow: -2px -2px 2px #000
+  box-shadow: -2px -2px 2px #000
+// Navigation CSS
+
+#navigation
+  display: block
+#navigation ul
+  float: left
+  margin: 0px
+  padding: 20px 0px
+  list-style: none
+#navigation li
+  float: left
+  padding: 0px
+  margin: 0px
+#navigation li a
+  display: block
+  padding: 8px 15px 6px 15px
+  text-decoration: none
+  font-size: 18px
+  color: #fff
+  border: none
+#navigation li a:hover
+  color: $accent_color
+#navigation li a.current
+  color: #ccc
+  border-bottom: 1px solid #ccc
+
+// Footer CSS
+
+#page_footer
+  height: 40px
+  width: 952px
+  margin: 0px auto
+  padding: 0px
+.contact_me
+  float: right
+.contact_me a
+  display: block
+  width: 125px
+  height: 19px
+  padding: 8px 0px 8px 0px
+  border: none
+  margin: 4px 0px 3px 0px
+  color: #fff
+.contact_me a:hover
+  border: none
+.small_logo
+  padding: 0px 5px
+#copy_right
+  color: #333
+  font-size: 10px
+  text-align: center
+  margin: 0px
+  padding: 5px 0px
+.copy_right a
+  text-decoration: none
+  color: #333
+  border: none
+.copy_right a:hover
+  color: #999
+
+// Index CSS
+
+#home_page
+  padding: 200px 50px
+  text-align: right
+  text-shadow: 1px 0px 3px #fff
+#home_page #home_large
+  font: 40px helvetica
+#home_page #home_small 
+  font: 15px helvetica
+// Portfolio Page
+
+#filter
+  padding: 10px 0px
+.portfolio_wrap
+  padding: 20px 10px
+.image-grid 
+  margin: -20px 0 0 -40px
+  padding-left: 45px
+  width: 840px
+.image-grid:after 
+  content: ""
+  display: block
+  height: 0
+  overflow: hidden
+  clear: both
+.image-grid li 
+  width: 170px
+  margin: 40px 0 0 40px
+  float: left
+  text-align: center
+  font-family: "Helvetica Neue", sans-serif
+  line-height: 17px
+  color: #686f74
+  overflow: hidden
+.image-grid li img,
+.image-grid li strong 
+  display: block
+.image-grid li span
+  color: #ccc
+.box_port
+  width: 600px
+.box_port a.centered
+  display: block
+  text-align: center
+  border: none
+  margin: 0px 15px 20px 15px
+.box_port span
+  display: block
+.box_port img
+  padding: 20px 0px
+  
+/*
+/* Mailer CSS
+/*
+
+#mailer_wrap
+  width: 500px
+#mailer_wrap h1
+  color: $a_color
+  font-size: 20px
+  padding: 0px 5px 25px 10px 
+.small_mailer_icon
+  float: right
+.div_spacer
+  padding: 10px
+#mailer_wrap form
+  border-top: 1px solid #ddd
+  padding-top: 10px
+#mailer_wrap form input, textarea
+  margin: 0px 0px 0px 10px
+  padding: 2px
+#mailer_wrap form textarea
+  height: 50px
+  width: 250px
+#mailer_wrap form label
+  width: 180px
+#mailer_wrap form input.error, textarea.error
+  border-width: 1px 
+  border-style: dotted 
+  border-color: $error_color
+#mailer_wrap form label.error, textarea.error
+  color: $error_color
+#mailer_wrap form label.error
+  margin-left: 10px
+  display: inline-block
+
+// Misc CSS
+
+.ui-datepicker-days-row td 
+  padding: 0px
+#facebox .footer a 
+  border: none
+
+// connect_css
+
+#connect_wrap
+  padding: 20px
+  
+// lab_css
+
+.color_toggle
+  display: block
+  text-align: right
+.backgound_color_select
+
+// process_css
+
+table.process_image_comp
+  width: 890px
+.process_image_comp td
+  text-align: center
+
+// Clearfix CSS
+
+.clearfix 
+  *display: inline-block
+.clearfix:after 
+  content: " "
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden

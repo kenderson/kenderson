@@ -1,3 +1,4 @@
+/* line 8, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -7,172 +8,222 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+/* line 19, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 *:focus {
-  outline: 10; }
+  outline: 10;
+}
 
+/* line 22, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 body {
   line-height: 1;
   color: black;
-  background: white; }
+  background: white;
+}
 
+/* line 27, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 30, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 table {
   border-collapse: separate;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
+/* line 34, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 caption, th, td {
   text-align: left;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
+/* line 38, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 blockquote:before, blockquote:after, q:before, q:after {
-  content: ""; }
+  content: "";
+}
 
+/* line 41, /Rails/kenderson/public/stylesheets/sass/reset.sass */
 blockquote, q {
-  quotes: "" ""; }
+  quotes: "" "";
+}
 
+@import url(shared.css);
+/* line 17, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .flash_notice {
-  background: white url(/images/content_body_bg.jpg) top left repeat-y; }
+  background: white;
+}
 
+/* line 19, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .flash_notice_wrap {
-  background: #666666 url(/images/entry_fade.gif) top left repeat-x;
+  background: #666666;
   margin: 0px 8px;
   padding: 10px 3px 10px 8px;
-  border-bottom: 1px solid #dedede; }
+  border-bottom: 1px solid #dedede;
+}
 
+/* line 24, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .flash_notice_wrap span {
   float: left;
   padding: 5px 3px 0px 3px;
-  border-bottom: 1px dotted #6494ad; }
+  border-bottom: 1px dotted #6494ad;
+}
 
+/* line 28, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .flash_notice_wrap a {
-  color: #6494ad; }
+  color: #6494ad;
+}
 
+/* line 30, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .flash_notice_text {
   margin: 0px 0px 0px 90px;
   padding: 5px;
-  color: #6494ad; }
+  color: #6494ad;
+}
 
+/* line 37, /Rails/kenderson/public/stylesheets/sass/application.sass */
 body {
   color: #333333;
   font-family: helvetica;
-  background-color: gray;
+  background: #31343d;
   font-size: 13px;
   padding: 0px;
   margin: 0px;
   font-weight: normal;
-  background: #575757 url(/images/body_bg.jpg) top left repeat-x; }
+}
 
+/* line 45, /Rails/kenderson/public/stylesheets/sass/application.sass */
 a {
   color: #6494ad;
   text-decoration: none;
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
+/* line 49, /Rails/kenderson/public/stylesheets/sass/application.sass */
 p {
   padding: 10px 0px;
   margin: 0px;
-  line-height: 1.3; }
+  line-height: 1.3;
+}
 
+/* line 53, /Rails/kenderson/public/stylesheets/sass/application.sass */
 a:hover {
-  color: #4e7385; }
+  color: #4e7385;
+}
 
+/* line 55, /Rails/kenderson/public/stylesheets/sass/application.sass */
 h1 {
   color: #adb167;
   margin: 10px 0px 10px 0px;
   padding: 0px;
-  font-size: 22px; }
+  font-size: 22px;
+}
 
+/* line 60, /Rails/kenderson/public/stylesheets/sass/application.sass */
 h2 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
   font-size: 18px;
   color: #adb167;
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 66, /Rails/kenderson/public/stylesheets/sass/application.sass */
 h3 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
-.right_content h2, .right_content h3, .right_content li, .right_content p {
-  color: #999999; }
-
-.right_content h2 {
-  line-height: 0.5; }
-
+/* line 71, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #page_frame {
   width: 966px;
   margin: 0px auto 0px auto;
-  padding: 0px; }
-
-.page_wrap {
   padding: 0px;
-  margin: 0px; }
+  background-image: -webkit-gradient(radial, 100% 0%, 0, 100% 0%, 100, color-stop(0%, #31343d), color-stop(100%, #010810));
+  background-image: -moz-radial-gradient(top right, circle, #31343d 0%, #010810 100%);
+}
 
-.top_header {
+/* line 76, /Rails/kenderson/public/stylesheets/sass/application.sass */
+#top_header {
   padding: 0px;
   margin: 0px;
   height: 250px;
-  background: white url(/images/header.jpg) top left no-repeat;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
-.top_header span {
-  display: none; }
+/* line 81, /Rails/kenderson/public/stylesheets/sass/application.sass */
+#top_header span {
+  display: none;
+}
 
-.content_wrap {
-  background: white url(/images/content_body_bg.jpg) top left repeat-y;
+/* line 85, /Rails/kenderson/public/stylesheets/sass/application.sass */
+#content_wrap {
   padding: 0px;
-  color: #333333; }
+  color: #333333;
+  background: #232732;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
 
+/* line 95, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation {
   display: block;
-  background: white url(/images/content_body_bg.jpg) top left repeat-y; }
+}
 
+/* line 97, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation ul {
   float: right;
   margin: 0px;
   padding: 0px 0px 0px 0px;
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 102, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation li {
   float: left;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+}
 
+/* line 106, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation li a {
   display: block;
   padding: 8px 15px 6px 15px;
   text-decoration: none;
   font-size: 18px;
-  border: none; }
+  color: white;
+  border: none;
+}
 
+/* line 113, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation li a:hover {
-  color: #363636; }
+  color: #363636;
+}
 
+/* line 115, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .navigation li a.current {
   color: #cccccc;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+}
 
-.page_footer_wrap {
-  height: 40px;
-  width: 966px;
-  margin: 0px auto 0px auto;
-  padding: 30px 0px 0px 0px;
-  background: #363636 url(/images/content_body_bg.jpg) top left repeat-y; }
-
+/* line 121, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .page_footer {
   height: 40px;
   width: 952px;
   margin: 0px auto;
   padding: 0px;
-  background: #363636; }
+}
 
+/* line 126, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .contact_me {
-  float: right; }
+  float: right;
+}
 
+/* line 128, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .contact_me a {
   display: block;
   width: 125px;
@@ -180,65 +231,88 @@ h3 {
   padding: 8px 0px 8px 0px;
   border: none;
   margin: 4px 0px 3px 0px;
-  color: white; }
+  color: white;
+}
 
+/* line 136, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .contact_me a:hover {
-  border: none; }
+  border: none;
+}
 
+/* line 138, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .small_logo {
-  padding: 0px 5px; }
+  padding: 0px 5px;
+}
 
-.tail {
-  background: url(/images/tail.jpg) top left no-repeat;
-  width: 966px;
-  height: 13px; }
-
+/* line 140, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .copy_right {
   color: #333333;
   font-size: 10px;
   text-align: center;
   margin: 0px;
-  padding: 5px 0px; }
+  padding: 5px 0px;
+}
 
+/* line 146, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .copy_right a {
   text-decoration: none;
   color: #333333;
-  border: none; }
+  border: none;
+}
 
+/* line 150, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .copy_right a:hover {
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 155, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .index_wrap {
-  padding: 15px 30px 0px 30px; }
+  padding: 15px 30px 0px 30px;
+}
 
+/* line 157, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .right_content {
   float: right;
   width: 180px;
   padding: 0px 0px 0px 20px;
-  border-left: 1px solid #efefef; }
+  border-left: 1px solid #efefef;
+}
 
+/* line 162, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .left_content {
   margin: 0px 200px 0px 0px;
-  padding: 0px 30px 0px 0px; }
+  padding: 0px 30px 0px 0px;
+}
 
+/* line 165, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .datepicker_wrap {
   font-size: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 168, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .art_subheader {
-  background: url(/images/sub_header.gif) top left no-repeat; }
+  background: url(/images/sub_header.gif) top left no-repeat;
+}
 
+/* line 170, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .xbv_subheader {
-  background: url(/images/xbv_sub_header.gif) top left no-repeat; }
+  background: url(/images/xbv_sub_header.gif) top left no-repeat;
+}
 
+/* line 172, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .gd_subheader {
-  background: url(/images/gd_sub_header.gif) top left no-repeat; }
+  background: url(/images/gd_sub_header.gif) top left no-repeat;
+}
 
+/* line 174, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .subheader {
   height: 25px;
   width: 600px;
-  color: #adb167; }
+  color: #adb167;
+}
 
+/* line 178, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .subheader span {
   display: none;
   font-style: italic;
@@ -246,63 +320,91 @@ h3 {
   font-size: 19px;
   color: #adb167;
   padding: 10px 0px 10px 10px;
-  border-bottom: 1px solid #dedede; }
+  border-bottom: 1px solid #dedede;
+}
 
+/* line 186, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .header_rule {
   background: url(/images/header_rule.gif) top center no-repeat;
   margin: 10px 0px 0px 0px;
   height: 2px;
-  width: 600px; }
+  width: 600px;
+}
 
+/* line 191, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .header_rule span {
   display: none;
   margin: 0px auto;
-  background-color: #dedede; }
+  background-color: #dedede;
+}
 
+/* line 195, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .good_stuff_links h2 {
-  background: url(/images/good_stuff.gif) top left no-repeat; }
+  background: url(/images/good_stuff.gif) top left no-repeat;
+}
 
+/* line 197, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .articles_links h2 {
-  background: url(/images/articles.gif) top left no-repeat; }
+  background: url(/images/articles.gif) top left no-repeat;
+}
 
+/* line 199, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .inspiration_links h2 {
-  background: url(/images/inspiration_links.gif) top left no-repeat; }
+  background: url(/images/inspiration_links.gif) top left no-repeat;
+}
 
+/* line 201, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .right_header h2 {
   width: 150px;
   height: 22px;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
+/* line 206, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .right_header h2 span {
-  display: none; }
+  display: none;
+}
 
+/* line 208, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .right_header ul {
   list-style: none;
   padding: 0px 0px 20px 0px;
-  margin: 0px; }
+  margin: 0px;
+}
 
+/* line 212, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .right_header li {
-  padding: 4px 20px; }
+  padding: 4px 20px;
+}
 
+/* line 217, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #filter {
-  padding: 10px 0px; }
+  padding: 10px 0px;
+}
 
+/* line 219, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .portfolio_wrap {
-  padding: 20px 10px; }
+  padding: 20px 10px;
+}
 
+/* line 221, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .image-grid {
   margin: -20px 0 0 -40px;
   padding-left: 45px;
-  width: 840px; }
+  width: 840px;
+}
 
+/* line 225, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .image-grid:after {
   content: "";
   display: block;
   height: 0;
   overflow: hidden;
-  clear: both; }
+  clear: both;
+}
 
+/* line 231, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .image-grid li {
   width: 170px;
   margin: 40px 0 0 40px;
@@ -311,93 +413,150 @@ h3 {
   font-family: "Helvetica Neue", sans-serif;
   line-height: 17px;
   color: #686f74;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 240, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .image-grid li img,
 .image-grid li strong {
-  display: block; }
+  display: block;
+}
 
+/* line 243, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .image-grid li span {
-  color: #cccccc; }
+  color: #cccccc;
+}
 
+/* line 245, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .box_port {
-  width: 600px; }
+  width: 600px;
+}
 
-.box_port a {
+/* line 247, /Rails/kenderson/public/stylesheets/sass/application.sass */
+.box_port a.centered {
   display: block;
   text-align: center;
   border: none;
-  margin: 0px 15px 20px 15px; }
+  margin: 0px 15px 20px 15px;
+}
 
+/* line 252, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .box_port span {
-  display: block; }
+  display: block;
+}
 
+/* line 254, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .box_port img {
-  padding: 20px 0px; }
+  padding: 20px 0px;
+}
 
 /* */
 /* Mailer CSS */
 /* */
+/* line 261, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap {
-  width: 500px; }
+  width: 500px;
+}
 
+/* line 263, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap h1 {
   color: #6494ad;
   font-size: 20px;
-  padding: 0px 5px 25px 10px; }
+  padding: 0px 5px 25px 10px;
+}
 
+/* line 267, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .small_mailer_icon {
-  float: right; }
+  float: right;
+}
 
+/* line 269, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .div_spacer {
-  padding: 10px; }
+  padding: 10px;
+}
 
+/* line 271, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form {
   border-top: 1px solid #dddddd;
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
+/* line 274, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form input, textarea {
   margin: 0px 0px 0px 10px;
-  padding: 2px; }
+  padding: 2px;
+}
 
+/* line 277, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form textarea {
   height: 50px;
-  width: 250px; }
+  width: 250px;
+}
 
+/* line 280, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form label {
-  width: 180px; }
+  width: 180px;
+}
 
+/* line 282, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form input.error, textarea.error {
   border-width: 1px;
   border-style: dotted;
-  border-color: #d94e4e; }
+  border-color: #d94e4e;
+}
 
+/* line 286, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form label.error, textarea.error {
-  color: #d94e4e; }
+  color: #d94e4e;
+}
 
+/* line 288, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #mailer_wrap form label.error {
   margin-left: 10px;
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 294, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .ui-datepicker-days-row td {
-  padding: 0px; }
+  padding: 0px;
+}
 
+/* line 296, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #facebox .footer a {
-  border: none; }
+  border: none;
+}
 
+/* line 301, /Rails/kenderson/public/stylesheets/sass/application.sass */
 #connect_wrap {
-  padding: 20px; }
+  padding: 20px;
+}
 
+/* line 306, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .color_toggle {
   display: block;
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 313, /Rails/kenderson/public/stylesheets/sass/application.sass */
+table.process_image_comp {
+  width: 890px;
+}
+
+/* line 315, /Rails/kenderson/public/stylesheets/sass/application.sass */
+.process_image_comp td {
+  text-align: center;
+}
+
+/* line 320, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .clearfix {
-  *display: inline-block; }
+  *display: inline-block;
+}
 
+/* line 322, /Rails/kenderson/public/stylesheets/sass/application.sass */
 .clearfix:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
-  visibility: hidden; }
+  visibility: hidden;
+}

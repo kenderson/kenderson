@@ -1,3 +1,14 @@
+// Wait Plugin
+$.fn.wait = function(time, type) {
+    time = time || 1000;
+    type = type || "fx";
+    return this.queue(type, function() {
+        var self = this;
+        setTimeout(function() {
+            $(self).dequeue();
+        }, time);
+    });
+};
 // Custom sorting plugin
 (function($) {
   $.fn.sorted = function(customOptions) {
@@ -22,33 +33,73 @@
 })(jQuery);
 
 jQuery(document).ready(function($) {
-  $("a[rel=fancybox]").fancybox({
+  $.fn.qtip.styles.mystyle = { 
+    padding: 0, 
+    border: { color: '#ce8429', width: 0 },
+    'background':'transparent',
+    color: 'black',
+    textAlign: 'center',
+    tip: 'bottomMiddle'
+  };
+  $("a.fancybox").fancybox({
     	'autoScale'		: false,
       'width' : 500,
   		'transitionIn'		: 'elastic',
   		'transitionOut'		: 'elastic',
-  		'titlePosition' 	: 'over',
+  		'titlePosition' 	: 'over'
   });
-  $('[tooltip]').each(function() {
-    $(this).qtip({
-      content: $(this).attr('tooltip'),
-      position: {
-        corner: {
-          target: 'topRight',
-          tooltip: 'bottomLeft'
-        }
-      },
-      style: {
-        border: {
-          width: 5,
-          radius: 10
+  $('a.fancybox').live("click", function(){
+    $.fancybox($("#"+this.href.split("#")[1]).html());
+  });
+  $('#navigation li a:not(:eq(0))').each(function() {
+    if ($(this).hasClass("current")) {
+      $(this).qtip({    
+        content: $(this).attr('tooltip_menu'),
+        show: { ready: true},
+        hide: false,
+        position: {
+          corner: {
+            target: 'topMiddle',
+            tooltip: 'bottomMiddle'
+          }
         },
-        padding: 10, 
-        textAlign: 'center',
-        tip: true, // Give it a speech bubble tip with automatic corner detection
-        name: 'dark' // Style it according to the preset 'cream' style
-      }
-    });
+        style: 'mystyle'
+      });
+    }
+    else {
+      $(this).qtip({    
+        content: $(this).attr('tooltip_menu'),
+        position: {
+          corner: {
+            target: 'topMiddle',
+            tooltip: 'bottomMiddle'
+          }
+        },
+        style: 'mystyle',
+        api: {
+          beforeShow: function() {
+            $(".qtip").hide();
+            // $('#navigation li a.current').qtip({
+            //   hide: true
+            // });
+          },
+          beforeHide: function() {
+            $('#navigation li a.current').qtip({    
+              content: $('#navigation li a.current').attr('tooltip_menu'),
+              show: { ready: true},
+              hide: false,
+              position: {
+                corner: {
+                  target: 'topMiddle',
+                  tooltip: 'bottomMiddle'
+                }
+              },
+              style: 'mystyle'
+            });
+          }
+        }
+      })
+    }
   });
 	$('.backgound_color_select').ColorPicker({
 		color: '#fff',
@@ -78,24 +129,10 @@ jQuery(document).ready(function($) {
 			$('.color_changer p').css('color', '#' + hex);
 		}
 	});
-	
   $("#accordion").accordion();
   $("#kenderson").validate();
   // $('#facebox').bgiframe();
   // $("a.facebox").facebox();
-  $('a[rel*=fancybox]').live("click", function(){
-    $.fancybox($("#"+this.href.split("#")[1]).html());
-  }); 
-  $.fn.wait = function(time, type) {
-      time = time || 1000;
-      type = type || "fx";
-      return this.queue(type, function() {
-          var self = this;
-          setTimeout(function() {
-              $(self).dequeue();
-          }, time);
-      });
-  };
   // DOMContentLoaded
   $(function() {
     // bind radiobuttons in the form

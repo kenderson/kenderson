@@ -1,21 +1,31 @@
-!!!
-%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en", :class=>"no-js"}
   %head
     %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"keywords", :content=>"web design, css,design,html,front end,virginia,fairfax,richmond,washington dc,maryland"}
     %meta{:name=>"google-site-verification", :content=>"Q9IgUhV24gYaOLqFzT5Mxp8_1F-j8obg9Ru2dmvqfAQ"}
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/images/favicon.ico"}
-    = stylesheet_link_tag("facebox.css","jquery.fancybox-1.3.1.css","btn.css","application.css",:media => 'screen, projection')
+    = stylesheet_link_tag("facebox.css","jquery.fancybox-1.3.1.css","btn.css","compiled/screen_dark.css",:media => 'screen, projection')
     %link{:href=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css",:rel=>"stylesheet",:type=>"text/css"}
     %link{:href=>"javascripts/colorpicker/css/colorpicker.css",:rel=>"stylesheet",:type=>"text/css"}
-
-    = javascript_include_tag('jquery-1.4.2.js','fancybox/jquery.fancybox-1.3.1.js','fancybox/jquery.mousewheel-3.0.2.pack.js','application.js','facebox.js','jquery.bgiframe.min.js', 'jquery.livequery.min.js', 'jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js','jquery.qtip-1.0.0-rc3.d.min.js')
-    %script{:src=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"}
-    %script{:src=>"javascripts/colorpicker/js/colorpicker.js", :type=>"text/javascript"}
-    
-    /[if IE]
-    = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    = javascript_include_tag('jquery-1.4.2.js','jquery-ui.min.js','fancybox/jquery.fancybox-1.3.1.js','fancybox/jquery.mousewheel-3.0.2.pack.js','application.js','jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js','jquery.qtip-1.0.0-rc3.d.min.js','colorpicker/js/colorpicker.js','modernizr-1.5.min.js')
+    /[if lt IE 9]
+      <script src="javascripts/gradientz.js" type="text/javascript"></script>
+      <script src="javascripts/ie.js" type="text/javascript"></script>
+      <link href="stylesheets/compiled/ie.css" rel="stylesheet" type="text/css"/>
+      
 %body
+  #ie_flash.show-75
+    #ie_flash_wrap 
+      %h2
+        Notice!
+        %span 
+          You're currently using Internet Explorer as your browser. Due to security and performance considerations, we and many other organizations recommend upgrading your browser to 
+          %a{:href=>"http://www.mozilla.com/en-US/firefox/firefox.html"} Mozilla Firefox.
+          Firefox is free and very secure!
+      .ie_close
+        %a{:href=>"#","onclick"=>'$("#ie_flash").remove();'} X Close this Warning
+
   - if flash[:notice]
     .flash_notice
       .flash_notice_wrap
@@ -23,37 +33,40 @@
           %span Close
         .flash_notice_text
           = h(flash[:notice])
-  #page_frame
-    .page_wrap
-      .top_header
-        %span Kenderson Consulting: HTML, CSS and JavaScript Consulting
-      .navigation.clearfix
-        %ul.clearfix
-          %li 
-            %a{"href"=>"/"} Home
-          %li
-            %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : "")} Process
-          %li
-            %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : "")} Portfolio
-          %li
-            %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : "")} Lab
-          %li
-            %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : "")} Connect
-          %li
-            %a{"href"=>"http://blog.kenderson.net"} Blog      
-      .content_wrap.clearfix      
-        = yield
-      .page_footer_wrap
-        .page_footer
-          .contact_me
-            %a{"href"=>"/send_mail_to_partners", :rel=>"fancybox"}
-              %span Contact Me             
-      .tail
-      .copy_right
-        %p 
-          %a{"href"=>"mailto:ken@kenderson.net"} Kenderson Consulting
+  #page_frame    
+    #top_header
+      %a#kenderson_logo{:href=>"/"} 
+        %span Kenderson
+    #navigation.clearfix
+      %ul.clearfix
+        %li 
+          %a{"href"=>"/"} Home
+        %li
+          %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">The way we do things.</span>"} Process
+        %li
+          %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our sample work.</span>"} Portfolio
+        %li
+          %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Scratch Pad.</span>"} Lab
+        %li
+          %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
+        %li
+          %a{"href"=>"http://blog.kenderson.net",:tooltip_menu =>"<span class=\"tip_bg\">A few of our thoughts.</span>"} Blog      
+    #content_wrap.clearfix      
+      = yield
+    #page_footer
+      #copy_right
+        %span
           &copy; 
           = DateTime.now.year
+          KENDERSON.NET | ALL RIGHTS RESERVED
+      #home_twitter_feed
+        %span.accent KENDERSON SAYS 
+        #twitter_div
+          %ul#twitter_update_list
+            %li Twitter Updates
+%script{"type"=>"text/javascript","src"=>"http://twitter.com/javascripts/blogger.js"}
+%script{"type"=>"text/javascript", "src"=>"http://twitter.com/statuses/user_timeline/kenderson.json?callback=twitterCallback2&amp;count=1"}
+    		
         
 %script{"type"=>"text/javascript"}
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
