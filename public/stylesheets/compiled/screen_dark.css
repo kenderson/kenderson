@@ -1,621 +1,184 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 14, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-  color: black;
-  background: white;
-}
-
-/* line 19, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-
-/* line 23, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 25, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: "" "";
-}
-/* line 96, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-}
-
-/* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 24, ../../../app/stylesheets/screen_dark.sass */
-.flash_notice {
-  background: white;
-}
-
-/* line 26, ../../../app/stylesheets/screen_dark.sass */
-.flash_notice_wrap {
-  background: #666666;
-  margin: 0px 8px;
-  padding: 10px 3px 10px 8px;
-  border-bottom: 1px solid #dedede;
-}
-
-/* line 31, ../../../app/stylesheets/screen_dark.sass */
-.flash_notice_wrap span {
-  float: left;
-  padding: 5px 3px 0px 3px;
-  border-bottom: 1px dotted #6494ad;
-}
-
-/* line 35, ../../../app/stylesheets/screen_dark.sass */
-.flash_notice_wrap a {
-  color: #6494ad;
-}
-
-/* line 37, ../../../app/stylesheets/screen_dark.sass */
-.flash_notice_text {
-  margin: 0px 0px 0px 90px;
-  padding: 5px;
-  color: #6494ad;
-}
-
-/* line 44, ../../../app/stylesheets/screen_dark.sass */
-body {
-  color: white;
-  font-family: "Helvetica Neue", arial, sans-serif;
-  background: #010810 no-repeat;
-  font-size: 13px;
-  padding: 0px;
-  margin: 0px;
-  font-weight: normal;
-  background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, #31343d), color-stop(100%, #010810));
-  background-image: -moz-radial-gradient(75% 0%, circle, #31343d 0%, #010810 100%);
-  min-height: 800px;
-}
-
-/* line 55, ../../../app/stylesheets/screen_dark.sass */
-a {
-  color: #999999;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-}
-
-/* line 59, ../../../app/stylesheets/screen_dark.sass */
-p {
-  padding: 10px 0px;
-  margin: 0px;
-  line-height: 1.3;
-}
-
-/* line 63, ../../../app/stylesheets/screen_dark.sass */
-a:hover {
-  color: #4e7385;
-}
-
-/* line 65, ../../../app/stylesheets/screen_dark.sass */
-h1 {
-  color: white;
-  margin: 10px 0px 10px 0px;
-  padding: 0px;
-  font-size: 22px;
-}
-
-/* line 70, ../../../app/stylesheets/screen_dark.sass */
-h2 {
-  margin: 10px 0px 5px 0px;
-  padding: 0px;
-  font-size: 18px;
-  color: white;
-  font-style: italic;
-}
-
-/* line 76, ../../../app/stylesheets/screen_dark.sass */
-h3 {
-  margin: 10px 0px 5px 0px;
-  padding: 0px;
-  font-size: 16px;
-}
-
-/* line 80, ../../../app/stylesheets/screen_dark.sass */
-.accent {
-  color: #ffa200;
-}
-
-/* line 82, ../../../app/stylesheets/screen_dark.sass */
-.css_hide {
-  display: none;
-}
-
-/* line 84, ../../../app/stylesheets/screen_dark.sass */
-.show-50 {
-  -moz-opacity: 0.5;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-}
-
-/* line 88, ../../../app/stylesheets/screen_dark.sass */
-.show-75 {
-  -moz-opacity: 0.75;
-  filter: alpha(opacity=75);
-  opacity: 0.75;
-}
-
-/* line 92, ../../../app/stylesheets/screen_dark.sass */
-.rounded_3 {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-
-/* line 100, ../../../app/stylesheets/screen_dark.sass */
-#ie_flash {
-  display: none;
-}
-
-/* line 102, ../../../app/stylesheets/screen_dark.sass */
-#page_frame {
-  width: 966px;
-  margin: 0px auto 0px auto;
-  padding: 20px 0px;
-}
-
-/* line 106, ../../../app/stylesheets/screen_dark.sass */
-#top_header {
-  float: right;
-}
-
-/* line 108, ../../../app/stylesheets/screen_dark.sass */
-a#kenderson_logo {
-  display: block;
-  text-align: right;
-  padding: 0px;
-  margin: 0px;
-  height: 39px;
-  width: 261px;
-  background: transparent url(/images/kenderson_logo.png) top left no-repeat;
-  border: none;
-}
-
-/* line 117, ../../../app/stylesheets/screen_dark.sass */
-#kenderson_logo span {
-  font-size: 24px;
-  display: none;
-}
-
-/* line 120, ../../../app/stylesheets/screen_dark.sass */
-#content_wrap {
-  padding: 20px;
-  color: white;
-  background: #232732;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: -2px -2px 2px black;
-  -webkit-box-shadow: -2px -2px 2px black;
-  box-shadow: -2px -2px 2px black;
-}
-
-/* line 130, ../../../app/stylesheets/screen_dark.sass */
-.no-borderradius #content_wrap {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 132, ../../../app/stylesheets/screen_dark.sass */
-.tip_bg {
-  display: block;
-  padding: 7px 10px;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb401), to(#ce8429));
-  background-image: -moz-linear-gradient(0% 10% 90deg, #ffb401, #ce8429);
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  text-shadow: 1px 1px 3px #ffe80e;
-}
-
-/* line 141, ../../../app/stylesheets/screen_dark.sass */
-.no-borderradius .tip_bg {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 143, ../../../app/stylesheets/screen_dark.sass */
-.no-cssgradients .tip_bg {
-  background: transparent url(/images/qtip_bg.png) top left repeat-x;
-}
-
-/* line 145, ../../../app/stylesheets/screen_dark.sass */
-#content_w_side {
-  margin: 0px 220px 0px 0px;
-}
-
-/* line 147, ../../../app/stylesheets/screen_dark.sass */
-#right_side {
-  float: right;
-  width: 195px;
-}
-
-/* line 150, ../../../app/stylesheets/screen_dark.sass */
-#right_side ul {
-  padding: 0px 0px 0px 20px;
-}
-
-/* line 152, ../../../app/stylesheets/screen_dark.sass */
-#right_side li {
-  padding: 3px 0px;
-}
-
-/* line 157, ../../../app/stylesheets/screen_dark.sass */
-#navigation {
-  display: block;
-}
-
-/* line 159, ../../../app/stylesheets/screen_dark.sass */
-#navigation ul {
-  float: left;
-  margin: 0px;
-  padding: 40px 0px 20px 0px;
-  list-style: none;
-}
-
-/* line 164, ../../../app/stylesheets/screen_dark.sass */
-#navigation li {
-  float: left;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* line 168, ../../../app/stylesheets/screen_dark.sass */
-#navigation li a {
-  display: block;
-  padding: 8px 15px 6px 15px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  border: none;
-}
-
-/* line 175, ../../../app/stylesheets/screen_dark.sass */
-#navigation li a:hover {
-  color: #ffa200;
-}
-
-/* line 177, ../../../app/stylesheets/screen_dark.sass */
-#navigation li a.current {
-  color: #ffa200;
-  border-bottom: 1px solid #ffa200;
-}
-
-/* line 183, ../../../app/stylesheets/screen_dark.sass */
-#page_footer {
-  padding: 50px 0px;
-}
-
-/* line 185, ../../../app/stylesheets/screen_dark.sass */
-#copy_right {
-  float: right;
-  display: block;
-  color: #41404d;
-  font-size: 10px;
-  margin: 0px;
-  padding: 0px;
-  line-height: 22px;
-}
-
-/* line 193, ../../../app/stylesheets/screen_dark.sass */
-#home_twitter_feed {
-  height: 22px;
-  line-height: 22px;
-  width: 600px;
-  margin: 0px;
-  padding: 0px 10px 0px 25px;
-  background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat;
-}
-
-/* line 203, ../../../app/stylesheets/screen_dark.sass */
-#home_page {
-  padding: 200px 50px;
-  margin: 0px;
-  position: relative;
-  text-align: right;
-}
-
-/* line 208, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_large {
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  text-shadow: 1px 0px 6px #010810;
-  font-size: 40px;
-}
-
-/* line 214, ../../../app/stylesheets/screen_dark.sass */
-.no-boxshadow #home_large {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 216, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_small {
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  text-shadow: 1px 0px 6px #010810;
-  font-size: 14px;
-}
-
-/* line 222, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_small span.normal {
-  text-shadow: 1px 0px 6px #010810;
-  position: relative;
-}
-
-/* line 225, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_small span.accent {
-  text-shadow: none;
-  position: relative;
-}
-
-/* line 228, ../../../app/stylesheets/screen_dark.sass */
-.no-boxshadow #home_page #home_small span.normal {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 233, ../../../app/stylesheets/screen_dark.sass */
-#filter {
-  padding: 10px 0px;
-}
-
-/* line 235, ../../../app/stylesheets/screen_dark.sass */
-.portfolio_wrap {
-  padding: 20px 10px;
-}
-
-/* line 237, ../../../app/stylesheets/screen_dark.sass */
-.portfolio_wrap #filter label {
-  float: right;
-  margin: 0px 5px;
-  padding: 5px;
-}
-
-/* line 241, ../../../app/stylesheets/screen_dark.sass */
-.portfolio_wrap #filter label:hover {
-  color: #ffa200;
-  background: transparent url(/images/stripped_bg.png) top left repeat;
-}
-
-/* line 244, ../../../app/stylesheets/screen_dark.sass */
-.image-grid {
-  margin: -20px 0 0 -40px;
-  padding-left: 45px;
-  width: 840px;
-}
-
-/* line 248, ../../../app/stylesheets/screen_dark.sass */
-.image-grid:after {
-  content: "";
-  display: block;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-}
-
-/* line 254, ../../../app/stylesheets/screen_dark.sass */
-.image-grid li {
-  width: 170px;
-  margin: 40px 0 0 40px;
-  float: left;
-  text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
-  line-height: 17px;
-  color: #686f74;
-  overflow: hidden;
-}
-
-/* line 263, ../../../app/stylesheets/screen_dark.sass */
-.image-grid li a {
-  border: none;
-}
-
-/* line 265, ../../../app/stylesheets/screen_dark.sass */
-.img_block {
-  position: absolute;
-  width: 170px;
-  height: 100px;
-  display: block;
-  -moz-box-shadow: 2px 2px 20px black;
-  -webkit-box-shadow: 2px 2px 20px black;
-  box-shadow: 2px 2px 20px black;
-  background: transparent url(/images/trans_bg.png) top left repeat;
-}
-
-/* line 274, ../../../app/stylesheets/screen_dark.sass */
-.image-grid li a:hover .img_block {
-  width: 164px;
-  height: 94px;
-  border: 3px solid #ffa200;
-  background: none;
-}
-
-/* line 279, ../../../app/stylesheets/screen_dark.sass */
-.image-grid li strong {
-  display: block;
-  padding: 5px 0px 0px 0px;
-}
-
-/* line 282, ../../../app/stylesheets/screen_dark.sass */
-.image-grid li span {
-  color: #cccccc;
-}
-
-/* line 284, ../../../app/stylesheets/screen_dark.sass */
-.box_port {
-  width: 600px;
-  color: #999999;
-}
-
-/* line 287, ../../../app/stylesheets/screen_dark.sass */
-.box_port a.centered {
-  display: block;
-  text-align: center;
-  border: none;
-  margin: 0px 15px 20px 15px;
-}
-
-/* line 292, ../../../app/stylesheets/screen_dark.sass */
-.box_port span {
-  display: block;
-}
-
-/* line 294, ../../../app/stylesheets/screen_dark.sass */
-.box_port img {
-  padding: 20px 0px;
-}
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+body { line-height: 1; color: black; background: white; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+a img { border: none; }
+
+.flash_notice { background: white; }
+
+.flash_notice_wrap { background: #666666; margin: 0px 8px; padding: 10px 3px 10px 8px; border-bottom: 1px solid #dedede; }
+
+.flash_notice_wrap span { float: left; padding: 5px 3px 0px 3px; border-bottom: 1px dotted #6494ad; }
+
+.flash_notice_wrap a { color: #6494ad; }
+
+.flash_notice_text { margin: 0px 0px 0px 90px; padding: 5px; color: #6494ad; }
+
+body { color: white; font-family: "Helvetica Neue", arial, sans-serif; background: #010810 no-repeat; font-size: 13px; padding: 0px; margin: 0px; font-weight: normal; background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, #31343d), color-stop(100%, #010810)); background-image: -moz-radial-gradient(75% 0%, circle, #31343d 0%, #010810 100%); min-height: 800px; }
+
+a { color: #999999; text-decoration: none; border-bottom: 1px dotted; }
+
+p { padding: 10px 0px; margin: 0px; line-height: 1.3; }
+
+a:hover { color: #4e7385; }
+
+h1 { color: white; margin: 10px 0px 10px 0px; padding: 0px; font-size: 22px; }
+
+h2 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 18px; color: white; font-style: italic; }
+
+h3 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 16px; }
+
+.accent { color: #ffa200; }
+
+.css_hide { display: none; }
+
+.show-50 { -moz-opacity: 0.5; filter: alpha(opacity=50); opacity: 0.5; }
+
+.show-75 { -moz-opacity: 0.75; filter: alpha(opacity=75); opacity: 0.75; }
+
+.rounded_3 { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+#ie_flash { display: none; }
+
+#page_frame { width: 966px; margin: 0px auto 0px auto; padding: 20px 0px; }
+
+#top_header { float: right; }
+
+a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px; height: 39px; width: 261px; background: transparent url(/images/kenderson_logo.png) top left no-repeat; border: none; }
+
+#kenderson_logo span { font-size: 24px; display: none; }
+
+#content_wrap { padding: 20px; color: white; background: #232732; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; -moz-box-shadow: -2px -2px 2px black; -webkit-box-shadow: -2px -2px 2px black; box-shadow: -2px -2px 2px black; }
+
+.no-borderradius #content_wrap { behavior: url(ie-css3.htc); }
+
+.tip_bg { display: block; padding: 7px 10px; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb401), to(#ce8429)); background-image: -moz-linear-gradient(0% 10% 90deg, #ffb401, #ce8429); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-shadow: 1px 1px 3px #ffe80e; }
+
+.no-borderradius .tip_bg { behavior: url(ie-css3.htc); }
+
+.no-cssgradients .tip_bg { background: transparent url(/images/qtip_bg.png) top left repeat-x; }
+
+#content_w_side { margin: 0px 220px 0px 0px; }
+
+#right_side { float: right; width: 195px; }
+
+#right_side ul { padding: 0px 0px 0px 20px; }
+
+#right_side li { padding: 3px 0px; }
+
+#navigation { display: block; }
+
+#navigation ul { float: left; margin: 0px; padding: 40px 0px 20px 0px; list-style: none; }
+
+#navigation li { float: left; padding: 0px; margin: 0px; }
+
+#navigation li a { display: block; padding: 8px 15px 6px 15px; text-decoration: none; font-size: 18px; color: white; border: none; }
+
+#navigation li a:hover { color: #ffa200; }
+
+#navigation li a.current { color: #ffa200; border-bottom: 1px solid #ffa200; }
+
+#page_footer { padding: 50px 0px; }
+
+#copy_right { float: right; display: block; color: #41404d; font-size: 10px; margin: 0px; padding: 0px; line-height: 22px; }
+
+#home_twitter_feed { height: 22px; line-height: 22px; width: 600px; margin: 0px; padding: 0px 10px 0px 25px; background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat; }
+
+#home_page { padding: 200px 50px; margin: 0px; position: relative; text-align: right; }
+
+#home_page #home_large { margin: 0px; padding: 0px; position: relative; text-shadow: 1px 0px 6px #010810; font-size: 40px; }
+
+.no-boxshadow #home_large { behavior: url(ie-css3.htc); }
+
+#home_page #home_small { margin: 0px; padding: 0px; position: relative; text-shadow: 1px 0px 6px #010810; font-size: 14px; }
+
+#home_page #home_small span.normal { text-shadow: 1px 0px 6px #010810; position: relative; }
+
+#home_page #home_small span.accent { text-shadow: none; position: relative; }
+
+.no-boxshadow #home_page #home_small span.normal { behavior: url(ie-css3.htc); }
+
+#filter { padding: 10px 0px; }
+
+.portfolio_wrap { padding: 20px 10px; }
+
+.portfolio_wrap #filter label { float: right; margin: 0px 5px; padding: 5px; }
+
+.portfolio_wrap #filter label:hover { color: #ffa200; background: transparent url(/images/stripped_bg.png) top left repeat; }
+
+.image-grid { margin: -20px 0 0 -40px; padding-left: 45px; width: 840px; }
+
+.image-grid:after { content: ""; display: block; height: 0; overflow: hidden; clear: both; }
+
+.image-grid li { width: 170px; margin: 40px 0 0 40px; float: left; text-align: center; font-family: "Helvetica Neue", sans-serif; line-height: 17px; color: #686f74; overflow: hidden; }
+
+.image-grid li a { border: none; }
+
+.img_block { position: absolute; width: 170px; height: 100px; display: block; -moz-box-shadow: 2px 2px 20px black; -webkit-box-shadow: 2px 2px 20px black; box-shadow: 2px 2px 20px black; background: transparent url(/images/trans_bg.png) top left repeat; }
+
+.image-grid li a:hover .img_block { width: 164px; height: 94px; border: 3px solid #ffa200; background: none; }
+
+.image-grid li strong { display: block; padding: 5px 0px 0px 0px; }
+
+.image-grid li span { color: #cccccc; }
+
+.box_port { width: 600px; color: #999999; }
+
+.box_port a.centered { display: block; text-align: center; border: none; margin: 0px 15px 20px 15px; }
+
+.box_port span { display: block; }
+
+.box_port img { padding: 20px 0px; }
 
 /* */
 /* Mailer CSS */
 /* */
-/* line 301, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap {
-  width: 500px;
-}
+#mailer_wrap { width: 500px; }
 
-/* line 303, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap h1 {
-  color: #999999;
-  font-size: 20px;
-  padding: 0px 5px 25px 10px;
-}
+#mailer_wrap h1 { color: #999999; font-size: 20px; padding: 0px 5px 25px 10px; }
 
-/* line 307, ../../../app/stylesheets/screen_dark.sass */
-.small_mailer_icon {
-  float: right;
-}
+.small_mailer_icon { float: right; }
 
-/* line 309, ../../../app/stylesheets/screen_dark.sass */
-.div_spacer {
-  padding: 10px;
-}
+.div_spacer { padding: 10px; }
 
-/* line 311, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form {
-  border-top: 1px solid #dddddd;
-  padding-top: 10px;
-}
+#mailer_wrap form { border-top: 1px solid #dddddd; padding-top: 10px; }
 
-/* line 314, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form input, textarea {
-  margin: 0px 0px 0px 10px;
-  padding: 2px;
-}
+#mailer_wrap form input, textarea { margin: 0px 0px 0px 10px; padding: 2px; }
 
-/* line 317, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form textarea {
-  height: 50px;
-  width: 250px;
-}
+#mailer_wrap form textarea { height: 50px; width: 250px; }
 
-/* line 320, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form label {
-  width: 180px;
-}
+#mailer_wrap form label { width: 180px; }
 
-/* line 322, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form input.error, textarea.error {
-  border-width: 1px;
-  border-style: dotted;
-  border-color: #d94e4e;
-}
+#mailer_wrap form input.error, textarea.error { border-width: 1px; border-style: dotted; border-color: #d94e4e; }
 
-/* line 326, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form label.error, textarea.error {
-  color: #d94e4e;
-}
+#mailer_wrap form label.error, textarea.error { color: #d94e4e; }
 
-/* line 328, ../../../app/stylesheets/screen_dark.sass */
-#mailer_wrap form label.error {
-  margin-left: 10px;
-  display: inline-block;
-}
+#mailer_wrap form label.error { margin-left: 10px; display: inline-block; }
 
-/* line 334, ../../../app/stylesheets/screen_dark.sass */
-.ui-datepicker-days-row td {
-  padding: 0px;
-}
+.ui-datepicker-days-row td { padding: 0px; }
 
-/* line 336, ../../../app/stylesheets/screen_dark.sass */
-a#fancybox-close {
-  border: none;
-}
+a#fancybox-close { border: none; }
 
-/* line 338, ../../../app/stylesheets/screen_dark.sass */
-#fancybox-wrap {
-  z-index: 42001;
-}
+#fancybox-wrap { z-index: 42001; }
 
-/* line 342, ../../../app/stylesheets/screen_dark.sass */
-#connect_wrap {
-  padding: 20px;
-}
+#connect_wrap { padding: 20px; }
 
-/* line 347, ../../../app/stylesheets/screen_dark.sass */
-.color_toggle {
-  display: block;
-  text-align: right;
-}
+.color_toggle { display: block; text-align: right; }
 
-/* line 355, ../../../app/stylesheets/screen_dark.sass */
-table.process_image_comp {
-  width: 890px;
-}
+table.process_image_comp { width: 890px; }
 
-/* line 357, ../../../app/stylesheets/screen_dark.sass */
-.process_image_comp td {
-  text-align: center;
-}
+.process_image_comp td { text-align: center; }
 
-/* line 362, ../../../app/stylesheets/screen_dark.sass */
-.clearfix {
-  *display: inline-block;
-}
+.clearfix { *display: inline-block; }
 
-/* line 364, ../../../app/stylesheets/screen_dark.sass */
-.clearfix:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
+.clearfix:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; }
