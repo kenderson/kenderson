@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 14, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,42 +22,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../vendor/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -96,7 +96,7 @@ a img {
 
 /* line 44, ../../../app/stylesheets/screen_dark.sass */
 body {
-  color: white;
+  color: #999999;
   font-family: "Helvetica Neue", arial, sans-serif;
   background: #010810 no-repeat;
   font-size: 13px;
@@ -109,222 +109,228 @@ body {
 }
 
 /* line 55, ../../../app/stylesheets/screen_dark.sass */
+.no-cssgradients body {
+  background: #31343d;
+}
+
+/* line 57, ../../../app/stylesheets/screen_dark.sass */
 a {
   color: #999999;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
 
-/* line 59, ../../../app/stylesheets/screen_dark.sass */
+/* line 61, ../../../app/stylesheets/screen_dark.sass */
 p {
   padding: 10px 0px;
   margin: 0px;
   line-height: 1.3;
 }
 
-/* line 63, ../../../app/stylesheets/screen_dark.sass */
+/* line 65, ../../../app/stylesheets/screen_dark.sass */
 a:hover {
   color: #4e7385;
 }
 
-/* line 65, ../../../app/stylesheets/screen_dark.sass */
+/* line 67, ../../../app/stylesheets/screen_dark.sass */
 h1 {
-  color: white;
+  color: #ffa200;
   margin: 10px 0px 10px 0px;
   padding: 0px;
   font-size: 22px;
+  text-shadow: -1px -1px 1px #e0e0e0;
 }
 
-/* line 70, ../../../app/stylesheets/screen_dark.sass */
+/* line 73, ../../../app/stylesheets/screen_dark.sass */
+.no-boxshadow h1 {
+  behavior: url(ie-css3.htc);
+}
+
+/* line 76, ../../../app/stylesheets/screen_dark.sass */
 h2 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
   font-size: 18px;
-  color: white;
+  color: #ffa200;
   font-style: italic;
 }
 
-/* line 76, ../../../app/stylesheets/screen_dark.sass */
+/* line 82, ../../../app/stylesheets/screen_dark.sass */
 h3 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
   font-size: 16px;
 }
 
-/* line 80, ../../../app/stylesheets/screen_dark.sass */
+/* line 86, ../../../app/stylesheets/screen_dark.sass */
 .accent {
   color: #ffa200;
 }
 
-/* line 82, ../../../app/stylesheets/screen_dark.sass */
+/* line 88, ../../../app/stylesheets/screen_dark.sass */
 .css_hide {
   display: none;
 }
 
-/* line 84, ../../../app/stylesheets/screen_dark.sass */
+/* line 90, ../../../app/stylesheets/screen_dark.sass */
 .show-50 {
   -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   opacity: 0.5;
 }
 
-/* line 88, ../../../app/stylesheets/screen_dark.sass */
+/* line 94, ../../../app/stylesheets/screen_dark.sass */
 .show-75 {
   -moz-opacity: 0.75;
   filter: alpha(opacity=75);
   opacity: 0.75;
 }
 
-/* line 92, ../../../app/stylesheets/screen_dark.sass */
-.rounded_3 {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+/* line 98, ../../../app/stylesheets/screen_dark.sass */
+.large_quote {
+  font-family: georgia;
+  font-style: italic;
 }
 
-/* line 100, ../../../app/stylesheets/screen_dark.sass */
+/* line 104, ../../../app/stylesheets/screen_dark.sass */
 #ie_flash {
   display: none;
 }
 
-/* line 102, ../../../app/stylesheets/screen_dark.sass */
+/* line 106, ../../../app/stylesheets/screen_dark.sass */
 #page_frame {
   width: 966px;
   margin: 0px auto 0px auto;
   padding: 20px 0px;
 }
 
-/* line 106, ../../../app/stylesheets/screen_dark.sass */
+/* line 110, ../../../app/stylesheets/screen_dark.sass */
 #top_header {
   float: right;
 }
 
-/* line 108, ../../../app/stylesheets/screen_dark.sass */
+/* line 112, ../../../app/stylesheets/screen_dark.sass */
 a#kenderson_logo {
   display: block;
   text-align: right;
   padding: 0px;
-  margin: 0px;
+  margin: 30px 0px 0px 0px;
   height: 39px;
   width: 261px;
   background: transparent url(/images/kenderson_logo.png) top left no-repeat;
   border: none;
 }
 
-/* line 117, ../../../app/stylesheets/screen_dark.sass */
+/* line 121, ../../../app/stylesheets/screen_dark.sass */
 #kenderson_logo span {
   font-size: 24px;
   display: none;
 }
 
-/* line 120, ../../../app/stylesheets/screen_dark.sass */
+/* line 124, ../../../app/stylesheets/screen_dark.sass */
 #content_wrap {
   padding: 20px;
-  color: white;
-  background: #232732;
+  color: #999999;
+  background: white;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  -moz-box-shadow: -2px -2px 2px black;
-  -webkit-box-shadow: -2px -2px 2px black;
-  box-shadow: -2px -2px 2px black;
+  -moz-box-shadow: 0px 0px 5px #efefef;
+  -webkit-box-shadow: 0px 0px 5px #efefef;
+  box-shadow: 0px 0px 5px #efefef;
 }
 
-/* line 130, ../../../app/stylesheets/screen_dark.sass */
+/* line 134, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius #content_wrap {
   behavior: url(ie-css3.htc);
 }
 
-/* line 132, ../../../app/stylesheets/screen_dark.sass */
+/* line 136, ../../../app/stylesheets/screen_dark.sass */
 .tip_bg {
   display: block;
   padding: 7px 10px;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb401), to(#ce8429));
-  background-image: -moz-linear-gradient(0% 10% 90deg, #ffb401, #ce8429);
+  background-image: -moz-linear-gradient(0% 100% 90deg, #ce8429, #ffb401);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   text-shadow: 1px 1px 3px #ffe80e;
 }
 
-/* line 141, ../../../app/stylesheets/screen_dark.sass */
-.no-borderradius .tip_bg {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 143, ../../../app/stylesheets/screen_dark.sass */
-.no-cssgradients .tip_bg {
-  background: transparent url(/images/qtip_bg.png) top left repeat-x;
-}
-
 /* line 145, ../../../app/stylesheets/screen_dark.sass */
+.no-borderradius .tip_bg {
+  padding: 0px;
+}
+
+/* line 147, ../../../app/stylesheets/screen_dark.sass */
 #content_w_side {
   margin: 0px 220px 0px 0px;
 }
 
-/* line 147, ../../../app/stylesheets/screen_dark.sass */
+/* line 149, ../../../app/stylesheets/screen_dark.sass */
 #right_side {
   float: right;
   width: 195px;
 }
 
-/* line 150, ../../../app/stylesheets/screen_dark.sass */
+/* line 152, ../../../app/stylesheets/screen_dark.sass */
 #right_side ul {
   padding: 0px 0px 0px 20px;
 }
 
-/* line 152, ../../../app/stylesheets/screen_dark.sass */
+/* line 154, ../../../app/stylesheets/screen_dark.sass */
 #right_side li {
   padding: 3px 0px;
 }
 
-/* line 157, ../../../app/stylesheets/screen_dark.sass */
+/* line 159, ../../../app/stylesheets/screen_dark.sass */
 #navigation {
   display: block;
 }
 
-/* line 159, ../../../app/stylesheets/screen_dark.sass */
+/* line 161, ../../../app/stylesheets/screen_dark.sass */
 #navigation ul {
   float: left;
   margin: 0px;
-  padding: 40px 0px 20px 0px;
+  padding: 40px 0px 35px 0px;
   list-style: none;
 }
 
-/* line 164, ../../../app/stylesheets/screen_dark.sass */
+/* line 166, ../../../app/stylesheets/screen_dark.sass */
 #navigation li {
   float: left;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 168, ../../../app/stylesheets/screen_dark.sass */
+/* line 170, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a {
   display: block;
-  padding: 8px 15px 6px 15px;
+  padding: 8px 5px 6px 5px;
+  margin: 0px 10px;
   text-decoration: none;
   font-size: 18px;
   color: white;
   border: none;
 }
 
-/* line 175, ../../../app/stylesheets/screen_dark.sass */
+/* line 178, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a:hover {
   color: #ffa200;
 }
 
-/* line 177, ../../../app/stylesheets/screen_dark.sass */
+/* line 180, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a.current {
   color: #ffa200;
   border-bottom: 1px solid #ffa200;
 }
 
-/* line 183, ../../../app/stylesheets/screen_dark.sass */
+/* line 186, ../../../app/stylesheets/screen_dark.sass */
 #page_footer {
   padding: 50px 0px;
 }
 
-/* line 185, ../../../app/stylesheets/screen_dark.sass */
+/* line 188, ../../../app/stylesheets/screen_dark.sass */
 #copy_right {
   float: right;
   display: block;
@@ -335,8 +341,9 @@ a#kenderson_logo {
   line-height: 22px;
 }
 
-/* line 193, ../../../app/stylesheets/screen_dark.sass */
+/* line 196, ../../../app/stylesheets/screen_dark.sass */
 #home_twitter_feed {
+  color: white;
   height: 22px;
   line-height: 22px;
   width: 600px;
@@ -345,85 +352,91 @@ a#kenderson_logo {
   background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat;
 }
 
-/* line 203, ../../../app/stylesheets/screen_dark.sass */
+/* line 204, ../../../app/stylesheets/screen_dark.sass */
+#home_twitter_feed span.accent {
+  width: 120px;
+  float: left;
+}
+
+/* line 207, ../../../app/stylesheets/screen_dark.sass */
+#twitter_div {
+  margin: 0px 0px 0px 130px;
+}
+
+/* line 211, ../../../app/stylesheets/screen_dark.sass */
 #home_page {
+  color: #31343d;
   padding: 200px 50px;
   margin: 0px;
   position: relative;
   text-align: right;
 }
 
-/* line 208, ../../../app/stylesheets/screen_dark.sass */
+/* line 217, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_large {
   margin: 0px;
   padding: 0px;
   position: relative;
-  text-shadow: 1px 0px 6px #010810;
+  text-shadow: -1px -1px 2px #010810;
   font-size: 40px;
 }
 
-/* line 214, ../../../app/stylesheets/screen_dark.sass */
+/* line 223, ../../../app/stylesheets/screen_dark.sass */
+#home_page #home_large .accent {
+  text-shadow: -1px -1px 2px #999999;
+}
+
+/* line 225, ../../../app/stylesheets/screen_dark.sass */
 .no-boxshadow #home_large {
   behavior: url(ie-css3.htc);
 }
 
-/* line 216, ../../../app/stylesheets/screen_dark.sass */
+/* line 227, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_small {
   margin: 0px;
-  padding: 0px;
+  padding: 10px 0px;
   position: relative;
-  text-shadow: 1px 0px 6px #010810;
+  text-shadow: -1px -1px 2px #b4b6b8;
   font-size: 14px;
 }
 
-/* line 222, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_small span.normal {
-  text-shadow: 1px 0px 6px #010810;
-  position: relative;
-}
-
-/* line 225, ../../../app/stylesheets/screen_dark.sass */
-#home_page #home_small span.accent {
-  text-shadow: none;
-  position: relative;
-}
-
-/* line 228, ../../../app/stylesheets/screen_dark.sass */
+/* line 233, ../../../app/stylesheets/screen_dark.sass */
 .no-boxshadow #home_page #home_small span.normal {
   behavior: url(ie-css3.htc);
 }
 
-/* line 233, ../../../app/stylesheets/screen_dark.sass */
+/* line 238, ../../../app/stylesheets/screen_dark.sass */
 #filter {
   padding: 10px 0px;
+  margin-top: -55px;
 }
 
-/* line 235, ../../../app/stylesheets/screen_dark.sass */
+/* line 241, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap {
   padding: 20px 10px;
 }
 
-/* line 237, ../../../app/stylesheets/screen_dark.sass */
+/* line 243, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label {
   float: right;
   margin: 0px 5px;
   padding: 5px;
 }
 
-/* line 241, ../../../app/stylesheets/screen_dark.sass */
+/* line 247, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label:hover {
   color: #ffa200;
   background: transparent url(/images/stripped_bg.png) top left repeat;
 }
 
-/* line 244, ../../../app/stylesheets/screen_dark.sass */
+/* line 250, ../../../app/stylesheets/screen_dark.sass */
 .image-grid {
   margin: -20px 0 0 -40px;
   padding-left: 45px;
   width: 840px;
 }
 
-/* line 248, ../../../app/stylesheets/screen_dark.sass */
+/* line 254, ../../../app/stylesheets/screen_dark.sass */
 .image-grid:after {
   content: "";
   display: block;
@@ -432,61 +445,118 @@ a#kenderson_logo {
   clear: both;
 }
 
-/* line 254, ../../../app/stylesheets/screen_dark.sass */
+/* line 260, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li {
   width: 170px;
-  margin: 40px 0 0 40px;
+  padding: 40px 0 0 40px;
   float: left;
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
   line-height: 17px;
   color: #686f74;
-  overflow: hidden;
 }
 
-/* line 263, ../../../app/stylesheets/screen_dark.sass */
+/* line 268, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a {
+  position: relative;
+  display: block;
   border: none;
 }
 
-/* line 265, ../../../app/stylesheets/screen_dark.sass */
-.img_block {
+/* line 272, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .img_block {
   position: absolute;
+  z-index: 100;
   width: 170px;
   height: 100px;
-  display: block;
-  -moz-box-shadow: 2px 2px 20px black;
-  -webkit-box-shadow: 2px 2px 20px black;
-  box-shadow: 2px 2px 20px black;
-  background: transparent url(/images/trans_bg.png) top left repeat;
+  padding: 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
-/* line 274, ../../../app/stylesheets/screen_dark.sass */
+/* line 281, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .port_thumb {
+  position: relative;
+  height: 100px;
+  width: 170px;
+  z-index: 10;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 2px 2px 15px #333333;
+  -webkit-box-shadow: 2px 2px 15px #333333;
+  box-shadow: 2px 2px 15px #333333;
+}
+
+/* line 292, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .coyne_thumb {
+  background: transparent url(/images/coyne_thumb.png) top left no-repeat;
+}
+
+/* line 294, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .legalruled_thumb {
+  background: transparent url(/images/legalruled_thumb.jpg) top left no-repeat;
+}
+
+/* line 296, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .protegus_thumb {
+  background: transparent url(/images/protegus_thumb.png) top left no-repeat;
+}
+
+/* line 298, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .sagwest_thumb {
+  background: transparent url(/images/sag_west_thumb.png) top left no-repeat;
+}
+
+/* line 300, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .htmlemail_thumb {
+  background: transparent url(/images/html_email_thumb.png) top left no-repeat;
+}
+
+/* line 302, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .smhklaw_thumb {
+  background: transparent url(/images/smhklaw_thumb.png) top left no-repeat;
+}
+
+/* line 304, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .modwedding_thumb {
+  background: transparent url(/images/modwedding_thumb.jpg) top left no-repeat;
+}
+
+/* line 306, ../../../app/stylesheets/screen_dark.sass */
+.image-grid li a .socialbuzzpr_thumb {
+  background: transparent url(/images/socialbuzzpr_thumb.jpg) top left no-repeat;
+}
+
+/* line 308, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a:hover .img_block {
+  z-index: 100;
   width: 164px;
   height: 94px;
   border: 3px solid #ffa200;
-  background: none;
+  background-image: none;
 }
 
-/* line 279, ../../../app/stylesheets/screen_dark.sass */
+/* line 314, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li strong {
+  color: #333333;
   display: block;
   padding: 5px 0px 0px 0px;
 }
 
-/* line 282, ../../../app/stylesheets/screen_dark.sass */
+/* line 318, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li span {
-  color: #cccccc;
+  color: #ffa200;
 }
 
-/* line 284, ../../../app/stylesheets/screen_dark.sass */
+/* line 320, ../../../app/stylesheets/screen_dark.sass */
 .box_port {
   width: 600px;
   color: #999999;
 }
 
-/* line 287, ../../../app/stylesheets/screen_dark.sass */
+/* line 323, ../../../app/stylesheets/screen_dark.sass */
 .box_port a.centered {
   display: block;
   text-align: center;
@@ -494,124 +564,137 @@ a#kenderson_logo {
   margin: 0px 15px 20px 15px;
 }
 
-/* line 292, ../../../app/stylesheets/screen_dark.sass */
+/* line 328, ../../../app/stylesheets/screen_dark.sass */
 .box_port span {
   display: block;
 }
 
-/* line 294, ../../../app/stylesheets/screen_dark.sass */
+/* line 330, ../../../app/stylesheets/screen_dark.sass */
 .box_port img {
   padding: 20px 0px;
+  color: #ffa200;
+}
+
+/* line 333, ../../../app/stylesheets/screen_dark.sass */
+.process_quote {
+  float: right;
+  width: 300px;
+  margin: 0px 0px 30px 80px;
 }
 
 /* */
 /* Mailer CSS */
 /* */
-/* line 301, ../../../app/stylesheets/screen_dark.sass */
+/* line 342, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap {
   width: 500px;
 }
 
-/* line 303, ../../../app/stylesheets/screen_dark.sass */
+/* line 344, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap h1 {
   color: #999999;
   font-size: 20px;
   padding: 0px 5px 25px 10px;
 }
 
-/* line 307, ../../../app/stylesheets/screen_dark.sass */
+/* line 348, ../../../app/stylesheets/screen_dark.sass */
 .small_mailer_icon {
   float: right;
 }
 
-/* line 309, ../../../app/stylesheets/screen_dark.sass */
+/* line 350, ../../../app/stylesheets/screen_dark.sass */
 .div_spacer {
   padding: 10px;
 }
 
-/* line 311, ../../../app/stylesheets/screen_dark.sass */
+/* line 352, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form {
   border-top: 1px solid #dddddd;
   padding-top: 10px;
 }
 
-/* line 314, ../../../app/stylesheets/screen_dark.sass */
+/* line 355, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form input, textarea {
   margin: 0px 0px 0px 10px;
   padding: 2px;
 }
 
-/* line 317, ../../../app/stylesheets/screen_dark.sass */
+/* line 358, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form textarea {
   height: 50px;
   width: 250px;
 }
 
-/* line 320, ../../../app/stylesheets/screen_dark.sass */
+/* line 361, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label {
   width: 180px;
 }
 
-/* line 322, ../../../app/stylesheets/screen_dark.sass */
+/* line 363, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form input.error, textarea.error {
   border-width: 1px;
   border-style: dotted;
   border-color: #d94e4e;
 }
 
-/* line 326, ../../../app/stylesheets/screen_dark.sass */
+/* line 367, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label.error, textarea.error {
   color: #d94e4e;
 }
 
-/* line 328, ../../../app/stylesheets/screen_dark.sass */
+/* line 369, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label.error {
   margin-left: 10px;
   display: inline-block;
 }
 
-/* line 334, ../../../app/stylesheets/screen_dark.sass */
+/* line 375, ../../../app/stylesheets/screen_dark.sass */
 .ui-datepicker-days-row td {
   padding: 0px;
 }
 
-/* line 336, ../../../app/stylesheets/screen_dark.sass */
+/* line 377, ../../../app/stylesheets/screen_dark.sass */
 a#fancybox-close {
   border: none;
 }
 
-/* line 338, ../../../app/stylesheets/screen_dark.sass */
+/* line 379, ../../../app/stylesheets/screen_dark.sass */
 #fancybox-wrap {
   z-index: 42001;
 }
 
-/* line 342, ../../../app/stylesheets/screen_dark.sass */
+/* line 381, ../../../app/stylesheets/screen_dark.sass */
+#fancybox-wrap h2 {
+  color: #333333;
+}
+
+/* line 386, ../../../app/stylesheets/screen_dark.sass */
 #connect_wrap {
   padding: 20px;
 }
 
-/* line 347, ../../../app/stylesheets/screen_dark.sass */
+/* line 391, ../../../app/stylesheets/screen_dark.sass */
 .color_toggle {
   display: block;
   text-align: right;
 }
 
-/* line 355, ../../../app/stylesheets/screen_dark.sass */
+/* line 399, ../../../app/stylesheets/screen_dark.sass */
 table.process_image_comp {
   width: 890px;
 }
 
-/* line 357, ../../../app/stylesheets/screen_dark.sass */
+/* line 401, ../../../app/stylesheets/screen_dark.sass */
 .process_image_comp td {
   text-align: center;
 }
 
-/* line 362, ../../../app/stylesheets/screen_dark.sass */
+/* line 406, ../../../app/stylesheets/screen_dark.sass */
 .clearfix {
   *display: inline-block;
 }
 
-/* line 364, ../../../app/stylesheets/screen_dark.sass */
+/* line 408, ../../../app/stylesheets/screen_dark.sass */
 .clearfix:after {
   content: " ";
   display: block;

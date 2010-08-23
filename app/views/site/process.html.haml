@@ -1,34 +1,41 @@
 .index_wrap.clearfix
   %h1 Our Process
+  .process_quote 
+    %span.large_quote "
+    We pride ourselves in knowing what works best and how to apply this technology to your industry. Below are a few thoughts on how we approach web design. Most of our clients find this useful in understanding the intricacies of web design.
+    %span.large_quote "
+    %p{:style=>"padding:10px 0px 0px 20px;"}
+      %i.accent Thanks for reading - Ken Henderson
+  %p
+    Until recently (within the past year or so) the process of converting good graphic design into a dynamic website was well understood. The limitations as to what elements would render consistently across the various internet browsers was well documented. For example, if you wanted rounded corners or color gradients on certain elements (these are just 2 examples, there are many more) of your website, you needed to construct those elements with individual images. But we are now in the age of 
+    %a{"href"=>"http://www.w3.org/TR/css3-roadmap/"} CSS3
+    which allows us to create many of these effects without the use of additional images. You might be thinkings.....
+    %i why should I be worried about additional images? ... 
+    the answer is quite simply that the more images you have on a page the longer the page takes to render. And as your page rendering time increases, you run the risk of frustrating your clients and 
+    %a{"href"=>"http://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html"} losing your ranking in 
+    %a{"href"=>"http://www.google.com"} Google 
+    searches.
   %p 
-    Kenderoson Consulting started from a consulting contract with 
-    %a{"href"=>"http://www.iterativedesigns.com"} Iterative Designs
-    to assist with various front-end projects, as the company progressed we started playing with Ruby on Rails and building web-based applications. Through all the projects, we realized that our true enjoyment is within the act of converting great graphic designs into web content (HTML &amp; CSS). 
-  %p 
-    The real 
-    %i art
-    comes into play when you can add touches of JavaScript to bring the page alive. The conversion from graphic design to web content isn't necessarily a highly technical process. What makes one person or company better than another is their attention to detail. There are so many different browsers that run on various operating systems, that the true challenge is to be able to design the content so that it renders consistently across all of these browsers. Furthermore, a good designer will construct a website so that it
-    %a{"href"=>"#graceful_degrdation"} 
-      %i gracefully degrades
-    when there is an error in the loading of the CSS file or for certain browsers (mostly mobile ones) that limit the use of stylesheets.
-    For more information on why you should consider multiple browsers and why graceful degradation is important, give this
-    %a{"href"=>"#cross_browser_design"} 
-      article on 
-      %i Cross Browser Considerations
-    a read.
-  %p 
-    %a{"href"=>"/send_mail_to_partners", :class=>"fancybox"} Contact us 
-    if you have something you would like us to look at. We have do some graphic design within the company, and we have done many collaborations with other designers like Alex Hsiao of 
-    %a{"href"=>"mailto:alex@perphic.com"} Perphic!.
-    If you need a full-stack website, I can either provide you hosting or make a recommendation based on your needs.
-
-  %p We pride ourselves in knowing what works best and how to apply this technology to your industry. Below are a couple articles that most of our clients find useful in understanding the intricacies of web design.
-  
+    So we believe CSS3 truly helps take web design to the next level, offering a huge variety of features that simplify the way we design for the web; ultimately reducing the cost for our clients. Here's a quick example to show you what I am referring to. 
+    %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-raw.html"} Example Page 1 
+    takes you to a page with no style. 
+    %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-basic.html"} Example Page 2 
+    adds some minimal CSS style to the page (what we in the web design industry might consider web 1.0 style). But 
+    %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-medium.html"} Example Page 3
+    shows a page that is very aesthetically pleasing, with drop-shadows, rounded corners, and styled images (more along the lines of what we would consider web 2.0). The difference with CSS3 is that we no longer need to use images to create rounded corners and gradients, which makes development and subsequent changes much faster/cheaper!
+  %p  
+    So you're probably thinking; what's the problem? Well, not all browsers render code the same and are compatible with the full suite of features that these new standards offer. The most problematic browser is once again Internet Explorer. IE is not compatible with the majority of features being flaunted by CSS3 and HTML5. Check out 
+    %a{"href"=>"http://www.findmebyip.com/litmus#target-selector"} this article 
+    on the full list of features that the various browsers are compatible with for both HTML5 and CSS3. So the question becomes, how do you design for compatibility & consistency with all of the major internet browsers?
+    %i Cross-Browser Compatibility
   #cross_browser_design
     %h2 Cross-Browser Design
-    %p So you might ask...what is cross-browser design? Well it quite simple, it means designing a website or application so that it looks the same in all internet browsers. People today use many different browsers. Windows users could be using Internet Explorer 6 (IE6), IE7, IE8, IE9 (coming very soon), Mozilla's FireFox, Safari, Netscape, Google's Chrome, etc. Mac users could be using Safari, Mozilla's FireFox, Chrome, Opera, webkit, etc. The problem is that each of these browsers have a slightly different way of rendering the code on the page. So the challenge (which happens to be our forte) is to know the limitations of each of the browsers and develop the website/application so that appears the same no matter what internet browser your clients are viewing it from. At this point you might be thinking to yourself...yeah, I see there are alot of browsers available, but don't most people just use the latest and greatest one? Well, the short answer is not really. Much to our chagrin, most of the world still uses the dinosaur of browsers; internet explorer. Below is a quick view of the breakdown browser statistics.
-    %img{"src"=>"/images/browser_stat.png"}
-    insert image
+    %p 
+      Good 
+      %I Cross-Browser Design 
+      means designing a website or application so that it looks the same in all internet browsers. People today use many different browsers. Windows users could be using Internet Explorer 6 (IE6), IE7, IE8, IE9 (coming very soon), Mozilla's FireFox, Safari, Netscape, Google's Chrome, etc. Mac users could be using Safari, Mozilla's FireFox, Chrome, Opera, webkit, etc. The problem is that each of these browsers have a slightly different way of rendering the code on the page. So the challenge (which happens to be our forte) is to know the limitations of each of the browsers and develop the website/application so that appears the same no matter what internet browser your clients are viewing it from. At this point you might be thinking to yourself...yeah, I see there are alot of browsers available, but don't most people just use the latest and greatest one? Well, the short answer is not really. Much to our chagrin, most of the world still uses the dinosaur of browsers; internet explorer. Below is a quick view of the breakdown browser statistics.
+      %img{"src"=>"/images/browser_stat.png"}
+      insert image
     %p So let's get to some examples to show you what we mean. Below is a very basic example of a website in IE7 and then in Safari. Notice how the content seems jumbled? That's because IE7 (and IE6) add a few extra pixels of padding to the right container, which pushes it below the left container.
     %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
       %tr
@@ -48,6 +55,19 @@
           %img{"src"=>"/images/xbv_2_saf.png"}
           %p ABOVE: View from Safari
     %p So the take away from this article is that you should be aware these differences when hiring a website designer/developer, and make sure that they are going to keep these things in-mind when designing your website!. 
+
+  %p 
+    So in summary, HTML5 and CSS3 offer some very cool functionality, but the problem is that this functionality isn't supported by all browsers yet. Microsoft is saying that IE9 will support some of these new features, but IE9 is not yet available. So if your a web designer who has a customer with IE clientele (which given the stats above - most people do), and you want your website to appear identically in all browsers, you need to stick with the tried and true ways of bringing a little extra style to the page.
+
+  %a{"href"=>"#graceful_degrdation"} 
+    %i gracefully degrades
+  when there is an error in the loading of the CSS file or for certain browsers (mostly mobile ones) that limit the use of stylesheets.
+  For more information on why you should consider multiple browsers and why graceful degradation is important, give this
+  %a{"href"=>"#cross_browser_design"} 
+    article on 
+    %i Cross Browser Considerations
+  a read.
+  
   #graceful_degrdation
     %h2 Graceful Degradation
     %p 
@@ -66,21 +86,6 @@
         %td
           %img{"src"=>"/images/xbv_1_saf.png"}
           %p ABOVE: Site without the stylesheet loaded (Good graceful degradation - text showed up when the image didn't load)
-    %h2 HTML5 &  CSS3 - A Double Edged Sword!
-    %p 
-      So if you follow web design, you may have heard of the newly released standards; HTML5 and CSS3. These both take web design to the next level, offering a huge variety of features that simplify the way we design for the web. Here's a quick example to show you what I am referring to. 
-      %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-raw.html"} Example Page 1 
-      takes you to a page with no style. 
-      %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-basic.html"} Example Page 2 
-      adds some minimal CSS style to the page (what we in the web design industry might consider web 1.0 style). But 
-      %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-medium.html"} Example Page 3
-      shows a page that is very aesthetically pleasing, with drop-shadows, rounded corners, and styled images (more along the lines of what we would consider web 2.0). The difference with CSS3 is that we no longer need to use images to create rounded corners and gradients, which makes development and subsequent changes much faster/cheaper!
-    %p  
-      So you're probably thinking; what's the problem? Well, remember what I mentioned in the previous section about cross-browser design; not all browsers render code the same. So the problem is that not all browsers are compatible with the full suite of features that these new standards offer. The most problematic browser is once again Internet Explorer. IE is not compatible with the majority of features being flaunted by CSS3 and HTML5. Check out 
-      %a{"href"=>"http://www.findmebyip.com/litmus#target-selector"} this article 
-      on the full list of features that the various browsers are compatible with for both HTML5 and CSS3.
-    %p 
-      So in summary, HTML5 and CSS3 offer some very cool functionality, but the problem is that this functionality isn't supported by all browsers yet. Microsoft is saying that IE9 will support some of these new features, but IE9 is not yet available. So if your a web designer who has a customer with IE clientele (which given the stats above - most people do), and you want your website to appear identically in all browsers, you need to stick with the tried and true ways of bringing a little extra style to the page.
 
   / #use_of_javascript  
   /   %h2 The use of JavaScript

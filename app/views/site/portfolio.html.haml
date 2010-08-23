@@ -1,66 +1,66 @@
 .index_wrap.clearfix
-  %h1 Portfolio
-  %p Below are a few examples of our work.
+  %h1 OUR WORK
+  %span Below are a few examples of our work.
   .portfolio_wrap
     %form#filter
       %fieldset
         %label
-          %input{ :name => "type", :value => "web", :type => "radio" } Websites
+          %input{ :name => "type", :value => "web", :type => "radio" } WEBSITES
         %label
-          %input{ :name => "type", :value => "app", :type => "radio" } Applications
+          %input{ :name => "type", :value => "app", :type => "radio" } APPLICATIONS
         %label
-          %input{ :name => "type", :value => "email", :type => "radio" } HTML Emails
+          %input{ :name => "type", :value => "email", :type => "radio" } HTML EMAILS
         %label
-          Filter by type: 
-          %input{ :checked => "checked", :name => "type", :value => "all", :type => "radio" } Everything
+          FILTER BY: 
+          %input{ :checked => "checked", :name => "type", :value => "all", :type => "radio" } EVERYTHING
 
     %ul#applications.image-grid
       %li{ "data-type" => "web", "data-id" => "id-1" }
         %a{:href=>"#facebox_coyne", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/coyne_thumb.png", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.coyne_thumb
           %strong Craig Coyne Jewelers
           %span Website
       %li{ "data-type" => "app", "data-id" => "id-2" }
         %a{:href=>"#facebox_legalruled", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/legalruled_thumb.jpg", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.legalruled_thumb
           %strong LegalRuled
           %span Application
       %li{ "data-type" => "web", "data-id" => "id-3" }
         %a{:href=>"#facebox_protegus", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/protegus_thumb.png", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.protegus_thumb
           %strong Protegus Website
           %span Website
       %li{ "data-type" => "web", "data-id" => "id-4" }
         %a{:href=>"#facebox_sag_web", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/sag_west_thumb.png", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.sagwest_thumb
           %strong Software AG
           %span Websites
       %li{ "data-type" => "email", "data-id" => "id-5" }
         %a{:href=>"#facebox_sag_emails", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/html_email_thumb.png", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.htmlemail_thumb
           %strong Software AG
           %span Email Templates
       %li{ "data-type" => "web", "data-id" => "id-6" }
         %a{:href=>"#facebox_smhklaw", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/smhklaw_thumb.png", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.smhklaw_thumb
           %strong SMHK Law Website
           %span Website
       %li{ "data-type" => "app", "data-id" => "id-7" }
         %a{:href=>"#facebox_modwedding", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/modwedding_thumb.jpg", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.modwedding_thumb
           %strong ModWedding
           %span Application
       %li{ "data-type" => "web", "data-id" => "id-8" }
         %a{:href=>"#facebox_socialbuzzpr", :class=>"fancybox"}
-          .img_block.rounded_3
-          %img.rounded_3{ :src => "/images/socialbuzzpr_thumb.jpg", :height => "100", :alt => "", :width => "170" }
+          .img_block
+          .port_thumb.socialbuzzpr_thumb
           %strong SocialBuzzPR
           %span Website
 #div{:style=>"display:none;"}

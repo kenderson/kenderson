@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   map.connect '/process', :controller => 'site', :action => 'process'
+  map.connect '/about', :controller => 'site', :action => 'about'
   map.connect '/portfolio', :controller => 'site', :action => 'portfolio'
   map.connect '/lab', :controller => 'site', :action => 'lab'
   map.connect '/modwedding_home', :controller => 'site', :action => 'modwedding_home'

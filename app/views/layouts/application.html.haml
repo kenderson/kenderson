@@ -6,7 +6,6 @@
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/images/favicon.ico"}
     = stylesheet_link_tag("facebox.css","jquery.fancybox-1.3.1.css","btn.css","compiled/screen_dark.css",:media => 'screen, projection')
-    %link{:href=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css",:rel=>"stylesheet",:type=>"text/css"}
     %link{:href=>"javascripts/colorpicker/css/colorpicker.css",:rel=>"stylesheet",:type=>"text/css"}
     = javascript_include_tag('jquery-1.4.2.js','jquery-ui.min.js','fancybox/jquery.fancybox-1.3.1.js','fancybox/jquery.mousewheel-3.0.2.pack.js','application.js','jquery.validate.js','jquery.quicksand.js','jquery.easing.1.3.js','jquery.qtip-1.0.0-rc3.d.min.js','colorpicker/js/colorpicker.js','modernizr-1.5.min.js')
     /[if lt IE 9]
@@ -40,13 +39,14 @@
     #navigation.clearfix
       %ul.clearfix
         %li 
-          %a{"href"=>"/"} Home
+          %a{"href"=>"/about", :class=>((params['action'] == "about") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Core Beliefs.</span>"} About
+
         %li
-          %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">The way we do things.</span>"} Process
+          %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">How we do things.</span>"} Process
         %li
           %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our sample work.</span>"} Portfolio
         %li
-          %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Scratch Pad.</span>"} Lab
+          %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Scratch Pad.</span>"} Lab
         %li
           %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
         %li

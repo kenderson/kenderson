@@ -8,16 +8,16 @@
 
 // Color Swatches
 
-$text_color: #fff
+$text_color: #999
 $a_color: #999
 $a_hover_color: #4e7385
 $accent_color: #ffa200
-$header_1_color: #fff
+$header_1_color: #ffa200
 $error_color: #d94e4e
 $green: #64b764
 $body_color: #010810
 $radial_start: #31343d
-$content_bg_color: #232732
+$content_bg_color: #fff
 
 // Error Handling
 
@@ -52,6 +52,8 @@ body
   background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, $radial_start), color-stop(100%, $body_color))
   background-image: -moz-radial-gradient(75% 0%, circle, $radial_start 0%, $body_color 100%)
   min-height: 800px
+.no-cssgradients body
+  background: #31343d
 a
   color: $a_color
   text-decoration: none
@@ -67,6 +69,10 @@ h1
   margin: 10px 0px 10px 0px
   padding: 0px
   font-size: 22px
+  text-shadow: -1px -1px 1px #e0e0e0
+.no-boxshadow h1
+  behavior: url(ie-css3.htc)
+
 h2
   margin: 10px 0px 5px 0px
   padding: 0px
@@ -89,12 +95,10 @@ h3
   -moz-opacity: 0.75
   filter: alpha(opacity=75)
   opacity: 0.75
-.rounded_3
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
+.large_quote
 
-
+  font-family: georgia
+  font-style: italic
 // Common_css
 
 #ie_flash
@@ -109,7 +113,7 @@ a#kenderson_logo
   display: block
   text-align: right
   padding: 0px
-  margin: 0px
+  margin: 30px 0px 0px 0px
   height: 39px
   width: 261px
   background: transparent url(/images/kenderson_logo.png) top left no-repeat
@@ -124,24 +128,22 @@ a#kenderson_logo
   -moz-border-radius: 12px
   -webkit-border-radius: 12px
   border-radius: 12px
-  -moz-box-shadow: -2px -2px 2px #000
-  -webkit-box-shadow: -2px -2px 2px #000
-  box-shadow: -2px -2px 2px #000
+  -moz-box-shadow: 0px 0px 5px #efefef
+  -webkit-box-shadow: 0px 0px 5px #efefef
+  box-shadow: 0px 0px 5px #efefef
 .no-borderradius #content_wrap
   behavior: url(ie-css3.htc)
 .tip_bg
   display: block
   padding: 7px 10px
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFB401), to(#CE8429))
-  background-image: -moz-linear-gradient(0% 10% 90deg,#FFB401, #CE8429)
+  background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
+  background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
   -moz-border-radius: 10px
   -webkit-border-radius: 10px
   border-radius: 10px
   text-shadow: 1px 1px 3px #ffe80e
 .no-borderradius .tip_bg
-  behavior: url(ie-css3.htc)
-.no-cssgradients .tip_bg
-  background: transparent url(/images/qtip_bg.png) top left repeat-x
+  padding: 0px
 #content_w_side
   margin: 0px 220px 0px 0px
 #right_side
@@ -159,7 +161,7 @@ a#kenderson_logo
 #navigation ul
   float: left
   margin: 0px
-  padding: 40px 0px 20px 0px
+  padding: 40px 0px 35px 0px
   list-style: none
 #navigation li
   float: left
@@ -167,7 +169,8 @@ a#kenderson_logo
   margin: 0px
 #navigation li a
   display: block
-  padding: 8px 15px 6px 15px
+  padding: 8px 5px 6px 5px
+  margin: 0px 10px
   text-decoration: none
   font-size: 18px
   color: #fff
@@ -191,16 +194,22 @@ a#kenderson_logo
   padding: 0px
   line-height: 22px
 #home_twitter_feed
+  color: #fff
   height: 22px
   line-height: 22px
   width: 600px
   margin: 0px
   padding: 0px 10px 0px 25px
   background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat
-  
+#home_twitter_feed span.accent
+  width: 120px
+  float: left
+#twitter_div
+  margin: 0px 0px 0px 130px
 // Index CSS
 
 #home_page
+  color: $radial_start
   padding: 200px 50px
   margin: 0px
   position: relative
@@ -209,22 +218,18 @@ a#kenderson_logo
   margin: 0px
   padding: 0px
   position: relative
-  text-shadow: 1px 0px 6px #010810
+  text-shadow: -1px -1px 2px #010810
   font-size: 40px
+#home_page #home_large .accent
+  text-shadow: -1px -1px 2px #999
 .no-boxshadow #home_large
   behavior: url(ie-css3.htc)
 #home_page #home_small
   margin: 0px
-  padding: 0px
+  padding: 10px 0px
   position: relative
-  text-shadow: 1px 0px 6px #010810
+  text-shadow: -1px -1px 2px #b4b6b8
   font-size: 14px
-#home_page #home_small span.normal
-  text-shadow: 1px 0px 6px #010810
-  position: relative
-#home_page #home_small span.accent
-  text-shadow: none
-  position: relative
 .no-boxshadow #home_page #home_small span.normal
   behavior: url(ie-css3.htc)
 
@@ -232,6 +237,7 @@ a#kenderson_logo
 
 #filter
   padding: 10px 0px
+  margin-top: -55px
 .portfolio_wrap
   padding: 20px 10px
 .portfolio_wrap #filter label
@@ -251,36 +257,66 @@ a#kenderson_logo
   height: 0
   overflow: hidden
   clear: both
-.image-grid li 
+.image-grid li
   width: 170px
-  margin: 40px 0 0 40px
+  padding: 40px 0 0 40px
   float: left
   text-align: center
   font-family: "Helvetica Neue", sans-serif
   line-height: 17px
   color: #686f74
-  overflow: hidden  
 .image-grid li a
+  position: relative
+  display: block
   border: none
-.img_block
+.image-grid li a .img_block
   position: absolute
+  z-index: 100
   width: 170px
   height: 100px
-  display: block
-  -moz-box-shadow: 2px 2px 20px #000
-  -webkit-box-shadow: 2px 2px 20px #000
-  box-shadow: 2px 2px 20px #000
-  background: transparent url(/images/trans_bg.png) top left repeat
+  padding: 0
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  border-radius: 3px
+.image-grid li a .port_thumb
+  position: relative
+  height: 100px
+  width: 170px
+  z-index: 10
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+  border-radius: 3px
+  -moz-box-shadow: 2px 2px 15px #333
+  -webkit-box-shadow: 2px 2px 15px #333
+  box-shadow: 2px 2px 15px #333
+.image-grid li a .coyne_thumb
+  background: transparent url(/images/coyne_thumb.png) top left no-repeat
+.image-grid li a .legalruled_thumb
+  background: transparent url(/images/legalruled_thumb.jpg) top left no-repeat
+.image-grid li a .protegus_thumb
+  background: transparent url(/images/protegus_thumb.png) top left no-repeat
+.image-grid li a .sagwest_thumb
+  background: transparent url(/images/sag_west_thumb.png) top left no-repeat
+.image-grid li a .htmlemail_thumb
+  background: transparent url(/images/html_email_thumb.png) top left no-repeat
+.image-grid li a .smhklaw_thumb
+  background: transparent url(/images/smhklaw_thumb.png) top left no-repeat
+.image-grid li a .modwedding_thumb
+  background: transparent url(/images/modwedding_thumb.jpg) top left no-repeat
+.image-grid li a .socialbuzzpr_thumb
+  background: transparent url(/images/socialbuzzpr_thumb.jpg) top left no-repeat
 .image-grid li a:hover .img_block
+  z-index: 100
   width: 164px
   height: 94px
   border: 3px solid $accent_color
-  background: none
+  background-image: none
 .image-grid li strong 
+  color: #333
   display: block
   padding: 5px 0px 0px 0px
 .image-grid li span
-  color: #ccc
+  color: $accent_color
 .box_port
   width: 600px
   color: #999
@@ -293,7 +329,12 @@ a#kenderson_logo
   display: block
 .box_port img
   padding: 20px 0px
-  
+  color: $accent_color
+.process_quote
+  float: right
+  width: 300px
+  margin: 0px 0px 30px 80px
+
 /*
 /* Mailer CSS
 /*
@@ -337,6 +378,9 @@ a#fancybox-close
   border: none
 #fancybox-wrap
   z-index: 42001
+#fancybox-wrap h2
+  color: #333
+
 // connect_css
 
 #connect_wrap
