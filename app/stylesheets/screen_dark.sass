@@ -5,13 +5,14 @@
 
 @import "compass/reset"
 @import "compass/css3/gradient"    
+@import "quicksand_book.sass"    
 
 // Color Swatches
 
 $text_color: #999
 $a_color: #999
 $a_hover_color: #4e7385
-$accent_color: #ffa200
+$accent_color: #ffaf00
 $header_1_color: #ffa200
 $error_color: #d94e4e
 $green: #64b764
@@ -49,11 +50,11 @@ body
   padding: 0px
   margin: 0px
   font-weight: normal
-  background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, $radial_start), color-stop(100%, $body_color))
+  background-image: -webkit-gradient(radial, 75% -30%, 100, 75% -30%, 1500, color-stop(0%, $radial_start), color-stop(100%, $body_color))
   background-image: -moz-radial-gradient(75% 0%, circle, $radial_start 0%, $body_color 100%)
-  min-height: 800px
+  min-height: 1000px
 .no-cssgradients body
-  background: #31343d
+  background: transparent url(/images/ie_bg.jpg) top center no-repeat
 a
   color: $a_color
   text-decoration: none
@@ -66,13 +67,13 @@ a:hover
   color: $a_hover_color
 h1
   color: $header_1_color
+  font: 22px/22px $fancy_font,"Helvetica Neue", arial
   margin: 10px 0px 10px 0px
   padding: 0px
-  font-size: 22px
+  text-transform: uppercase
   text-shadow: -1px -1px 1px #e0e0e0
 .no-boxshadow h1
   behavior: url(ie-css3.htc)
-
 h2
   margin: 10px 0px 5px 0px
   padding: 0px
@@ -96,7 +97,6 @@ h3
   filter: alpha(opacity=75)
   opacity: 0.75
 .large_quote
-
   font-family: georgia
   font-style: italic
 // Common_css
@@ -202,7 +202,7 @@ a#kenderson_logo
   padding: 0px 10px 0px 25px
   background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat
 #home_twitter_feed span.accent
-  width: 120px
+  width: 125px
   float: left
 #twitter_div
   margin: 0px 0px 0px 130px
@@ -222,7 +222,6 @@ a#kenderson_logo
   font-size: 40px
 #home_page #home_large .accent
   text-shadow: -1px -1px 2px #999
-.no-boxshadow #home_large
   behavior: url(ie-css3.htc)
 #home_page #home_small
   margin: 0px
@@ -245,12 +244,11 @@ a#kenderson_logo
   margin: 0px 5px
   padding: 5px
 .portfolio_wrap #filter label:hover
-  color: $accent_color
-  background: transparent url(/images/stripped_bg.png) top left repeat
+  background: transparent url(/images/stripped_bg_light.png) top left repeat
 .image-grid 
   margin: -20px 0 0 -40px
-  padding-left: 45px
-  width: 840px
+  padding-left: 15px
+  width: 920px
 .image-grid:after 
   content: ""
   display: block
@@ -258,7 +256,7 @@ a#kenderson_logo
   overflow: hidden
   clear: both
 .image-grid li
-  width: 170px
+  width: 188px
   padding: 40px 0 0 40px
   float: left
   text-align: center
@@ -272,27 +270,17 @@ a#kenderson_logo
 .image-grid li a .img_block
   position: absolute
   z-index: 100
-  width: 170px
-  height: 100px
+  margin: 3px 0px 0px 3px
   padding: 0
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
 .image-grid li a .port_thumb
   position: relative
-  height: 100px
-  width: 170px
-  z-index: 10
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
-  -moz-box-shadow: 2px 2px 15px #333
-  -webkit-box-shadow: 2px 2px 15px #333
-  box-shadow: 2px 2px 15px #333
+  height: 118px
+  width: 188px
+  z-index: 10  
 .image-grid li a .coyne_thumb
   background: transparent url(/images/coyne_thumb.png) top left no-repeat
 .image-grid li a .legalruled_thumb
-  background: transparent url(/images/legalruled_thumb.jpg) top left no-repeat
+  background: transparent url(/images/legalruled_thumb.png) top left no-repeat
 .image-grid li a .protegus_thumb
   background: transparent url(/images/protegus_thumb.png) top left no-repeat
 .image-grid li a .sagwest_thumb
@@ -302,15 +290,27 @@ a#kenderson_logo
 .image-grid li a .smhklaw_thumb
   background: transparent url(/images/smhklaw_thumb.png) top left no-repeat
 .image-grid li a .modwedding_thumb
-  background: transparent url(/images/modwedding_thumb.jpg) top left no-repeat
+  background: transparent url(/images/modwedding_thumb.png) top left no-repeat
 .image-grid li a .socialbuzzpr_thumb
-  background: transparent url(/images/socialbuzzpr_thumb.jpg) top left no-repeat
+  background: transparent url(/images/socialbuzzpr_thumb.png) top left no-repeat
 .image-grid li a:hover .img_block
-  z-index: 100
-  width: 164px
-  height: 94px
-  border: 3px solid $accent_color
+  width: 171px
+  height: 100px
   background-image: none
+  border: 3px solid $accent_color
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  border-radius: 4px
+.no-borderradius .image-grid li a:hover .img_block
+  position: absolute
+  z-index: 100
+  height: 118px
+  width: 188px
+  padding: 0
+  margin: 0
+  border: none
+.no-borderradius .image-grid li a:hover .img_block
+  background: transparent url(/images/hover_border.png) top left no-repeat
 .image-grid li strong 
   color: #333
   display: block
