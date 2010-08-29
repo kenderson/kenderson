@@ -33,14 +33,45 @@ $.fn.wait = function(time, type) {
 })(jQuery);
 
 jQuery(document).ready(function($) {
-  $.fn.qtip.styles.mystyle = { 
-    padding: 0, 
-    border: { color: '#ce8429', width: 0 },
-    'background':'transparent',
-    color: 'black',
-    textAlign: 'center',
-    tip: 'bottomMiddle'
-  };
+
+  jQuery.each(jQuery.browser, function(i) {
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;
+      var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
+      if (ieversion < 9 ){
+        $.fn.qtip.styles.mystyle = { 
+          padding: 0, 
+          border: { color: '#ce8429', radius: 7 },
+          'background':'#ce8429',
+          color: 'black',
+          textAlign: 'center',
+          tip: 'bottomMiddle',
+          width: { min: 135 }   
+        }
+      }
+      else {
+        $.fn.qtip.styles.mystyle = { 
+          padding: 0, 
+          border: { color: '#ce8429', width: 0 },
+          'background':'transparent',
+          color: 'black',
+          textAlign: 'center',
+          tip: 'bottomMiddle',
+          width: { min: 135 }
+        }
+      }
+    }
+    else {
+      $.fn.qtip.styles.mystyle = { 
+        padding: 0, 
+        border: { color: '#ce8429', width: 0 },
+        'background':'transparent',
+        color: 'black',
+        textAlign: 'center',
+        tip: 'bottomMiddle',
+        width: { min: 135 }
+      }
+    }
+  });
   $("a.fancybox").fancybox({
     	'autoScale'		: false,
       'width' : 500,
@@ -51,13 +82,14 @@ jQuery(document).ready(function($) {
   $('a.fancybox').live("click", function(){
     $.fancybox($("#"+this.href.split("#")[1]).html());
   });
-  $('#navigation li a:not(:eq(0))').each(function() {
+  $('#navigation li a').each(function() {
     if ($(this).hasClass("current")) {
-      $(this).qtip({    
+      $(this).qtip({
         content: $(this).attr('tooltip_menu'),
         show: { ready: true},
         hide: false,
         position: {
+          adjust: { resize: true, screen: false },
           corner: {
             target: 'topMiddle',
             tooltip: 'bottomMiddle'
@@ -79,9 +111,6 @@ jQuery(document).ready(function($) {
         api: {
           beforeShow: function() {
             $(".qtip").hide();
-            // $('#navigation li a.current').qtip({
-            //   hide: true
-            // });
           },
           beforeHide: function() {
             $('#navigation li a.current').qtip({    
@@ -98,7 +127,7 @@ jQuery(document).ready(function($) {
             });
           }
         }
-      })
+      });
     }
   });
 	$('.backgound_color_select').ColorPicker({

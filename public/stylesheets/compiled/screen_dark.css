@@ -24,7 +24,9 @@ a img { border: none; }
 
 .flash_notice_text { margin: 0px 0px 0px 90px; padding: 5px; color: #6494ad; }
 
-body { color: white; font-family: "Helvetica Neue", arial, sans-serif; background: #010810 no-repeat; font-size: 13px; padding: 0px; margin: 0px; font-weight: normal; background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, #31343d), color-stop(100%, #010810)); background-image: -moz-radial-gradient(75% 0%, circle, #31343d 0%, #010810 100%); min-height: 800px; }
+body { color: #999999; font-family: "Helvetica Neue", arial, sans-serif; background: #010810 no-repeat; font-size: 13px; padding: 0px; margin: 0px; font-weight: normal; background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, #31343d), color-stop(100%, #010810)); background-image: -moz-radial-gradient(75% 0%, circle, #31343d 0%, #010810 100%); min-height: 800px; }
+
+.no-cssgradients body { background: #31343d; }
 
 a { color: #999999; text-decoration: none; border-bottom: 1px dotted; }
 
@@ -32,9 +34,11 @@ p { padding: 10px 0px; margin: 0px; line-height: 1.3; }
 
 a:hover { color: #4e7385; }
 
-h1 { color: white; margin: 10px 0px 10px 0px; padding: 0px; font-size: 22px; }
+h1 { color: #ffa200; margin: 10px 0px 10px 0px; padding: 0px; font-size: 22px; text-shadow: -1px -1px 1px #e0e0e0; }
 
-h2 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 18px; color: white; font-style: italic; }
+.no-boxshadow h1 { behavior: url(ie-css3.htc); }
+
+h2 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 18px; color: #ffa200; font-style: italic; }
 
 h3 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 16px; }
 
@@ -46,7 +50,7 @@ h3 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 16px; }
 
 .show-75 { -moz-opacity: 0.75; filter: alpha(opacity=75); opacity: 0.75; }
 
-.rounded_3 { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.large_quote { font-family: georgia; font-style: italic; }
 
 #ie_flash { display: none; }
 
@@ -54,19 +58,17 @@ h3 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 16px; }
 
 #top_header { float: right; }
 
-a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px; height: 39px; width: 261px; background: transparent url(/images/kenderson_logo.png) top left no-repeat; border: none; }
+a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 30px 0px 0px 0px; height: 39px; width: 261px; background: transparent url(/images/kenderson_logo.png) top left no-repeat; border: none; }
 
 #kenderson_logo span { font-size: 24px; display: none; }
 
-#content_wrap { padding: 20px; color: white; background: #232732; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; -moz-box-shadow: -2px -2px 2px black; -webkit-box-shadow: -2px -2px 2px black; box-shadow: -2px -2px 2px black; }
+#content_wrap { padding: 20px; color: #999999; background: white; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; -moz-box-shadow: 0px 0px 5px #efefef; -webkit-box-shadow: 0px 0px 5px #efefef; box-shadow: 0px 0px 5px #efefef; }
 
 .no-borderradius #content_wrap { behavior: url(ie-css3.htc); }
 
-.tip_bg { display: block; padding: 7px 10px; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb401), to(#ce8429)); background-image: -moz-linear-gradient(0% 10% 90deg, #ffb401, #ce8429); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-shadow: 1px 1px 3px #ffe80e; }
+.tip_bg { display: block; padding: 7px 10px; background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb401), to(#ce8429)); background-image: -moz-linear-gradient(0% 100% 90deg, #ce8429, #ffb401); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-shadow: 1px 1px 3px #ffe80e; }
 
-.no-borderradius .tip_bg { behavior: url(ie-css3.htc); }
-
-.no-cssgradients .tip_bg { background: transparent url(/images/qtip_bg.png) top left repeat-x; }
+.no-borderradius .tip_bg { padding: 0px; }
 
 #content_w_side { margin: 0px 220px 0px 0px; }
 
@@ -78,11 +80,11 @@ a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px;
 
 #navigation { display: block; }
 
-#navigation ul { float: left; margin: 0px; padding: 40px 0px 20px 0px; list-style: none; }
+#navigation ul { float: left; margin: 0px; padding: 40px 0px 35px 0px; list-style: none; }
 
 #navigation li { float: left; padding: 0px; margin: 0px; }
 
-#navigation li a { display: block; padding: 8px 15px 6px 15px; text-decoration: none; font-size: 18px; color: white; border: none; }
+#navigation li a { display: block; padding: 8px 5px 6px 5px; margin: 0px 10px; text-decoration: none; font-size: 18px; color: white; border: none; }
 
 #navigation li a:hover { color: #ffa200; }
 
@@ -92,23 +94,25 @@ a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px;
 
 #copy_right { float: right; display: block; color: #41404d; font-size: 10px; margin: 0px; padding: 0px; line-height: 22px; }
 
-#home_twitter_feed { height: 22px; line-height: 22px; width: 600px; margin: 0px; padding: 0px 10px 0px 25px; background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat; }
+#home_twitter_feed { color: white; height: 22px; line-height: 22px; width: 600px; margin: 0px; padding: 0px 10px 0px 25px; background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat; }
 
-#home_page { padding: 200px 50px; margin: 0px; position: relative; text-align: right; }
+#home_twitter_feed span.accent { width: 120px; float: left; }
 
-#home_page #home_large { margin: 0px; padding: 0px; position: relative; text-shadow: 1px 0px 6px #010810; font-size: 40px; }
+#twitter_div { margin: 0px 0px 0px 130px; }
+
+#home_page { color: #31343d; padding: 200px 50px; margin: 0px; position: relative; text-align: right; }
+
+#home_page #home_large { margin: 0px; padding: 0px; position: relative; text-shadow: -1px -1px 2px #010810; font-size: 40px; }
+
+#home_page #home_large .accent { text-shadow: -1px -1px 2px #999999; }
 
 .no-boxshadow #home_large { behavior: url(ie-css3.htc); }
 
-#home_page #home_small { margin: 0px; padding: 0px; position: relative; text-shadow: 1px 0px 6px #010810; font-size: 14px; }
-
-#home_page #home_small span.normal { text-shadow: 1px 0px 6px #010810; position: relative; }
-
-#home_page #home_small span.accent { text-shadow: none; position: relative; }
+#home_page #home_small { margin: 0px; padding: 10px 0px; position: relative; text-shadow: -1px -1px 2px #b4b6b8; font-size: 14px; }
 
 .no-boxshadow #home_page #home_small span.normal { behavior: url(ie-css3.htc); }
 
-#filter { padding: 10px 0px; }
+#filter { padding: 10px 0px; margin-top: -55px; }
 
 .portfolio_wrap { padding: 20px 10px; }
 
@@ -120,17 +124,35 @@ a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px;
 
 .image-grid:after { content: ""; display: block; height: 0; overflow: hidden; clear: both; }
 
-.image-grid li { width: 170px; margin: 40px 0 0 40px; float: left; text-align: center; font-family: "Helvetica Neue", sans-serif; line-height: 17px; color: #686f74; overflow: hidden; }
+.image-grid li { width: 170px; padding: 40px 0 0 40px; float: left; text-align: center; font-family: "Helvetica Neue", sans-serif; line-height: 17px; color: #686f74; }
 
-.image-grid li a { border: none; }
+.image-grid li a { position: relative; display: block; border: none; }
 
-.img_block { position: absolute; width: 170px; height: 100px; display: block; -moz-box-shadow: 2px 2px 20px black; -webkit-box-shadow: 2px 2px 20px black; box-shadow: 2px 2px 20px black; background: transparent url(/images/trans_bg.png) top left repeat; }
+.image-grid li a .img_block { position: absolute; z-index: 100; width: 170px; height: 100px; padding: 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
 
-.image-grid li a:hover .img_block { width: 164px; height: 94px; border: 3px solid #ffa200; background: none; }
+.image-grid li a .port_thumb { position: relative; height: 100px; width: 170px; z-index: 10; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 2px 2px 15px #333333; -webkit-box-shadow: 2px 2px 15px #333333; box-shadow: 2px 2px 15px #333333; }
 
-.image-grid li strong { display: block; padding: 5px 0px 0px 0px; }
+.image-grid li a .coyne_thumb { background: transparent url(/images/coyne_thumb.png) top left no-repeat; }
 
-.image-grid li span { color: #cccccc; }
+.image-grid li a .legalruled_thumb { background: transparent url(/images/legalruled_thumb.jpg) top left no-repeat; }
+
+.image-grid li a .protegus_thumb { background: transparent url(/images/protegus_thumb.png) top left no-repeat; }
+
+.image-grid li a .sagwest_thumb { background: transparent url(/images/sag_west_thumb.png) top left no-repeat; }
+
+.image-grid li a .htmlemail_thumb { background: transparent url(/images/html_email_thumb.png) top left no-repeat; }
+
+.image-grid li a .smhklaw_thumb { background: transparent url(/images/smhklaw_thumb.png) top left no-repeat; }
+
+.image-grid li a .modwedding_thumb { background: transparent url(/images/modwedding_thumb.jpg) top left no-repeat; }
+
+.image-grid li a .socialbuzzpr_thumb { background: transparent url(/images/socialbuzzpr_thumb.jpg) top left no-repeat; }
+
+.image-grid li a:hover .img_block { z-index: 100; width: 164px; height: 94px; border: 3px solid #ffa200; background-image: none; }
+
+.image-grid li strong { color: #333333; display: block; padding: 5px 0px 0px 0px; }
+
+.image-grid li span { color: #ffa200; }
 
 .box_port { width: 600px; color: #999999; }
 
@@ -138,7 +160,9 @@ a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px;
 
 .box_port span { display: block; }
 
-.box_port img { padding: 20px 0px; }
+.box_port img { padding: 20px 0px; color: #ffa200; }
+
+.process_quote { float: right; width: 300px; margin: 0px 0px 30px 80px; }
 
 /* */
 /* Mailer CSS */
@@ -170,6 +194,8 @@ a#kenderson_logo { display: block; text-align: right; padding: 0px; margin: 0px;
 a#fancybox-close { border: none; }
 
 #fancybox-wrap { z-index: 42001; }
+
+#fancybox-wrap h2 { color: #333333; }
 
 #connect_wrap { padding: 20px; }
 
