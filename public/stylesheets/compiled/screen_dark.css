@@ -62,12 +62,20 @@ a img {
   border: none;
 }
 
-/* line 24, ../../../app/stylesheets/screen_dark.sass */
+@font-face {
+  font-family: "QuicksandBook";
+  src: url("/fonts/quicksand_book/Quicksand_Book-webfont.eot");
+  src: local("☺"), url("/fonts/quicksand_book/Quicksand_Book-webfont.woff") format("woff"), url("/fonts/quicksand_book/Quicksand_Book-webfont.ttf") format("truetype"), url("/fonts/quicksand_book/Quicksand_Book-webfont.svg#webfontQvsv8Mp8") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 25, ../../../app/stylesheets/screen_dark.sass */
 .flash_notice {
   background: white;
 }
 
-/* line 26, ../../../app/stylesheets/screen_dark.sass */
+/* line 27, ../../../app/stylesheets/screen_dark.sass */
 .flash_notice_wrap {
   background: #666666;
   margin: 0px 8px;
@@ -75,26 +83,26 @@ a img {
   border-bottom: 1px solid #dedede;
 }
 
-/* line 31, ../../../app/stylesheets/screen_dark.sass */
+/* line 32, ../../../app/stylesheets/screen_dark.sass */
 .flash_notice_wrap span {
   float: left;
   padding: 5px 3px 0px 3px;
   border-bottom: 1px dotted #6494ad;
 }
 
-/* line 35, ../../../app/stylesheets/screen_dark.sass */
+/* line 36, ../../../app/stylesheets/screen_dark.sass */
 .flash_notice_wrap a {
   color: #6494ad;
 }
 
-/* line 37, ../../../app/stylesheets/screen_dark.sass */
+/* line 38, ../../../app/stylesheets/screen_dark.sass */
 .flash_notice_text {
   margin: 0px 0px 0px 90px;
   padding: 5px;
   color: #6494ad;
 }
 
-/* line 44, ../../../app/stylesheets/screen_dark.sass */
+/* line 45, ../../../app/stylesheets/screen_dark.sass */
 body {
   color: #999999;
   font-family: "Helvetica Neue", arial, sans-serif;
@@ -103,50 +111,51 @@ body {
   padding: 0px;
   margin: 0px;
   font-weight: normal;
-  background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 1000, color-stop(0%, #31343d), color-stop(100%, #010810));
+  background-image: -webkit-gradient(radial, 75% -30%, 100, 75% -30%, 1500, color-stop(0%, #31343d), color-stop(100%, #010810));
   background-image: -moz-radial-gradient(75% 0%, circle, #31343d 0%, #010810 100%);
-  min-height: 800px;
+  min-height: 1000px;
 }
 
-/* line 55, ../../../app/stylesheets/screen_dark.sass */
+/* line 56, ../../../app/stylesheets/screen_dark.sass */
 .no-cssgradients body {
-  background: #31343d;
+  background: transparent url(/images/ie_bg.jpg) top center no-repeat;
 }
 
-/* line 57, ../../../app/stylesheets/screen_dark.sass */
+/* line 58, ../../../app/stylesheets/screen_dark.sass */
 a {
   color: #999999;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
 
-/* line 61, ../../../app/stylesheets/screen_dark.sass */
+/* line 62, ../../../app/stylesheets/screen_dark.sass */
 p {
   padding: 10px 0px;
   margin: 0px;
   line-height: 1.3;
 }
 
-/* line 65, ../../../app/stylesheets/screen_dark.sass */
+/* line 66, ../../../app/stylesheets/screen_dark.sass */
 a:hover {
   color: #4e7385;
 }
 
-/* line 67, ../../../app/stylesheets/screen_dark.sass */
+/* line 68, ../../../app/stylesheets/screen_dark.sass */
 h1 {
   color: #ffa200;
+  font: 22px/22px "QuicksandBook", "Helvetica Neue", arial;
   margin: 10px 0px 10px 0px;
   padding: 0px;
-  font-size: 22px;
+  text-transform: uppercase;
   text-shadow: -1px -1px 1px #e0e0e0;
 }
 
-/* line 73, ../../../app/stylesheets/screen_dark.sass */
+/* line 75, ../../../app/stylesheets/screen_dark.sass */
 .no-boxshadow h1 {
   behavior: url(ie-css3.htc);
 }
 
-/* line 76, ../../../app/stylesheets/screen_dark.sass */
+/* line 77, ../../../app/stylesheets/screen_dark.sass */
 h2 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
@@ -155,38 +164,38 @@ h2 {
   font-style: italic;
 }
 
-/* line 82, ../../../app/stylesheets/screen_dark.sass */
+/* line 83, ../../../app/stylesheets/screen_dark.sass */
 h3 {
   margin: 10px 0px 5px 0px;
   padding: 0px;
   font-size: 16px;
 }
 
-/* line 86, ../../../app/stylesheets/screen_dark.sass */
+/* line 87, ../../../app/stylesheets/screen_dark.sass */
 .accent {
-  color: #ffa200;
+  color: #ffaf00;
 }
 
-/* line 88, ../../../app/stylesheets/screen_dark.sass */
+/* line 89, ../../../app/stylesheets/screen_dark.sass */
 .css_hide {
   display: none;
 }
 
-/* line 90, ../../../app/stylesheets/screen_dark.sass */
+/* line 91, ../../../app/stylesheets/screen_dark.sass */
 .show-50 {
   -moz-opacity: 0.5;
   filter: alpha(opacity=50);
   opacity: 0.5;
 }
 
-/* line 94, ../../../app/stylesheets/screen_dark.sass */
+/* line 95, ../../../app/stylesheets/screen_dark.sass */
 .show-75 {
   -moz-opacity: 0.75;
   filter: alpha(opacity=75);
   opacity: 0.75;
 }
 
-/* line 98, ../../../app/stylesheets/screen_dark.sass */
+/* line 99, ../../../app/stylesheets/screen_dark.sass */
 .large_quote {
   font-family: georgia;
   font-style: italic;
@@ -316,13 +325,13 @@ a#kenderson_logo {
 
 /* line 178, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a:hover {
-  color: #ffa200;
+  color: #ffaf00;
 }
 
 /* line 180, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a.current {
-  color: #ffa200;
-  border-bottom: 1px solid #ffa200;
+  color: #ffaf00;
+  border-bottom: 1px solid #ffaf00;
 }
 
 /* line 186, ../../../app/stylesheets/screen_dark.sass */
@@ -354,7 +363,7 @@ a#kenderson_logo {
 
 /* line 204, ../../../app/stylesheets/screen_dark.sass */
 #home_twitter_feed span.accent {
-  width: 120px;
+  width: 125px;
   float: left;
 }
 
@@ -384,14 +393,10 @@ a#kenderson_logo {
 /* line 223, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_large .accent {
   text-shadow: -1px -1px 2px #999999;
-}
-
-/* line 225, ../../../app/stylesheets/screen_dark.sass */
-.no-boxshadow #home_large {
   behavior: url(ie-css3.htc);
 }
 
-/* line 227, ../../../app/stylesheets/screen_dark.sass */
+/* line 226, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_small {
   margin: 0px;
   padding: 10px 0px;
@@ -400,43 +405,42 @@ a#kenderson_logo {
   font-size: 14px;
 }
 
-/* line 233, ../../../app/stylesheets/screen_dark.sass */
+/* line 232, ../../../app/stylesheets/screen_dark.sass */
 .no-boxshadow #home_page #home_small span.normal {
   behavior: url(ie-css3.htc);
 }
 
-/* line 238, ../../../app/stylesheets/screen_dark.sass */
+/* line 237, ../../../app/stylesheets/screen_dark.sass */
 #filter {
   padding: 10px 0px;
   margin-top: -55px;
 }
 
-/* line 241, ../../../app/stylesheets/screen_dark.sass */
+/* line 240, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap {
   padding: 20px 10px;
 }
 
-/* line 243, ../../../app/stylesheets/screen_dark.sass */
+/* line 242, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label {
   float: right;
   margin: 0px 5px;
   padding: 5px;
 }
 
-/* line 247, ../../../app/stylesheets/screen_dark.sass */
+/* line 246, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label:hover {
-  color: #ffa200;
-  background: transparent url(/images/stripped_bg.png) top left repeat;
+  background: transparent url(/images/stripped_bg_light.png) top left repeat;
 }
 
-/* line 250, ../../../app/stylesheets/screen_dark.sass */
+/* line 248, ../../../app/stylesheets/screen_dark.sass */
 .image-grid {
   margin: -20px 0 0 -40px;
-  padding-left: 45px;
-  width: 840px;
+  padding-left: 15px;
+  width: 920px;
 }
 
-/* line 254, ../../../app/stylesheets/screen_dark.sass */
+/* line 252, ../../../app/stylesheets/screen_dark.sass */
 .image-grid:after {
   content: "";
   display: block;
@@ -445,9 +449,9 @@ a#kenderson_logo {
   clear: both;
 }
 
-/* line 260, ../../../app/stylesheets/screen_dark.sass */
+/* line 258, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li {
-  width: 170px;
+  width: 188px;
   padding: 40px 0 0 40px;
   float: left;
   text-align: center;
@@ -456,86 +460,94 @@ a#kenderson_logo {
   color: #686f74;
 }
 
-/* line 268, ../../../app/stylesheets/screen_dark.sass */
+/* line 266, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a {
   position: relative;
   display: block;
   border: none;
 }
 
-/* line 272, ../../../app/stylesheets/screen_dark.sass */
+/* line 270, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .img_block {
   position: absolute;
   z-index: 100;
-  width: 170px;
-  height: 100px;
+  margin: 3px 0px 0px 3px;
   padding: 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
 
-/* line 281, ../../../app/stylesheets/screen_dark.sass */
+/* line 275, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .port_thumb {
   position: relative;
-  height: 100px;
-  width: 170px;
+  height: 118px;
+  width: 188px;
   z-index: 10;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: 2px 2px 15px #333333;
-  -webkit-box-shadow: 2px 2px 15px #333333;
-  box-shadow: 2px 2px 15px #333333;
 }
 
-/* line 292, ../../../app/stylesheets/screen_dark.sass */
+/* line 280, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .coyne_thumb {
   background: transparent url(/images/coyne_thumb.png) top left no-repeat;
 }
 
-/* line 294, ../../../app/stylesheets/screen_dark.sass */
+/* line 282, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .legalruled_thumb {
-  background: transparent url(/images/legalruled_thumb.jpg) top left no-repeat;
+  background: transparent url(/images/legalruled_thumb.png) top left no-repeat;
 }
 
-/* line 296, ../../../app/stylesheets/screen_dark.sass */
+/* line 284, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .protegus_thumb {
   background: transparent url(/images/protegus_thumb.png) top left no-repeat;
 }
 
-/* line 298, ../../../app/stylesheets/screen_dark.sass */
+/* line 286, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .sagwest_thumb {
   background: transparent url(/images/sag_west_thumb.png) top left no-repeat;
 }
 
-/* line 300, ../../../app/stylesheets/screen_dark.sass */
+/* line 288, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .htmlemail_thumb {
   background: transparent url(/images/html_email_thumb.png) top left no-repeat;
 }
 
-/* line 302, ../../../app/stylesheets/screen_dark.sass */
+/* line 290, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .smhklaw_thumb {
   background: transparent url(/images/smhklaw_thumb.png) top left no-repeat;
 }
 
-/* line 304, ../../../app/stylesheets/screen_dark.sass */
+/* line 292, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .modwedding_thumb {
-  background: transparent url(/images/modwedding_thumb.jpg) top left no-repeat;
+  background: transparent url(/images/modwedding_thumb.png) top left no-repeat;
 }
 
-/* line 306, ../../../app/stylesheets/screen_dark.sass */
+/* line 294, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .socialbuzzpr_thumb {
-  background: transparent url(/images/socialbuzzpr_thumb.jpg) top left no-repeat;
+  background: transparent url(/images/socialbuzzpr_thumb.png) top left no-repeat;
 }
 
-/* line 308, ../../../app/stylesheets/screen_dark.sass */
+/* line 296, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a:hover .img_block {
-  z-index: 100;
-  width: 164px;
-  height: 94px;
-  border: 3px solid #ffa200;
+  width: 171px;
+  height: 100px;
   background-image: none;
+  border: 3px solid #ffaf00;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 304, ../../../app/stylesheets/screen_dark.sass */
+.no-borderradius .image-grid li a:hover .img_block {
+  position: absolute;
+  z-index: 100;
+  height: 118px;
+  width: 188px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* line 312, ../../../app/stylesheets/screen_dark.sass */
+.no-borderradius .image-grid li a:hover .img_block {
+  background: transparent url(/images/hover_border.png) top left no-repeat;
 }
 
 /* line 314, ../../../app/stylesheets/screen_dark.sass */
@@ -547,7 +559,7 @@ a#kenderson_logo {
 
 /* line 318, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li span {
-  color: #ffa200;
+  color: #ffaf00;
 }
 
 /* line 320, ../../../app/stylesheets/screen_dark.sass */
@@ -572,7 +584,7 @@ a#kenderson_logo {
 /* line 330, ../../../app/stylesheets/screen_dark.sass */
 .box_port img {
   padding: 20px 0px;
-  color: #ffa200;
+  color: #ffaf00;
 }
 
 /* line 333, ../../../app/stylesheets/screen_dark.sass */
