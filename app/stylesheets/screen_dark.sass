@@ -10,8 +10,8 @@
 // Color Swatches
 
 $text_color: #999
-$a_color: #999
-$a_hover_color: #4e7385
+$a_color: #666
+$a_hover_color: #FF8C00
 $accent_color: #ffaf00
 $header_1_color: #ffa200
 $error_color: #d94e4e
@@ -47,6 +47,7 @@ body
   font-family: "Helvetica Neue", arial, sans-serif
   background: $body_color no-repeat
   font-size: 13px
+  line-height: 1.5
   padding: 0px
   margin: 0px
   font-weight: normal
@@ -97,8 +98,10 @@ h3
   filter: alpha(opacity=75)
   opacity: 0.75
 .large_quote
-  font-family: georgia
+  line-height: 25px
+  font-family: Georgia, "Times New Roman", Times, serif
   font-style: italic
+  font-size: 40px
 // Common_css
 
 #ie_flash
@@ -136,6 +139,7 @@ a#kenderson_logo
 .tip_bg
   display: block
   padding: 7px 10px
+  line-height: 1.1
   background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
   background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
   -moz-border-radius: 10px
@@ -151,7 +155,7 @@ a#kenderson_logo
   width: 195px
 #right_side ul
   padding: 0px 0px 0px 20px
-#right_side li
+#right_side li 
   padding: 3px 0px
 
 // Navigation CSS
@@ -330,10 +334,6 @@ a#kenderson_logo
 .box_port img
   padding: 20px 0px
   color: $accent_color
-.process_quote
-  float: right
-  width: 300px
-  margin: 0px 0px 30px 80px
 
 /*
 /* Mailer CSS
@@ -341,6 +341,7 @@ a#kenderson_logo
 
 #mailer_wrap
   width: 500px
+  height: 280px
 #mailer_wrap h1
   color: $a_color
   font-size: 20px
@@ -393,6 +394,31 @@ a#fancybox-close
   text-align: right
 .backgound_color_select
 
+#accordion h3
+  display: block
+  padding: 7px 10px
+  margin-bottom: 0px
+  line-height: 1.1
+  background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
+  background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  text-shadow: 1px 1px 3px #ffe80e
+.no-borderradius #accordion h3
+  background: transparent url(/images/qtip_bg.png) top left repeat-x  
+  behavior: url(ie-css3.htc)
+#accordion h3 a
+  color: #333
+  border: none
+#accordion h3 a:hover
+  color: #000
+#accordion .ui-accordion-content
+  padding: 10px
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  border: 1px solid #ce8428
 
 // process_css
 
@@ -400,7 +426,37 @@ table.process_image_comp
   width: 890px
 .process_image_comp td
   text-align: center
+.process_quote
+  float: right
+  width: 300px
+  margin: 0px 0px 30px 80px
+#cross_browser_design ul li
+  padding: 5px 10px 5px 10px
+  margin: 0px 0px 0px 35px 
+  list-style: circle
+  list-style-position: outside
+#cross_browser_design ul li span
+  color: $accent_color
+  font-size: 14px
 
+// about_css
+
+#about_image
+  float: right
+  display: block
+  margin: 0px 0px 30px 30px
+.pics
+  height: 250px
+  width: 225px
+.pic_1
+  background: transparent url(/images/bio_pic_1_r8.png) top left no-repeat
+.pic_2
+  background: transparent url(/images/bio_pic_2_r8.png) top left no-repeat
+.pic_3
+  background: transparent url(/images/bio_pic_3_r8.png) top left no-repeat
+
+.no-borderradius #about_image .div
+  behavior: url(ie-css3.htc)
 // Clearfix CSS
 
 .clearfix 

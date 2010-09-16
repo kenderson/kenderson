@@ -1,11 +1,35 @@
 .index_wrap.clearfix
   #right_side
-    = render :partial => "/site/right_content"
+    %h2 
+      %span Collaborations
+    %ul
+      %li
+        %a{"href"=>"http://www.iterativedesigns.com"} Iterative Designs
+      %li
+        %a{"href"=>"http://www.perphic.com"} Perphic Design
+      %li
+        %a{"href"=>"http://www.voodootikigod.com"} Chris Williams
+
+    %h2 
+      %span Inspiration
+    %ul
+      %li
+        %a{"href"=>"http://www.sohtanaka.com/web-design/examples/image-rotator/"} Sohtanka jQuery
+      %li
+        %a{"href"=>"http://jqueryui.com/demos/"} jQuery UI
+      %li
+        %a{"href"=>"http://www.webdesignerwall.com/demo/jquery/"} Web Designer Wall
+      %li
+        %a{"href"=>"http://jqueryfordesigners.com/"} jQuery for Designers
+      %li
+        %a{"href"=>"http://www.jsroll.com"} JS Roll
+
   #content_w_side
     %h1 THE LAB
     %p Below are a couple cool demos and snippets of technology that I like to showcase to clients.    
     %h2 UNDER CONSTRUCTION
-    #accordion{:style=>"display:none;"}
+    #accordion
+      / {:style=>"display:none;"}
       %h3
         %a{:href=>"#"}Featured: Live Color Updates
       %div
@@ -16,8 +40,6 @@
         %div.color_changer{:style=>"background-color:#fff;"}       
           %p I am thinking of filling these sections with the different pieces of technology I want to show case. I figured the accordion would give an easy way to condense the info. Thoughts?
           %p Custom colors and styles can be applied to the accordion.
-        
-
       %h3
         %a{:href=>"#"} Second Entry
       %div 
