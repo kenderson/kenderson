@@ -119,7 +119,7 @@ body {
 
 /* line 57, ../../../app/stylesheets/screen_dark.sass */
 .no-cssgradients body {
-  background: transparent url(/images/ie_bg.jpg) top center no-repeat;
+  background: #010810 url(/images/ie_bg.jpg) top center no-repeat;
 }
 
 /* line 59, ../../../app/stylesheets/screen_dark.sass */
@@ -196,32 +196,24 @@ h3 {
   opacity: 0.75;
 }
 
-/* line 100, ../../../app/stylesheets/screen_dark.sass */
-.large_quote {
-  line-height: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 40px;
-}
-
-/* line 107, ../../../app/stylesheets/screen_dark.sass */
+/* line 102, ../../../app/stylesheets/screen_dark.sass */
 #ie_flash {
   display: none;
 }
 
-/* line 109, ../../../app/stylesheets/screen_dark.sass */
+/* line 104, ../../../app/stylesheets/screen_dark.sass */
 #page_frame {
   width: 966px;
   margin: 0px auto 0px auto;
   padding: 20px 0px;
 }
 
-/* line 113, ../../../app/stylesheets/screen_dark.sass */
+/* line 108, ../../../app/stylesheets/screen_dark.sass */
 #top_header {
   float: right;
 }
 
-/* line 115, ../../../app/stylesheets/screen_dark.sass */
+/* line 110, ../../../app/stylesheets/screen_dark.sass */
 a#kenderson_logo {
   display: block;
   text-align: right;
@@ -233,13 +225,13 @@ a#kenderson_logo {
   border: none;
 }
 
-/* line 124, ../../../app/stylesheets/screen_dark.sass */
+/* line 119, ../../../app/stylesheets/screen_dark.sass */
 #kenderson_logo span {
   font-size: 24px;
   display: none;
 }
 
-/* line 127, ../../../app/stylesheets/screen_dark.sass */
+/* line 122, ../../../app/stylesheets/screen_dark.sass */
 #content_wrap {
   padding: 20px;
   color: #999999;
@@ -252,12 +244,12 @@ a#kenderson_logo {
   box-shadow: 0px 0px 5px #efefef;
 }
 
-/* line 137, ../../../app/stylesheets/screen_dark.sass */
+/* line 132, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius #content_wrap {
   behavior: url(ie-css3.htc);
 }
 
-/* line 139, ../../../app/stylesheets/screen_dark.sass */
+/* line 134, ../../../app/stylesheets/screen_dark.sass */
 .tip_bg {
   display: block;
   padding: 7px 10px;
@@ -270,38 +262,38 @@ a#kenderson_logo {
   text-shadow: 1px 1px 3px #ffe80e;
 }
 
-/* line 149, ../../../app/stylesheets/screen_dark.sass */
+/* line 144, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius .tip_bg {
   padding: 0px;
 }
 
-/* line 151, ../../../app/stylesheets/screen_dark.sass */
+/* line 146, ../../../app/stylesheets/screen_dark.sass */
 #content_w_side {
   margin: 0px 220px 0px 0px;
 }
 
-/* line 153, ../../../app/stylesheets/screen_dark.sass */
+/* line 148, ../../../app/stylesheets/screen_dark.sass */
 #right_side {
   float: right;
   width: 195px;
 }
 
-/* line 156, ../../../app/stylesheets/screen_dark.sass */
+/* line 151, ../../../app/stylesheets/screen_dark.sass */
 #right_side ul {
   padding: 0px 0px 0px 20px;
 }
 
-/* line 158, ../../../app/stylesheets/screen_dark.sass */
+/* line 153, ../../../app/stylesheets/screen_dark.sass */
 #right_side li {
   padding: 3px 0px;
 }
 
-/* line 163, ../../../app/stylesheets/screen_dark.sass */
+/* line 158, ../../../app/stylesheets/screen_dark.sass */
 #navigation {
   display: block;
 }
 
-/* line 165, ../../../app/stylesheets/screen_dark.sass */
+/* line 160, ../../../app/stylesheets/screen_dark.sass */
 #navigation ul {
   float: left;
   margin: 0px;
@@ -309,14 +301,14 @@ a#kenderson_logo {
   list-style: none;
 }
 
-/* line 170, ../../../app/stylesheets/screen_dark.sass */
+/* line 165, ../../../app/stylesheets/screen_dark.sass */
 #navigation li {
   float: left;
   padding: 0px;
   margin: 0px;
 }
 
-/* line 174, ../../../app/stylesheets/screen_dark.sass */
+/* line 169, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a {
   display: block;
   padding: 8px 5px 6px 5px;
@@ -327,23 +319,23 @@ a#kenderson_logo {
   border: none;
 }
 
-/* line 182, ../../../app/stylesheets/screen_dark.sass */
+/* line 177, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a:hover {
   color: #ffaf00;
 }
 
-/* line 184, ../../../app/stylesheets/screen_dark.sass */
+/* line 179, ../../../app/stylesheets/screen_dark.sass */
 #navigation li a.current {
   color: #ffaf00;
   border-bottom: 1px solid #ffaf00;
 }
 
-/* line 190, ../../../app/stylesheets/screen_dark.sass */
+/* line 185, ../../../app/stylesheets/screen_dark.sass */
 #page_footer {
   padding: 50px 0px;
 }
 
-/* line 192, ../../../app/stylesheets/screen_dark.sass */
+/* line 187, ../../../app/stylesheets/screen_dark.sass */
 #copy_right {
   float: right;
   display: block;
@@ -354,7 +346,7 @@ a#kenderson_logo {
   line-height: 22px;
 }
 
-/* line 200, ../../../app/stylesheets/screen_dark.sass */
+/* line 195, ../../../app/stylesheets/screen_dark.sass */
 #home_twitter_feed {
   color: white;
   height: 22px;
@@ -365,18 +357,18 @@ a#kenderson_logo {
   background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat;
 }
 
-/* line 208, ../../../app/stylesheets/screen_dark.sass */
+/* line 203, ../../../app/stylesheets/screen_dark.sass */
 #home_twitter_feed span.accent {
   width: 125px;
   float: left;
 }
 
-/* line 211, ../../../app/stylesheets/screen_dark.sass */
+/* line 206, ../../../app/stylesheets/screen_dark.sass */
 #twitter_div {
   margin: 0px 0px 0px 130px;
 }
 
-/* line 215, ../../../app/stylesheets/screen_dark.sass */
+/* line 210, ../../../app/stylesheets/screen_dark.sass */
 #home_page {
   color: #31343d;
   padding: 200px 50px;
@@ -385,7 +377,7 @@ a#kenderson_logo {
   text-align: right;
 }
 
-/* line 221, ../../../app/stylesheets/screen_dark.sass */
+/* line 216, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_large {
   margin: 0px;
   padding: 0px;
@@ -394,13 +386,13 @@ a#kenderson_logo {
   font-size: 40px;
 }
 
-/* line 227, ../../../app/stylesheets/screen_dark.sass */
+/* line 222, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_large .accent {
   text-shadow: -1px -1px 2px #999999;
   behavior: url(ie-css3.htc);
 }
 
-/* line 230, ../../../app/stylesheets/screen_dark.sass */
+/* line 225, ../../../app/stylesheets/screen_dark.sass */
 #home_page #home_small {
   margin: 0px;
   padding: 10px 0px;
@@ -409,42 +401,42 @@ a#kenderson_logo {
   font-size: 14px;
 }
 
-/* line 236, ../../../app/stylesheets/screen_dark.sass */
+/* line 231, ../../../app/stylesheets/screen_dark.sass */
 .no-boxshadow #home_page #home_small span.normal {
   behavior: url(ie-css3.htc);
 }
 
-/* line 241, ../../../app/stylesheets/screen_dark.sass */
+/* line 236, ../../../app/stylesheets/screen_dark.sass */
 #filter {
   padding: 10px 0px;
   margin-top: -55px;
 }
 
-/* line 244, ../../../app/stylesheets/screen_dark.sass */
+/* line 239, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap {
   padding: 20px 10px;
 }
 
-/* line 246, ../../../app/stylesheets/screen_dark.sass */
+/* line 241, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label {
   float: right;
   margin: 0px 5px;
   padding: 5px;
 }
 
-/* line 250, ../../../app/stylesheets/screen_dark.sass */
+/* line 245, ../../../app/stylesheets/screen_dark.sass */
 .portfolio_wrap #filter label:hover {
   background: transparent url(/images/stripped_bg_light.png) top left repeat;
 }
 
-/* line 252, ../../../app/stylesheets/screen_dark.sass */
+/* line 247, ../../../app/stylesheets/screen_dark.sass */
 .image-grid {
   margin: -20px 0 0 -40px;
   padding-left: 15px;
   width: 920px;
 }
 
-/* line 256, ../../../app/stylesheets/screen_dark.sass */
+/* line 251, ../../../app/stylesheets/screen_dark.sass */
 .image-grid:after {
   content: "";
   display: block;
@@ -453,7 +445,7 @@ a#kenderson_logo {
   clear: both;
 }
 
-/* line 262, ../../../app/stylesheets/screen_dark.sass */
+/* line 257, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li {
   width: 188px;
   padding: 40px 0 0 40px;
@@ -464,14 +456,14 @@ a#kenderson_logo {
   color: #686f74;
 }
 
-/* line 270, ../../../app/stylesheets/screen_dark.sass */
+/* line 265, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a {
   position: relative;
   display: block;
   border: none;
 }
 
-/* line 274, ../../../app/stylesheets/screen_dark.sass */
+/* line 269, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .img_block {
   position: absolute;
   z-index: 100;
@@ -479,7 +471,7 @@ a#kenderson_logo {
   padding: 0;
 }
 
-/* line 279, ../../../app/stylesheets/screen_dark.sass */
+/* line 274, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .port_thumb {
   position: relative;
   height: 118px;
@@ -487,47 +479,47 @@ a#kenderson_logo {
   z-index: 10;
 }
 
-/* line 284, ../../../app/stylesheets/screen_dark.sass */
+/* line 279, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .coyne_thumb {
   background: transparent url(/images/coyne_thumb.png) top left no-repeat;
 }
 
-/* line 286, ../../../app/stylesheets/screen_dark.sass */
+/* line 281, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .legalruled_thumb {
   background: transparent url(/images/legalruled_thumb.png) top left no-repeat;
 }
 
-/* line 288, ../../../app/stylesheets/screen_dark.sass */
+/* line 283, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .protegus_thumb {
   background: transparent url(/images/protegus_thumb.png) top left no-repeat;
 }
 
-/* line 290, ../../../app/stylesheets/screen_dark.sass */
+/* line 285, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .sagwest_thumb {
   background: transparent url(/images/sag_west_thumb.png) top left no-repeat;
 }
 
-/* line 292, ../../../app/stylesheets/screen_dark.sass */
+/* line 287, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .htmlemail_thumb {
   background: transparent url(/images/html_email_thumb.png) top left no-repeat;
 }
 
-/* line 294, ../../../app/stylesheets/screen_dark.sass */
+/* line 289, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .smhklaw_thumb {
   background: transparent url(/images/smhklaw_thumb.png) top left no-repeat;
 }
 
-/* line 296, ../../../app/stylesheets/screen_dark.sass */
+/* line 291, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .modwedding_thumb {
   background: transparent url(/images/modwedding_thumb.png) top left no-repeat;
 }
 
-/* line 298, ../../../app/stylesheets/screen_dark.sass */
+/* line 293, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a .socialbuzzpr_thumb {
   background: transparent url(/images/socialbuzzpr_thumb.png) top left no-repeat;
 }
 
-/* line 300, ../../../app/stylesheets/screen_dark.sass */
+/* line 295, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li a:hover .img_block {
   width: 171px;
   height: 100px;
@@ -538,7 +530,7 @@ a#kenderson_logo {
   border-radius: 4px;
 }
 
-/* line 308, ../../../app/stylesheets/screen_dark.sass */
+/* line 303, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius .image-grid li a:hover .img_block {
   position: absolute;
   z-index: 100;
@@ -549,30 +541,30 @@ a#kenderson_logo {
   border: none;
 }
 
-/* line 316, ../../../app/stylesheets/screen_dark.sass */
+/* line 311, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius .image-grid li a:hover .img_block {
   background: transparent url(/images/hover_border.png) top left no-repeat;
 }
 
-/* line 318, ../../../app/stylesheets/screen_dark.sass */
+/* line 313, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li strong {
   color: #333333;
   display: block;
   padding: 5px 0px 0px 0px;
 }
 
-/* line 322, ../../../app/stylesheets/screen_dark.sass */
+/* line 317, ../../../app/stylesheets/screen_dark.sass */
 .image-grid li span {
   color: #ffaf00;
 }
 
-/* line 324, ../../../app/stylesheets/screen_dark.sass */
+/* line 319, ../../../app/stylesheets/screen_dark.sass */
 .box_port {
   width: 600px;
   color: #999999;
 }
 
-/* line 327, ../../../app/stylesheets/screen_dark.sass */
+/* line 322, ../../../app/stylesheets/screen_dark.sass */
 .box_port a.centered {
   display: block;
   text-align: center;
@@ -580,12 +572,12 @@ a#kenderson_logo {
   margin: 0px 15px 20px 15px;
 }
 
-/* line 332, ../../../app/stylesheets/screen_dark.sass */
+/* line 327, ../../../app/stylesheets/screen_dark.sass */
 .box_port span {
   display: block;
 }
 
-/* line 334, ../../../app/stylesheets/screen_dark.sass */
+/* line 329, ../../../app/stylesheets/screen_dark.sass */
 .box_port img {
   padding: 20px 0px;
   color: #ffaf00;
@@ -594,102 +586,102 @@ a#kenderson_logo {
 /* */
 /* Mailer CSS */
 /* */
-/* line 342, ../../../app/stylesheets/screen_dark.sass */
+/* line 337, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap {
   width: 500px;
   height: 280px;
 }
 
-/* line 345, ../../../app/stylesheets/screen_dark.sass */
+/* line 340, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap h1 {
   color: #666666;
   font-size: 20px;
   padding: 0px 5px 25px 10px;
 }
 
-/* line 349, ../../../app/stylesheets/screen_dark.sass */
+/* line 344, ../../../app/stylesheets/screen_dark.sass */
 .small_mailer_icon {
   float: right;
 }
 
-/* line 351, ../../../app/stylesheets/screen_dark.sass */
+/* line 346, ../../../app/stylesheets/screen_dark.sass */
 .div_spacer {
   padding: 10px;
 }
 
-/* line 353, ../../../app/stylesheets/screen_dark.sass */
+/* line 348, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form {
   border-top: 1px solid #dddddd;
   padding-top: 10px;
 }
 
-/* line 356, ../../../app/stylesheets/screen_dark.sass */
+/* line 351, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form input, textarea {
   margin: 0px 0px 0px 10px;
   padding: 2px;
 }
 
-/* line 359, ../../../app/stylesheets/screen_dark.sass */
+/* line 354, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form textarea {
   height: 50px;
   width: 250px;
 }
 
-/* line 362, ../../../app/stylesheets/screen_dark.sass */
+/* line 357, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label {
   width: 180px;
 }
 
-/* line 364, ../../../app/stylesheets/screen_dark.sass */
+/* line 359, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form input.error, textarea.error {
   border-width: 1px;
   border-style: dotted;
   border-color: #d94e4e;
 }
 
-/* line 368, ../../../app/stylesheets/screen_dark.sass */
+/* line 363, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label.error, textarea.error {
   color: #d94e4e;
 }
 
-/* line 370, ../../../app/stylesheets/screen_dark.sass */
+/* line 365, ../../../app/stylesheets/screen_dark.sass */
 #mailer_wrap form label.error {
   margin-left: 10px;
   display: inline-block;
 }
 
-/* line 376, ../../../app/stylesheets/screen_dark.sass */
+/* line 371, ../../../app/stylesheets/screen_dark.sass */
 .ui-datepicker-days-row td {
   padding: 0px;
 }
 
-/* line 378, ../../../app/stylesheets/screen_dark.sass */
+/* line 373, ../../../app/stylesheets/screen_dark.sass */
 a#fancybox-close {
   border: none;
 }
 
-/* line 380, ../../../app/stylesheets/screen_dark.sass */
+/* line 375, ../../../app/stylesheets/screen_dark.sass */
 #fancybox-wrap {
   z-index: 42001;
 }
 
-/* line 382, ../../../app/stylesheets/screen_dark.sass */
+/* line 377, ../../../app/stylesheets/screen_dark.sass */
 #fancybox-wrap h2 {
   color: #333333;
 }
 
-/* line 387, ../../../app/stylesheets/screen_dark.sass */
+/* line 382, ../../../app/stylesheets/screen_dark.sass */
 #connect_wrap {
   padding: 20px;
 }
 
-/* line 392, ../../../app/stylesheets/screen_dark.sass */
+/* line 387, ../../../app/stylesheets/screen_dark.sass */
 .color_toggle {
   display: block;
   text-align: right;
 }
 
-/* line 397, ../../../app/stylesheets/screen_dark.sass */
+/* line 392, ../../../app/stylesheets/screen_dark.sass */
 #accordion h3 {
   display: block;
   padding: 7px 10px;
@@ -703,24 +695,23 @@ a#fancybox-close {
   text-shadow: 1px 1px 3px #ffe80e;
 }
 
-/* line 408, ../../../app/stylesheets/screen_dark.sass */
+/* line 403, ../../../app/stylesheets/screen_dark.sass */
 .no-borderradius #accordion h3 {
   background: transparent url(/images/qtip_bg.png) top left repeat-x;
-  behavior: url(ie-css3.htc);
 }
 
-/* line 411, ../../../app/stylesheets/screen_dark.sass */
+/* line 405, ../../../app/stylesheets/screen_dark.sass */
 #accordion h3 a {
   color: #333333;
   border: none;
 }
 
-/* line 414, ../../../app/stylesheets/screen_dark.sass */
+/* line 408, ../../../app/stylesheets/screen_dark.sass */
 #accordion h3 a:hover {
   color: black;
 }
 
-/* line 416, ../../../app/stylesheets/screen_dark.sass */
+/* line 410, ../../../app/stylesheets/screen_dark.sass */
 #accordion .ui-accordion-content {
   padding: 10px;
   -moz-border-radius: 10px;
@@ -729,24 +720,49 @@ a#fancybox-close {
   border: 1px solid #ce8428;
 }
 
-/* line 425, ../../../app/stylesheets/screen_dark.sass */
+/* line 419, ../../../app/stylesheets/screen_dark.sass */
 table.process_image_comp {
   width: 890px;
 }
 
-/* line 427, ../../../app/stylesheets/screen_dark.sass */
+/* line 421, ../../../app/stylesheets/screen_dark.sass */
 .process_image_comp td {
   text-align: center;
 }
 
-/* line 429, ../../../app/stylesheets/screen_dark.sass */
-.process_quote {
+/* line 423, ../../../app/stylesheets/screen_dark.sass */
+#process_quote {
   float: right;
-  width: 300px;
-  margin: 0px 0px 30px 80px;
+  width: 270px;
+  margin: 0px 0px 30px 50px;
+  border: 3px solid #ffebc6;
+  padding: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 100;
 }
 
 /* line 433, ../../../app/stylesheets/screen_dark.sass */
+.no-borderradius #process_quote {
+  background-color: white;
+  behavior: url(ie-css3.htc);
+}
+
+/* line 436, ../../../app/stylesheets/screen_dark.sass */
+#process_quote p {
+  position: relative;
+  z-index: 1000;
+  line-height: 1.6;
+}
+
+/* line 440, ../../../app/stylesheets/screen_dark.sass */
+.large_quote {
+  display: inline;
+  margin: -8px 0px;
+}
+
+/* line 443, ../../../app/stylesheets/screen_dark.sass */
 #cross_browser_design ul li {
   padding: 5px 10px 5px 10px;
   margin: 0px 0px 0px 35px;
@@ -754,51 +770,46 @@ table.process_image_comp {
   list-style-position: outside;
 }
 
-/* line 438, ../../../app/stylesheets/screen_dark.sass */
+/* line 448, ../../../app/stylesheets/screen_dark.sass */
 #cross_browser_design ul li span {
   color: #ffaf00;
   font-size: 14px;
 }
 
-/* line 444, ../../../app/stylesheets/screen_dark.sass */
+/* line 454, ../../../app/stylesheets/screen_dark.sass */
 #about_image {
   float: right;
   display: block;
   margin: 0px 0px 30px 30px;
 }
 
-/* line 448, ../../../app/stylesheets/screen_dark.sass */
+/* line 458, ../../../app/stylesheets/screen_dark.sass */
 .pics {
   height: 250px;
   width: 225px;
 }
 
-/* line 451, ../../../app/stylesheets/screen_dark.sass */
+/* line 461, ../../../app/stylesheets/screen_dark.sass */
 .pic_1 {
   background: transparent url(/images/bio_pic_1_r8.png) top left no-repeat;
 }
 
-/* line 453, ../../../app/stylesheets/screen_dark.sass */
+/* line 463, ../../../app/stylesheets/screen_dark.sass */
 .pic_2 {
   background: transparent url(/images/bio_pic_2_r8.png) top left no-repeat;
 }
 
-/* line 455, ../../../app/stylesheets/screen_dark.sass */
+/* line 465, ../../../app/stylesheets/screen_dark.sass */
 .pic_3 {
   background: transparent url(/images/bio_pic_3_r8.png) top left no-repeat;
 }
 
-/* line 458, ../../../app/stylesheets/screen_dark.sass */
-.no-borderradius #about_image .div {
-  behavior: url(ie-css3.htc);
-}
-
-/* line 462, ../../../app/stylesheets/screen_dark.sass */
+/* line 470, ../../../app/stylesheets/screen_dark.sass */
 .clearfix {
   *display: inline-block;
 }
 
-/* line 464, ../../../app/stylesheets/screen_dark.sass */
+/* line 472, ../../../app/stylesheets/screen_dark.sass */
 .clearfix:after {
   content: " ";
   display: block;

@@ -55,7 +55,7 @@ body
   background-image: -moz-radial-gradient(75% 0%, circle, $radial_start 0%, $body_color 100%)
   min-height: 1000px
 .no-cssgradients body
-  background: transparent url(/images/ie_bg.jpg) top center no-repeat
+  background: #010810 url(/images/ie_bg.jpg) top center no-repeat
 a
   color: $a_color
   text-decoration: none
@@ -97,11 +97,6 @@ h3
   -moz-opacity: 0.75
   filter: alpha(opacity=75)
   opacity: 0.75
-.large_quote
-  line-height: 25px
-  font-family: Georgia, "Times New Roman", Times, serif
-  font-style: italic
-  font-size: 40px
 // Common_css
 
 #ie_flash
@@ -407,7 +402,6 @@ a#fancybox-close
   text-shadow: 1px 1px 3px #ffe80e
 .no-borderradius #accordion h3
   background: transparent url(/images/qtip_bg.png) top left repeat-x  
-  behavior: url(ie-css3.htc)
 #accordion h3 a
   color: #333
   border: none
@@ -426,10 +420,26 @@ table.process_image_comp
   width: 890px
 .process_image_comp td
   text-align: center
-.process_quote
+#process_quote
   float: right
-  width: 300px
-  margin: 0px 0px 30px 80px
+  width: 270px
+  margin: 0px 0px 30px 50px
+  border: 3px solid #ffebc6
+  padding: 15px
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  z-index: 100  
+.no-borderradius #process_quote
+  background-color: #fff
+  behavior: url(ie-css3.htc)
+#process_quote p
+  position: relative
+  z-index: 1000
+  line-height: 1.6
+.large_quote
+  display: inline
+  margin: -8px 0px
 #cross_browser_design ul li
   padding: 5px 10px 5px 10px
   margin: 0px 0px 0px 35px 
@@ -455,8 +465,6 @@ table.process_image_comp
 .pic_3
   background: transparent url(/images/bio_pic_3_r8.png) top left no-repeat
 
-.no-borderradius #about_image .div
-  behavior: url(ie-css3.htc)
 // Clearfix CSS
 
 .clearfix 
