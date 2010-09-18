@@ -33,7 +33,11 @@ $.fn.wait = function(time, type) {
 })(jQuery);
 
 jQuery(document).ready(function($) {
-
+  $('#pic_frame').cycle({
+       fx:     'scrollHorz',
+       speed:  'slow',
+       timeout: 7000
+   });
   jQuery.each(jQuery.browser, function(i) {
     if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){ //test for MSIE x.x;
       var ieversion=new Number(RegExp.$1) // capture x.x portion and store as a number
@@ -79,6 +83,28 @@ jQuery(document).ready(function($) {
   		'transitionOut'		: 'elastic',
   		'titlePosition' 	: 'over'
   });
+  $('[tooltip]').each(function() {
+    $(this).qtip({
+      content: $(this).attr('tooltip'),
+      position: {
+        adjust: { resize: true, screen: false },
+        corner: {
+          target: 'topRight',
+          tooltip: 'bottomLeft'
+        }
+      },
+      style: {
+        border: {
+          width: 2,
+          radius: 10
+        },
+        textAlign: 'center',
+        tip: 'bottomLeft', 
+        name: 'light'
+      }
+    });
+  });
+  
   $('a.fancybox').live("click", function(){
     $.fancybox($("#"+this.href.split("#")[1]).html());
   });

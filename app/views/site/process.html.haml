@@ -1,18 +1,19 @@
 .index_wrap.clearfix
   %h1 Our Process
-  .process_quote 
+  .process_quote
     %span.large_quote "
     We pride ourselves in knowing what works best and how to apply this technology to your industry. Below are a few thoughts on how we approach web design. Most of our clients find this useful in understanding the intricacies of web design.
-    %span.large_quote "
-    %p{:style=>"padding:10px 0px 0px 20px;"}
-      %i.accent Thanks for reading - Ken Henderson
+    .large_quote{:style=>"text-align: right;"} "
+    %p{:style=>"padding:0px 0px 0px 120px; margin:0;"}
+      %i.accent - Ken Henderson
   %p
-    Until recently (within the past year or so) the process of converting good graphic design into a dynamic website was well understood. The limitations as to what elements would render consistently across the various internet browsers was well documented. For example, if you wanted rounded corners or color gradients on certain elements (these are just 2 examples, there are many more) of your website, you needed to construct those elements with individual images. But we are now in the age of 
+    Until recently (within the past year or so) the process of converting good graphic design into a dynamic website was well understood. The limitations as to what elements would render consistently across the various internet browsers was well documented. For example, if you wanted rounded corners or color gradients on certain elements (these are just 2 examples, there are many more) of your website, you needed to construct those elements with individual images and peice them together to form a rounded rectangle. But we are now in the age of 
     %a{"href"=>"http://www.w3.org/TR/css3-roadmap/"} CSS3
     which allows us to create many of these effects without the use of additional images. You might be thinkings.....
     %i why should I be worried about additional images? ... 
     the answer is quite simply that the more images you have on a page the longer the page takes to render. And as your page rendering time increases, you run the risk of frustrating your clients and 
-    %a{"href"=>"http://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html"} losing your ranking in 
+    %a{"href"=>"http://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html"} losing your ranking 
+    in 
     %a{"href"=>"http://www.google.com"} Google 
     searches.
   %p 
@@ -22,13 +23,13 @@
     %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-basic.html"} Example Page 2 
     adds some minimal CSS style to the page (what we in the web design industry might consider web 1.0 style). But 
     %a{"href"=>"http://www.alistapart.com/d/taking-advantage-of-html5-and-css3-with-modernizr/sample-medium.html"} Example Page 3
-    shows a page that is very aesthetically pleasing, with drop-shadows, rounded corners, and styled images (more along the lines of what we would consider web 2.0). The difference with CSS3 is that we no longer need to use images to create rounded corners and gradients, which makes development and subsequent changes much faster/cheaper!
+    shows a page that is very aesthetically pleasing, with drop-shadows, rounded corners, and styled images (more along the lines of what we would consider web 2.0). The only difference between example 2 and 3 is the use of CSS3 elements (no additional images). The difference with CSS3 is that we no longer need to use images to create rounded corners and gradients, which makes development and subsequent changes much faster/cheaper!
   %p  
-    So you're probably thinking; what's the problem? Well, not all browsers render code the same and are compatible with the full suite of features that these new standards offer. The most problematic browser is Internet Explorer (IE). IE is not compatible with the majority of features being flaunted by CSS3 and HTML5. Check out 
+    So you're probably thinking that it sounds pretty simple....just use CSS3, right? Well, not all browsers render code the same and are compatible with the full suite of features that new standards such as CSS3 offer. The most problematic browser is Internet Explorer (IE). IE is not compatible with the majority of features being flaunted by CSS3 (and HTML5). Check out 
     %a{"href"=>"http://www.findmebyip.com/litmus#target-selector"} this article 
-    on the full list of features that the various browsers are compatible with for both HTML5 and CSS3. So the question becomes, how do you design for 
+    on the full list of features that the various browsers are compatible with CSS3. So the question becomes, how do you design for 
     %i Cross-Browser Compatibility
-    consistency with all of the major internet browsers? Keep reading.....
+    and consistency with all of the major internet browsers? Keep reading.....
   #cross_browser_design
     %h2 Cross-Browser Design
     %p 
@@ -38,55 +39,60 @@
       %i broken.
       There are a ton of articles that explain these differences in detail (
       %a{"href"=>"http://css-tricks.com/ie-css-bugs-thatll-get-you-every-time/"} here's a good example
-      ), so I'm not going to go into detail about this. Rather, I am going to explain how we design with these limitations in mind.
+      ), so I'm not going to go into detail about this. Rather, I am going to explain how we at Kenderson design with these limitations in mind.
     %p
-      So the challenge (which we pride ourselves on excelling at) is to know the limitations of each of the browsers and develop the website/application so that appears the same no matter what internet browser your clients are viewing it from. At this point you might be thinking to yourself...yeah, I see there are a lot of browsers available, but don't most people just use the latest and greatest one? Well, the short answer is not really. Much to our chagrin, most of the world still uses the dinosaur of browsers; internet explorer. Below is a quick view of the breakdown browser statistics as of June 2010 (
+      So the challenge (which we pride ourselves on excelling at) is to know the limitations of each of the browsers and develop the website/application so that it appears the same no matter what internet browser your you are viewing it from. At this point you might be thinking to yourself...yeah, I see there are a lot of browsers available, but don't most people just use the latest and greatest one? Well, the short answer is not really. Much to our chagrin, most of the world still uses the dinosaur of browsers; internet explorer. Below is a quick view of the breakdown browser statistics as of June 2010 (
       %a{"href"=>"http://www.w3counter.com/globalstats.php"} Source
       ).
     %center
       %img{"src"=>"/images/browser_stat.png"}
-    %p So when hiring a.
-    %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
-      %tr
-        %td
-          %img{"src"=>"/images/xbv_1_ie7.png"}
-          %p ABOVE: View from IE7
-        %td
-          %img{"src"=>"/images/xbv_1_saf.png"}
-          %p ABOVE: View from Safari
-    %p Below is another very basic example of a website in IE7 and then in Safari. Notice how the content seems jumbled? That's because IE7 (and IE6) add a few extra pixels of padding to the right container, which pushes it below the left container.    
-    %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
-      %tr
-        %td
-          %img{"src"=>"/images/xbv_2_ie7.png"}
-          %p ABOVE: View from IE7
-        %td
-          %img{"src"=>"/images/xbv_2_saf.png"}
-          %p ABOVE: View from Safari
-    %p So the take away from this article is that you should be aware these differences when hiring a website designer/developer, and make sure that they are going to keep these things in-mind when designing your website!. 
-
-  %p 
-    So in summary, HTML5 and CSS3 offer some very cool functionality, but the problem is that this functionality isn't supported by all browsers yet. Microsoft is saying that IE9 will support some of these new features, but IE9 is not yet available. So if your a web designer who has a customer with IE clientele (which given the stats above - most people do), and you want your website to appear identically in all browsers, you need to stick with the tried and true ways of bringing a little extra style to the page.
-  
-  #graceful_degrdation
-    %h2 Graceful Degradation
     %p 
-      Once again we'll start with a definition. Graceful Degradation refers to how your website looks when it is viewed through a browser that does not have stylesheet rendering capabilities (mostly mobile browsers), or when some happens on the user side of the site that prevents the stylesheet from loading. A very common practice for the web design industry is to use stylized images to present text that is critical to the users understanding of the site. But what happens when the stylesheet doesn't load? The image doesn't load, which means that the user doesn't see the text. The best way of integrating text into graphics like this is to include a 
-      %i span
-      tag to place text inside is the graphical element, and use the stylesheet to hide the text. So when the stylesheet doesn't load, the image doesn't load, but the text does. Below is a quick example of a site without and without good graceful degradation.
+      So now that you understand the challenge, it's time to present you with the three possible solutions.
+      %ul
+        %li 
+          %span The Old Way.
+          Since the majority of internet users are using internet explorer, and internet explorer hasn't adopted any of the CSS3 elements, some designers feel as though the world is not ready for CSS3. These designers will usually fall-back to the older way of creating a website/application; which will inevitably have slower page-load speeds.
+        %li 
+          %span In with the New and out with the Old.
+          Then there's "the other side of the extreme". Some designers feel as though the world should automatically and instantaneously come up to speed with the latest and greatest standards (CSS3). These designers will push the features of CSS3 and produce a website/application that has great page-load speeds. The problem is that these sites/applications will not appear the same in all browsers. Rounded corners will become square, gradients will turn into flat colors, etc. These web designers see this difference in functionality as a simple 
+          %i degradation in style.
+        %li 
+          %span A Hybrid of New and Old.
+          This methodology mixes both the old and new. By constructing the code to use CSS3 on browsers that recognize it, and reverting back to images and slower page-load speeds for browsers that require it, this method respects the graphical design of the website/application and assures that it is rendered identically across all browsers. The downside behind this method is that it requires more work and attention to detail when constructing the website.
+    %p As you might have guessed, at Kenderson we design using the 3rd methodology. When working with clients who want a new website/application, or to refresh the graphical design on an older website), we go through many design iterations to assure the customer gets the design they want, and in the end it's our responsibility to assure that that design is properly translated to the web; and we take that seriously.
+    %p Below are a couple visual examples of what we are referring to. Using the front page of this website (done mostly using CSS3), we first show how the page looks in Mozilla FireFox, then we show the appearance in IE8, and finally we show the appearance in IE8 with the CSS3 shortcomings patched up.
     %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
       %tr
         %td{:colspan=>"2"}
-          %img{"src"=>"/images/xbv_1_ie7.png"}
-          %p ABOVE: Original Site ( Notice XXX Section)
+          %img{"src"=>"/images/xbv_1_ff.png"}
+          %p ABOVE: Kenderson Site in Mozilla FireFox
       %tr
         %td
-          %img{"src"=>"/images/xbv_1_ie7.png"}
-          %p ABOVE: Site without the stylesheet loaded (bad graceful degradation - no text showed up when the image didn't load)
+          %img{"src"=>"/images/xbv_1_ie8.png"}
+          %p ABOVE: Kenderson Site in IE8 (WITHOUT hybrid approach)
         %td
-          %img{"src"=>"/images/xbv_1_saf.png"}
-          %p ABOVE: Site without the stylesheet loaded (Good graceful degradation - text showed up when the image didn't load)
-
+          %img{"src"=>"/images/xbv_1_ie8_fixed.png"}
+          %p ABOVE: Kenderson Site in IE8 (with hybrid approach applied)
+    %p In conclusion, the take away from this article is that you (the customer) should be aware these differences when hiring a website designer/developer, and make sure that they are delivering truly matches your expectations. 
+  
+  / #graceful_degrdation
+  /   %h2 Graceful Degradation
+  /   %p 
+  /     Once again we'll start with a definition. Graceful Degradation refers to how your website looks when it is viewed through a browser that does not have stylesheet rendering capabilities (mostly mobile browsers), or when some happens on the user side of the site that prevents the stylesheet from loading. A very common practice for the web design industry is to use stylized images to present text that is critical to the users understanding of the site. But what happens when the stylesheet doesn't load? The image doesn't load, which means that the user doesn't see the text. The best way of integrating text into graphics like this is to include a 
+  /     %i span
+  /     tag to place text inside is the graphical element, and use the stylesheet to hide the text. So when the stylesheet doesn't load, the image doesn't load, but the text does. Below is a quick example of a site without and without good graceful degradation.
+  /   %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
+  /     %tr
+  /       %td{:colspan=>"2"}
+  /         %img{"src"=>"/images/xbv_1_ie7.png"}
+  /         %p ABOVE: Original Site ( Notice XXX Section)
+  /     %tr
+  /       %td
+  /         %img{"src"=>"/images/xbv_1_ie7.png"}
+  /         %p ABOVE: Site without the stylesheet loaded (bad graceful degradation - no text showed up when the image didn't load)
+  /       %td
+  /         %img{"src"=>"/images/xbv_1_saf.png"}
+  /         %p ABOVE: Site without the stylesheet loaded (Good graceful degradation - text showed up when the image didn't load)
   / #use_of_javascript  
   /   %h2 The use of JavaScript
   /   %p Below is another very basic example of a website in IE7 and then in Safari. Notice how the content seems jumbled? That's because IE7 (and IE6) add a few extra pixels of padding to the right container, which pushes it below the left container.    
