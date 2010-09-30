@@ -14,13 +14,13 @@
           height: 300,
           theme: {
             shell: {
-              background: '#8ec1da',
-              color: '#ffffff'
+              background: '#cecece',
+              color: '#666'
             },
             tweets: {
-              background: '#ffffff',
-              color: '#444444',
-              links: '#1985b5'
+              background: '#fff',
+              color: '#999',
+              links: '#666'
             }
           },
           features: {
@@ -34,40 +34,12 @@
             behavior: 'default'
           }
         }).render().start();
-    .div{:style=>"padding: 20px 0px"}
-      :javascript  
-        new TWTR.Widget({
-          version: 2,
-          type: 'profile',
-          rpp: 4,
-          interval: 12000,
-          width: 180,
-          height: 300,
-          theme: {
-            shell: {
-              background: '#333333',
-              color: '#ffffff'
-            },
-            tweets: {
-              background: '#000000',
-              color: '#ffffff',
-              links: '#4aed05'
-            }
-          },
-          features: {
-            scrollbar: true,
-            loop: false,
-            live: true,
-            hashtags: true,
-            timestamp: true,
-            avatars: false,
-            behavior: 'all'
-          }
-        }).render().setUser('kenderson').start();
+        
   #content_w_side
     %h1 Connect with Kenderson Consulting
     .div
       %p We are located in Northern Virginia, but work with customers all over the world. Feel free to contact us by any of the methods below.
+    %h2 PAGE UNDER CONSTRUCTION
     .div
       %p 
         Email at 
@@ -76,20 +48,20 @@
         %a{"href"=>"/send_mail_to_partners", :class=>"fancybox"}
           %span Contact Form.
       
-    .div
-      %p Insert VCF Logo and Link to Card
-
-    .div
-      %h2 Using Skype? 
-      %p Contact us Online by clicking the link below
-      %a{"href"=>"skype:kenderson","onclick"=>"return skypeCheck();"}
-        %img{"src"=>"http://mystatus.skype.com/bigclassic/kenderson", "alt"=>"Link to Skype"}  
-    .div
-      %p
-        %iframe{"width"=>"450", "height"=>"350", "frameborder"=>"0", "scrolling"=>"no", "marginheight"=>"0", "marginwidth"=>"0", :src=>"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Herndon,+VA&amp;sll=37.0625,-95.677068&amp;sspn=34.999041,77.607422&amp;ie=UTF8&amp;hq=&amp;hnear=Herndon,+Fairfax,+Virginia&amp;z=13&amp;ll=38.979554,-77.386098&amp;output=embed"}
-        %br
-        %small
-          %a{"href"=>"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Herndon,+VA&amp;sll=37.0625,-95.677068&amp;sspn=34.999041,77.607422&amp;ie=UTF8&amp;hq=&amp;hnear=Herndon,+Fairfax,+Virginia&amp;z=13&amp;ll=38.969554,-77.386098", :style=>"color:#0000FF;text-align:left"} View Larger Map
-
-
-%script{"type"=>"text/javascript", "src"=>"http://download.skype.com/share/skypebuttons/js/skypeCheck.js"}
+/     .div
+/       %i Insert VCF Logo and Link to Card
+/ 
+/     .div
+/       %h2 Using Skype? 
+/       %p Contact us Online by clicking the link below
+/       %a{"href"=>"skype:kenderson","onclick"=>"return skypeCheck();"}
+/         %img{"src"=>"http://mystatus.skype.com/bigclassic/kenderson", "alt"=>"Link to Skype"}  
+/     .div
+/       %p
+/         %iframe{"width"=>"450", "height"=>"350", "frameborder"=>"0", "scrolling"=>"no", "marginheight"=>"0", "marginwidth"=>"0", :src=>"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Herndon,+VA&amp;sll=37.0625,-95.677068&amp;sspn=34.999041,77.607422&amp;ie=UTF8&amp;hq=&amp;hnear=Herndon,+Fairfax,+Virginia&amp;z=13&amp;ll=38.979554,-77.386098&amp;output=embed"}
+/         %br
+/         %small
+/           %a{"href"=>"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Herndon,+VA&amp;sll=37.0625,-95.677068&amp;sspn=34.999041,77.607422&amp;ie=UTF8&amp;hq=&amp;hnear=Herndon,+Fairfax,+Virginia&amp;z=13&amp;ll=38.969554,-77.386098", :style=>"color:#0000FF;text-align:left"} View Larger Map
+/ 
+/ 
+/ %script{"type"=>"text/javascript", "src"=>"http://download.skype.com/share/skypebuttons/js/skypeCheck.js"}
