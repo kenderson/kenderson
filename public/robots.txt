@@ -1,5 +1,18 @@
-# See http://www.robotstxt.org/wc/norobots.html for documentation on how to use the robots.txt file
-#
-# To ban all spiders from the entire site uncomment the next two lines:
-# User-Agent: *
-# Disallow: /
+User-Agent: MJ12bot
+Disallow:
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: YahooYSMcm
+Disallow: 
+
+User-agent: Googlebot
+Disallow: /send_mail_for_rfq
+Disallow: /send_mail_to_partners
+ 
+User-agent: *
+Disallow: /send_mail_for_rfq
+Disallow: /send_mail_to_partners
+
+Sitemap: http://www.kenderson.net/sitemap.xml.gz.xml
