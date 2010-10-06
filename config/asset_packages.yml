@@ -12,6 +12,7 @@ javascripts:
   - jquery.cycle.all.min
   - ie
   - application
+  - blogger
 stylesheets: 
 - base: 
   - reset
