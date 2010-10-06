@@ -1,0 +1,20 @@
+--- 
+javascripts: 
+- base: 
+  - jquery-1.3.2.min
+  - jquery-1.4.2
+  - modernizr-1.5.min
+  - jquery.validate
+  - fancybox/jquery.fancybox-1.3.1
+  - jquery.quicksand.min
+  - jquery.qtip-1.0.0-rc3.d.min
+  - jquery.easing.1.3
+  - jquery.cycle.all.min
+  - ie
+  - application
+stylesheets: 
+- base: 
+  - reset
+  - application
+  - ie
+  - jquery.fancybox-1.3.1

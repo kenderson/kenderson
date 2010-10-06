@@ -156,35 +156,35 @@ jQuery(document).ready(function($) {
       });
     }
   });
-	$('.backgound_color_select').ColorPicker({
-		color: '#fff',
-		onShow: function (colpkr) {
-			$(colpkr).fadeIn(500);
-			return false;
-		},
-		onHide: function (colpkr) {
-			$(colpkr).fadeOut(500);
-			return false;
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('.color_changer').css('backgroundColor', '#' + hex);
-		}
-	});
-	$('.text_color_select').ColorPicker({
-		color: '#000',
-		onShow: function (colpkr) {
-			$(colpkr).fadeIn(500);
-			return false;
-		},
-		onHide: function (colpkr) {
-			$(colpkr).fadeOut(500);
-			return false;
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('.color_changer p').css('color', '#' + hex);
-		}
-	});
-  $("#accordion").accordion();
+  // $('.backgound_color_select').ColorPicker({
+  //  color: '#fff',
+  //  onShow: function (colpkr) {
+  //    $(colpkr).fadeIn(500);
+  //    return false;
+  //  },
+  //  onHide: function (colpkr) {
+  //    $(colpkr).fadeOut(500);
+  //    return false;
+  //  },
+  //  onChange: function (hsb, hex, rgb) {
+  //    $('.color_changer').css('backgroundColor', '#' + hex);
+  //  }
+  // });
+  // $('.text_color_select').ColorPicker({
+  //  color: '#000',
+  //  onShow: function (colpkr) {
+  //    $(colpkr).fadeIn(500);
+  //    return false;
+  //  },
+  //  onHide: function (colpkr) {
+  //    $(colpkr).fadeOut(500);
+  //    return false;
+  //  },
+  //  onChange: function (hsb, hex, rgb) {
+  //    $('.color_changer p').css('color', '#' + hex);
+  //  }
+  // });
+  //   $("#accordion").accordion();
   $("#kenderson").validate();
   // $('#facebox').bgiframe();
   // $("a.facebox").facebox();
