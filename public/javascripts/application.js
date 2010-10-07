@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
       $.fn.qtip.styles.mystyle = { 
         padding: 0, 
         border: { color: '#ce8429', width: 0 },
-        'background':'transparent',
+        'background':'##ce8429',
         color: 'black',
         textAlign: 'center',
         tip: 'bottomMiddle',
