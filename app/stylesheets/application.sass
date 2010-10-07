@@ -23,22 +23,26 @@ $content_bg_color: #fff
 // Error Handling
 
 .flash_notice
-  background: #fff
+  position: absolute
+  width: 100%
+  background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
+  background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
 .flash_notice_wrap
-  background: #666
-  margin: 0px 8px
-  padding: 10px 3px 10px 8px
-  border-bottom: 1px solid #dedede
+  width: 900px
+  margin: 0px auto
+  padding: 1px 3px 1px 8px
 .flash_notice_wrap span
   float: left
   padding: 5px 3px 0px 3px
-  border-bottom: 1px dotted #6494ad
+  border-bottom: 1px dotted #000
 .flash_notice_wrap a
-  color: #6494ad
+  color: #000
+.flash_notice_wrap a:hover
+  color: #333
 .flash_notice_text
   margin: 0px 0px 0px 90px
   padding: 5px
-  color: #6494ad
+  color: #000
 	
 // Body and Main CSS
 

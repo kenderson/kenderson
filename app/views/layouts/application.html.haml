@@ -27,10 +27,10 @@
         %a{:href=>"#","onclick"=>'$("#ie_flash").remove();'} X Close this Warning
 
   - if flash[:notice]
-    .flash_notice
+    .flash_notice.show-75
       .flash_notice_wrap
         %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
-          %span Close
+          %span X Close
         .flash_notice_text
           = h(flash[:notice])
   #page_frame    
