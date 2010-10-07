@@ -5,27 +5,29 @@
     %meta{:name=>"google-site-verification", :content=>"Q9IgUhV24gYaOLqFzT5Mxp8_1F-j8obg9Ru2dmvqfAQ"}
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/favicon-2.ico"}
-    = stylesheet_link_merged :base
-    = javascript_include_merged :base
+    / = stylesheet_link_merged :base
+    = stylesheet_link_tag("base_packaged.css")
+    = javascript_include_tag('base_packaged.js')
+    / = javascript_include_merged :base
     /[if lt IE 9]
-      <script src="javascripts/gradientz.js" type="text/javascript"></script>
       <script src="javascripts/ie.js" type="text/javascript"></script>
-      <link href="stylesheets/compiled/ie.css" rel="stylesheet" type="text/css"/>
       
 %body
-  #ie_flash.show-75
+  #ie_flash.show-85
     #ie_flash_wrap 
+      %a#kenderson_logo{:href=>"/"} 
+        %span Kenderson
       %h2
         Notice!
         %span 
           You're currently using Internet Explorer as your browser. Due to security and performance considerations, we and many other organizations recommend upgrading your browser to 
           %a{:href=>"http://www.mozilla.com/en-US/firefox/firefox.html"} Mozilla Firefox.
-          Firefox is free and very secure!
+          Firefox is free, secure, and will provide much faster and better viewing quality!
       .ie_close
         %a{:href=>"#","onclick"=>'$("#ie_flash").remove();'} X Close this Warning
 
   - if flash[:notice]
-    .flash_notice.show-75
+    .flash_notice.show-85
       .flash_notice_wrap
         %a{"href"=>"#", "id"=>"close_notification", "onclick"=>"$(this).parent().remove();"}
           %span X Close

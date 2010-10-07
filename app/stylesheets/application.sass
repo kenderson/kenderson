@@ -97,14 +97,37 @@ h3
   -moz-opacity: 0.50
   filter: alpha(opacity=50)
   opacity: 0.50
-.show-75
-  -moz-opacity: 0.75
-  filter: alpha(opacity=75)
-  opacity: 0.75
+.show-85
+  -moz-opacity: 0.85
+  filter: alpha(opacity=85)
+  opacity: 0.85
 // Common_css
 
 #ie_flash
   display: none
+  background: #000
+  margin: 0px auto
+  padding: 0px 0px 20px 0px
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+#ie_flash_wrap
+  width: 900px
+  margin: 0px auto
+#ie_flash h2, #ie_flash span, #ie_flash a
+  color: #fff
+#ie_flash a 
+  font-weight: bold
+  border-bottom: 1px solid $accent_color
+  color: $accent_color
+#ie_flash span
+  font-size: 14px
+  font-weight: normal
+.ie_close
+  text-align: right
+  display: block
+  padding: 0px 20px 5px 10px
 #page_frame
   width: 966px
   margin: 0px auto 0px auto

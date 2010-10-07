@@ -18,5 +18,4 @@ stylesheets:
 - base: 
   - reset
   - application
-  - ie
   - jquery.fancybox-1.3.1
