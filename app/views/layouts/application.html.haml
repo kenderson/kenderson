@@ -6,7 +6,9 @@
     %title= "Kenderson Consulting"
     %link{"rel"=>"shortcut icon", "href"=>"/favicon-2.ico"}
     = stylesheet_link_merged :base
-    = javascript_include_merged :base
+    = javascript_include_tag('base_packaged.js')
+
+    / = javascript_include_merged :base
     /[if lt IE 9]
       <script src="javascripts/gradientz.js" type="text/javascript"></script>
       <script src="javascripts/ie.js" type="text/javascript"></script>

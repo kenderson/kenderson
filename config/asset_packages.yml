@@ -13,6 +13,7 @@ javascripts:
   - ie
   - application
   - blogger
+
 stylesheets: 
 - base: 
   - reset
