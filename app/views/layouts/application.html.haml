@@ -43,15 +43,13 @@
           %a{"href"=>"/about", :class=>((params['action'] == "about") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Core Beliefs.</span>"} About
 
         %li
-          %a{"href"=>"/process", :class=>((params['action'] == "process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">How we do things.</span>"} Process
+          %a{"href"=>"/our_process", :class=>((params['action'] == "our_process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">How we do things.</span>"} Process
         %li
           %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our sample work.</span>"} Portfolio
         %li
           %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Scratch Pad.</span>"} Lab
         %li
           %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
-        / %li
-        /   %a{"href"=>"http://blog.kenderson.net",:tooltip_menu =>"<span class=\"tip_bg\">A few of our thoughts.</span>"} Blog      
     #content_wrap.clearfix      
       = yield
     #page_footer

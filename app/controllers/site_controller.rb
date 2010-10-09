@@ -1,4 +1,16 @@
 class SiteController < ApplicationController
+  def index
+  end
+  def about
+  end
+  def connect
+  end
+  def lab
+  end
+  def portfolio
+  end
+  def our_process
+  end
   def send_mail_to_partners
     if request.post?
       # note the deliver_ prefix, this is IMPORTANT
