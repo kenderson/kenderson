@@ -1,31 +1,16 @@
 !!! 5
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en", :class=>"no-js"}
   %head
+    %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"description", :content=>"Website and Web Application Design Services, providing our clients the highest performance..."}  
     %meta{'http-equiv' => "content-type", :content => "text/html;charset=UTF-8", :name=>"keywords", :content=>"web design, css,website design,html,front end,design,virginia,fairfax,richmond,washington dc,maryland"}
     %meta{:name=>"google-site-verification", :content=>"Q9IgUhV24gYaOLqFzT5Mxp8_1F-j8obg9Ru2dmvqfAQ"}
-    %title= "Kenderson Consulting"
+    %title= "Kenderson Consulting - Website and Web Application Design Services"
     %link{"rel"=>"shortcut icon", "href"=>"/favicon-2.ico"}
     = stylesheet_link_merged :base
     = javascript_include_merged :base
     /[if lt IE 9]
       <script src="javascripts/ie.js" type="text/javascript"></script>
-      
 %body
-  #ie_flash.show-85
-    #ie_flash_wrap 
-      .ie_close
-        %a{:href=>"#","onclick"=>'$("#ie_flash").remove();'} X Close this Warning
-
-      %a#kenderson_logo{:href=>"/", :style=>"margin:0;"} 
-        %span Kenderson
-
-      %h2
-        Notice!
-        %span 
-          You're currently using Internet Explorer as your browser. Due to security and performance considerations, we and many other organizations recommend upgrading your browser to 
-          %a{:href=>"http://www.mozilla.com/en-US/firefox/firefox.html"} Mozilla Firefox.
-          Firefox is free, secure, and will provide much faster and better viewing quality!
-
   - if flash[:notice]
     .flash_notice.show-85
       .flash_notice_wrap
@@ -40,16 +25,15 @@
     #navigation.clearfix
       %ul.clearfix
         %li 
-          %a{"href"=>"/about", :class=>((params['action'] == "about") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Core Beliefs.</span>"} About
-
+          %a#about{"href"=>"/about", :class=>((params['action'] == "about") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our Core Beliefs.</span>"} About
         %li
-          %a{"href"=>"/our_process", :class=>((params['action'] == "our_process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">How we do things.</span>"} Process
+          %a#our_process{"href"=>"/our_process", :class=>((params['action'] == "our_process") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">How we do things.</span>"} Process
         %li
-          %a{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our sample work.</span>"} Portfolio
+          %a#portfolio{"href"=>"/portfolio", :class=>((params['action'] == "portfolio") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Our sample work.</span>"} Portfolio
         %li
-          %a{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Scratch Pad.</span>"} Lab
+          %a#lab{"href"=>"/lab", :class=>((params['action'] == "lab") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Scratch Pad.</span>"} Lab
         %li
-          %a{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
+          %a#connect{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
     #content_wrap.clearfix      
       = yield
     #page_footer
@@ -62,7 +46,19 @@
         %span.accent KENDERSON SAYS 
         #twitter_div
           %ul#twitter_update_list
-            %li Twitter Updates        
+            %li Twitter Updates
+  #ie_flash.show-85
+    #ie_flash_wrap 
+      .ie_close
+        %a{:href=>"#","onclick"=>'$("#ie_flash").remove();'} X Close this Warning
+      %a#kenderson_logo{:href=>"/", :style=>"margin:0;"} 
+        %span Kenderson
+      %h2
+        Notice!
+        %span 
+          You're currently using Internet Explorer as your browser. Due to security and performance considerations, we and many other organizations recommend upgrading your browser to 
+          %a{:href=>"http://www.mozilla.com/en-US/firefox/firefox.html"} Mozilla Firefox.
+          Firefox is free, secure, and will provide much faster and better viewing quality!
 %script{"type"=>"text/javascript"}
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 %script{"type"=>"text/javascript"}

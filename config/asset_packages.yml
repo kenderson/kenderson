@@ -12,7 +12,7 @@ javascripts:
   - jquery.cycle.all.min
   - ie
   - application
-  - blogger
+  - maraboustork_blogger
 
 stylesheets: 
 - base: 

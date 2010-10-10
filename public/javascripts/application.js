@@ -33,6 +33,7 @@ $.fn.wait = function(time, type) {
 })(jQuery);
 
 jQuery(document).ready(function($) {
+	GetTwitterFeedIncRT('kenderson', 1, 'twitter_update_list');
   $('#pic_frame').cycle({
        fx:     'scrollHorz',
        speed:  'slow',
