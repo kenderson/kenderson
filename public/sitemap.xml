@@ -36,9 +36,4 @@
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>http://www.kenderson.net/send_mail_to_partners</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
 </urlset>
