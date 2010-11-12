@@ -15,4 +15,4 @@ User-agent: *
 Disallow: /send_mail_for_rfq
 Disallow: /send_mail_to_partners
 
-Sitemap: http://www.kenderson.net/sitemap.xml.gz
+Sitemap: http://www.kenderson.net/sitemap.xml
