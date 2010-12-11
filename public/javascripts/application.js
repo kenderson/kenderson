@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
   $('#contact_tabs').cycle({
       fx:     'scrollRight',
       speed:  'slow',
-      timeout: 6000,
+      timeout: 0,
       pager:  '#contact_nav ul',
       pause: true,
       pauseOnPagerHover: true,
