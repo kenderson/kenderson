@@ -33,6 +33,27 @@ $.fn.wait = function(time, type) {
 })(jQuery);
 
 jQuery(document).ready(function($) {
+	GetTwitterFeedIncRT('kenderson', 1, 'twitter_update_list');
+  $('#contact_tabs').cycle({
+      fx:     'scrollRight',
+      speed:  'slow',
+      timeout: 6000,
+      pager:  '#contact_nav ul',
+      pause: true,
+      pauseOnPagerHover: true,
+      pagerAnchorBuilder: function(idx, slide) {
+          return '<li><a href="#">'+slide.title+'</a></li>';
+      }
+  });
+  var first_contact_nav_pos = $("#contact_nav ul li:first").position();
+  var first_contact_nav_width = $("#contact_nav ul li:first").width() -15;
+  $('#contact_nav ul').append('<li class="contact_nav_current" style="width:'+first_contact_nav_width+'px;top:'+first_contact_nav_pos.top+'px;left:'+first_contact_nav_pos.left+'px;">&nbsp;</li>');
+  $('#contact_nav ul li a').click(function() {
+    var current_position = $(this).position();
+    var current_width = $(this).width();
+    $('#contact_nav ul li:last').animate({width: current_width+"px"}, { "duration": 100 });
+    $('#contact_nav ul li:last').animate({left: current_position.left+"px", top: current_position.top+"px"}, { "duration": 300 } );
+  });
   $('#pic_frame').cycle({
        fx:     'scrollHorz',
        speed:  'slow',
@@ -68,7 +89,7 @@ jQuery(document).ready(function($) {
       $.fn.qtip.styles.mystyle = { 
         padding: 0, 
         border: { color: '#ce8429', width: 0 },
-        'background':'transparent',
+        'background':'##ce8429',
         color: 'black',
         textAlign: 'center',
         tip: 'bottomMiddle',
@@ -156,35 +177,6 @@ jQuery(document).ready(function($) {
       });
     }
   });
-	$('.backgound_color_select').ColorPicker({
-		color: '#fff',
-		onShow: function (colpkr) {
-			$(colpkr).fadeIn(500);
-			return false;
-		},
-		onHide: function (colpkr) {
-			$(colpkr).fadeOut(500);
-			return false;
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('.color_changer').css('backgroundColor', '#' + hex);
-		}
-	});
-	$('.text_color_select').ColorPicker({
-		color: '#000',
-		onShow: function (colpkr) {
-			$(colpkr).fadeIn(500);
-			return false;
-		},
-		onHide: function (colpkr) {
-			$(colpkr).fadeOut(500);
-			return false;
-		},
-		onChange: function (hsb, hex, rgb) {
-			$('.color_changer p').css('color', '#' + hex);
-		}
-	});
-  $("#accordion").accordion();
   $("#kenderson").validate();
   // $('#facebox').bgiframe();
   // $("a.facebox").facebox();
@@ -202,7 +194,7 @@ jQuery(document).ready(function($) {
       if ($($filterType+':checked').val() == 'all') {
         var $filteredData = $data.find('li');
       } else {
-        var $filteredData = $data.find('li[data-type=' + $($filterType+":checked").val() + ']');
+        var $filteredData = $data.find('li.' + $($filterType+":checked").val());
       }
       // if sorted by size
       if ($('#filter input[name="sort"]:checked').val() == "size") {
