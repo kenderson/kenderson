@@ -11,58 +11,81 @@
         %label
           %input{ :name => "type", :value => "email", :type => "radio" } HTML EMAILS
         %label
+          %input{ :name => "type", :value => "cms", :type => "radio" } CMSI - Content Management System Integration
+        %label
           FILTER BY: 
           %input{ :checked => "checked", :name => "type", :value => "all", :type => "radio" } EVERYTHING
 
     %ul#applications.image-grid
-      %li{ "data-type" => "web", "data-id" => "id-1" }
+      %li{ "class" => "web", "data-id" => "id-1" }
         %a{:href=>"#facebox_coyne", :class=>"fancybox"}
           .img_block
           .port_thumb.coyne_thumb
           %strong Craig Coyne Jewelers
           %span Website
-      %li{ "data-type" => "app", "data-id" => "id-2" }
+      %li{ "class" => "app", "data-id" => "id-2" }
         %a{:href=>"#facebox_legalruled", :class=>"fancybox"}
           .img_block
           .port_thumb.legalruled_thumb
           %strong LegalRuled
           %span Application
-      %li{ "data-type" => "web", "data-id" => "id-3" }
+      %li{ "class" => "web", "data-id" => "id-3" }
         %a{:href=>"#facebox_protegus", :class=>"fancybox"}
           .img_block
           .port_thumb.protegus_thumb
           %strong Protegus Website
           %span Website
-      %li{ "data-type" => "web", "data-id" => "id-4" }
+      %li{ "class" => "web", "data-id" => "id-4" }
         %a{:href=>"#facebox_sag_web", :class=>"fancybox"}
           .img_block
           .port_thumb.sagwest_thumb
           %strong Software AG
           %span Websites
-      %li{ "data-type" => "email", "data-id" => "id-5" }
+      %li{ "class" => "email", "data-id" => "id-5" }
         %a{:href=>"#facebox_sag_emails", :class=>"fancybox"}
           .img_block
           .port_thumb.htmlemail_thumb
           %strong Software AG
           %span Email Templates
-      %li{ "data-type" => "web", "data-id" => "id-6" }
+      %li{ "class" => "web app", "data-id" => "id-6" }
         %a{:href=>"#facebox_smhklaw", :class=>"fancybox"}
           .img_block
           .port_thumb.smhklaw_thumb
           %strong SMHK Law Website
-          %span Website
-      %li{ "data-type" => "app", "data-id" => "id-7" }
+          %span Website, Application
+      %li{ "class" => "app email", "data-id" => "id-7" }
         %a{:href=>"#facebox_modwedding", :class=>"fancybox"}
           .img_block
           .port_thumb.modwedding_thumb
           %strong ModWedding
-          %span Application
-      %li{ "data-type" => "web", "data-id" => "id-8" }
+          %span Application, Email Templates, Website
+      %li{ "class" => "web cms", "data-id" => "id-8" }
         %a{:href=>"#facebox_socialbuzzpr", :class=>"fancybox"}
           .img_block
           .port_thumb.socialbuzzpr_thumb
           %strong SocialBuzzPR
+          %span Website, CMSI
+      %li{ "class" => "cms", "data-id" => "id-9" }
+        %a{:href=>"#facebox_d3", :class=>"fancybox"}
+          .img_block
+          .port_thumb.d3systems_thumb
+          %strong D3 Systems
+          %span CMSI
+      %li{ "class" => "cms", "data-id" => "id-10" }
+        %a{:href=>"#facebox_acsor", :class=>"fancybox"}
+          .img_block
+          .port_thumb.acsor_thumb
+          %strong ACSOR Surveys
+          %span CMSI
+      %li{ "class" => "web", "data-id" => "id-11" }
+        %a{:href=>"#facebox_hbn", :class=>"fancybox"}
+          .img_block
+          .port_thumb.hbn_thumb
+          %strong Hopkins Bio Tech Network
           %span Website
+    %center.styled_text
+      References available upon request
+
 #div{:style=>"display:none;"}
   #facebox_coyne
     .box_port
@@ -103,9 +126,8 @@
         , I handled the Graphic Design conversion for the 
         %i refreshed 
         Protegus website. By request of the client, the back-end of this site was constructed using Expression Engine (a PHP driven Content management system). This site highlights the use of JavaScript to create the slideshow/top menu on the front page of the site. We also incorporated a few touches of JavaScript into the hover effects of the menu and the front page tabbed section.
-      %a.centered{"href"=>"http://www.protegus.com"} 
+      .centered
         %img{"src"=>"/images/protegus.png", "width"=>"500px"}
-        %span Click to view the site
 #div{:style=>"display:none;"}
   #facebox_sag_web
     .box_port
@@ -179,7 +201,7 @@
         %a{:href=>"http://modwedding.com/themes.html"} themes
         , development of 
         %a{:href=>"http://modwedding.com/features.html"} ModCards
-        , and the recent architecture of an automated theme builder. 
+        , and the recent architecture of an automated theme builder. The automated theme builder provided the ability for an administrator to create custom layouts for new "themes" by simply uploading new images and selecting from a matrix of available layout options. This functionality helped Alex and Nicole reduce the costs associated with hiring someone to specifically develop and test new themes and in-turn reduce the time it takes to release new themes.
       %a.centered{"href"=>"http://www.modwedding.com"} 
         %img{"src"=>"/images/modwedding.png", "width"=>"500px"}
         %span Click to view the site
@@ -195,4 +217,52 @@
         site. This was a great opportunity for us to work with and learn about WordPress. Since working on this project we have taken on several other WordPress projects.
       %a.centered{"href"=>"http://www.socialbuzzpr.com"} 
         %img{"src"=>"/images/socialbuzzpr.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_d3
+    .box_port
+      %h2 D3 Systems Content Management Integration
+      %p 
+        %a{:href=>"http://d3systems.com"} D3 Systems
+        was using a Content Management System (CMS) that provided the capability for them to update their client-side content (blog articles, files, images, and text), but it would only render appropriately in Internet Explorer (IE).
+        %a{:href=>"http://d3systems.com"} D3 Systems
+        contacted us and was looking for a cost efficient replacement for their current solution. We set-up new hosting for them, created a new 
+        %a{:href=>"http://wordpress.com"} WordPress
+        application for them, and transitioned all of their current content into the new application. We also provided internal training to their corporate users and stakeholders.
+      %p
+        In the transition to the new host, we updated and optimized the HTML and CSS (no graphic design updates), and in doing so we were able to reduce the page loading speed from 3.00 seconds to 0.75 seconds.
+      %a.centered{"href"=>"http://www.d3systems.com"} 
+        %img{"src"=>"/images/d3systems.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_acsor
+    .box_port
+      %h2 ACSOR Surveys Content Management Integration
+      %p 
+        %a{:href=>"http://acsor-surveys.com"} ACSOR Surveys
+        is run by 
+        %a{:href=>"http://d3systems.com"} D3 Systems
+        and 
+        %a{:href=>"http://www.gallup-bbss.com/index.php?id=129080955720&"} BBSS
+        , and is the only registered commercial market and opinion research agency in Afghanistan. The ACSOR Surveys website was running on a Content Management System (CMS) that provided the capability for them to update their client-side content (blog articles, files, images, and text), but it would only render appropriately in Internet Explorer (IE).
+        Similarly to what we did with the 
+        %a{:href=>"http://d3systems.com"} D3 Systems
+        website, we were contracted to provide a cost efficient replacement for their current solution. We set-up new hosting, created a new
+        %a{:href=>"http://wordpress.com"} WordPress
+        application, and transitioned all of their current content into the new application. We also provided internal training to their corporate users and stakeholders.
+      %p
+        In the transition to the new host, we updated and optimized the HTML and CSS (no graphic design updates), and in doing so we were able to reduce the page loading speed from 1.80 seconds to 0.75 seconds.
+      %a.centered{"href"=>"http://www.acsor-surveys.com"} 
+        %img{"src"=>"/images/acsor.png", "width"=>"500px"}
+        %span Click to view the site
+#div{:style=>"display:none;"}
+  #facebox_hbn
+    .box_port
+      %h2 Hopkins Bio Tech Network
+      %p 
+        We partnered with Alex Hsaio from
+        %a{:href=>"http://perphic.com"} Perphic
+        to help Johns Hopkins Bio Tech create a fresh new look for their website. The goal was to provide additional information to their clients through the use of blog posts, career posts, and white-papers, while helping to ease the usability of their website. We provided a very nice looking web 2.0 look with a Ruby on Rails driven Content management system that provided the capability for the corporate users to add and modify posts, articles, and media.
+      %a.centered{"href"=>"http://www.hopkinsbio.org"} 
+        %img{"src"=>"/images/hbn.png", "width"=>"500px"}
         %span Click to view the site

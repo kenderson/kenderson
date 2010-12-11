@@ -1,62 +1,114 @@
 %script{:src=>"http://widgets.twimg.com/j/2/widget.js"}
-.clearfix
-  #right_side
-    .div
-      :javascript
-        new TWTR.Widget({
-          version: 2,
-          type: 'search',
-          search: 'web design',
-          interval: 6000,
-          title: 'the world of web design',
-          subject: 'Twitter',
-          width: 180,
-          height: 300,
-          theme: {
-            shell: {
-              background: '#cecece',
-              color: '#666'
-            },
-            tweets: {
-              background: '#fff',
-              color: '#999',
-              links: '#666'
-            }
+#right_side
+  .div
+    :javascript
+      new TWTR.Widget({
+        version: 2,
+        type: 'search',
+        search: 'web design',
+        interval: 6000,
+        title: 'the world of web design',
+        subject: 'Twitter',
+        width: 180,
+        height: 300,
+        theme: {
+          shell: {
+            background: '#cecece',
+            color: '#666'
           },
-          features: {
-            scrollbar: false,
-            loop: true,
-            live: true,
-            hashtags: true,
-            timestamp: true,
-            avatars: true,
-            toptweets: true,
-            behavior: 'default'
+          tweets: {
+            background: '#fff',
+            color: '#999',
+            links: '#666'
           }
-        }).render().start();
-        
-  #content_w_side
-    %h1 Connect with Kenderson Consulting
-    .div
-      %p We are located in Northern Virginia, but work with customers all over the world. Feel free to contact us by any of the methods below.
-    %h2 PAGE UNDER CONSTRUCTION
-    .div
-      %p 
-        Email at 
-        %a{"href"=>"mailto:info@kenderson.net"} info@kenderson.net
-        , or use the 
-        %a{"href"=>"/send_mail_to_partners", :class=>"fancybox"}
-          %span Contact Form.
-      %p.addthis_toolbox.addthis_default_style
-        %a.addthis_button_compact{:href => "http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4cb1f1723664ca20"} Share
-        %span.addthis_separator |
-        %a.addthis_button_preferred_1
-        %a.addthis_button_preferred_2
-        %a.addthis_button_preferred_3
-        %a.addthis_button_preferred_4
-      %script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4cb1f1723664ca20", :type => "text/javascript"}
-        
-      
+        },
+        features: {
+          scrollbar: false,
+          loop: true,
+          live: true,
+          hashtags: true,
+          timestamp: true,
+          avatars: true,
+          toptweets: true,
+          behavior: 'default'
+        }
+      }).render().start();
+#content_w_side
+  %h1 Connect with Kenderson Consulting
+  .div
+    %p We are located in Northern Virginia, but work with customers all over the world. Feel free to contact us by any of the methods below.
+  #contact_options_wrap
+    #contact_nav
+      %ul
+    #contact_tabs
+      .contact_tab{:title=>"Basic Contact Info"}
+        .contact_inner_left
+          .contact_left Email
+          .contact_right
+            %a{"href"=>"mailto:info@kenderson.net"} info@kenderson.net
+          .contact_left Address
+          .contact_right 12905 Centre Park Circle
+          .contact_left
+          .contact_right Suite 204
+          .contact_left
+          .contact_right Herndon, Va, 20171
+          .contact_left Phone
+          .contact_right (443) 629-4257
+        .contact_inner_right
+          %iframe{:width=>"325", :height=>"350", :frameborder=>"0", :scrolling=>"no", :marginheight=>"0", :marginwidth=>"0", :src=>"http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=12905+centre+park+circle+suite+204,+herndon,+va+20171&amp;sll=37.0625,-95.677068&amp;sspn=34.396866,76.201172&amp;ie=UTF8&amp;hq=&amp;hnear=12905+Centre+Park+Cir,+Herndon,+Fairfax,+Virginia+20171&amp;ll=38.949063,-77.393274&amp;spn=0.023363,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"}
+          %br
+          %small
+            %a{:href=>"http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=12905+centre+park+circle+suite+204,+herndon,+va+20171&amp;sll=37.0625,-95.677068&amp;sspn=34.396866,76.201172&amp;ie=UTF8&amp;hq=&amp;hnear=12905+Centre+Park+Cir,+Herndon,+Fairfax,+Virginia+20171&amp;ll=38.949063,-77.393274&amp;spn=0.023363,0.036478&amp;z=14&amp;iwloc=A" ,:style=>"color:#0000FF;text-align:left"} View Larger Map
+      .contact_tab{:title=>"Social Contacts"}
+        %p 
+          Social Media Contacts
+          %ul
+            %li Facebook
+            %li Twitter
+            %li IM      
+            %li 
+              Skype
+              %a{:href=>"skype:smhklaw",:onclick=>"return skypeCheck();", :style=>"border:none;"}
+                %img{"src"=>"http://mystatus.skype.com/bigclassic/kenderson4", "alt"=>"Link to Skype"}              
+      .contact_tab{:title=>"Contact Form"}
+        #mailer_wrap
+          %h1 Send us an email
+          %form{"name"=>"kenderson", "id"=>"kenderson", "action"=>"/send_mail_to_partners", "method"=>"POST"}
+            %table
+              %tr
+                %td{"valign"=>"top"}
+                  %label.text_label Full Name (Required)
+                %td{"valign"=>"top"}
+                  %input{"type"=>"text", "name"=>"name", "class"=>"required"}
+                  .div_spacer
+              %tr
+                %td{"valign"=>"top"}
+                  %label.text_label Email or Phone Number (Required)
+                %td{"valign"=>"top"}
+                  %input{"type"=>"text", "name"=>"contact", "class"=>"required"}
+                  .div_spacer
+              %tr
+                %td{"valign"=>"top"}
+                  %label.text_label Your Message (Optional)
+                %td{"valign"=>"top"}
+                  %textarea{"type"=>"text", "name"=>"message_body", "class"=>"required"}
+                  .div_spacer
+            %input{"class"=>"submit", "value"=>"Send", "type"=>"submit", "onClick" =>"$(\"#kenderson\").validate();" }
+      .contact_tab{:title=>"Got QR?"}
+        .contact_inner_left
+          %a{:href=>"http://en.wikipedia.org/wiki/QR_Code"} QR Reader 
+          Ready?
+        .contact_inner_right
+          %img{:src=>"/images/kenderson_qr.png"}
+  %p Share Us!
+  .addthis_toolbox.addthis_default_style
+    %a.addthis_button_compact{:href => "http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4cb1f1723664ca20"} Share
+    %span.addthis_separator |
+    %a.addthis_button_facebook
+    %a.addthis_button_twitter
+    %a.addthis_button_google
+    %a.addthis_button_email
+    
 /     .div
 /       %i Insert VCF Logo and Link to Card
 / 
@@ -74,3 +126,5 @@
 / 
 / 
 / %script{"type"=>"text/javascript", "src"=>"http://download.skype.com/share/skypebuttons/js/skypeCheck.js"}
+%script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4cb1f1723664ca20", :type => "text/javascript"}
+%script{"type"=>"text/javascript", "src"=>"http://download.skype.com/share/skypebuttons/js/skypeCheck.js"}

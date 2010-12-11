@@ -35,7 +35,8 @@
         %li
           %a#connect{"href"=>"/connect", :class=>((params['action'] == "connect") ? "current" : ""),:tooltip_menu =>"<span class=\"tip_bg\">Ways to connect with us.</span>"} Connect
     #content_wrap.clearfix      
-      = yield
+      #yield
+        = yield
     #page_footer
       #copy_right
         %span
