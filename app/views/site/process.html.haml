@@ -1,10 +1,11 @@
 .index_wrap.clearfix
   %h1 Our Process
-  .process_quote
-    %span.large_quote "
-    We pride ourselves in knowing what works best and how to apply this technology to your industry. Below are a few thoughts on how we approach web design. Most of our clients find this useful in understanding the intricacies of web design.
-    .large_quote{:style=>"text-align: right;"} "
-    %p{:style=>"padding:0px 0px 0px 120px; margin:0;"}
+  #process_quote
+    %p
+      %img.large_quote{:src=>"/images/start_quote.png"}
+      We pride ourselves in knowing what works best and how to apply this technology to your industry. Below are a few thoughts on how we approach web design. Most of our clients find this useful in understanding the intricacies of web design.
+      %img.large_quote{:src=>"/images/end_quote.png"}
+    %p{:style=>"text-align:right; margin:0; padding:0 15px;"}
       %i.accent - Ken Henderson
   %p
     Until recently (within the past year or so) the process of converting good graphic design into a dynamic website was well understood. The limitations as to what elements would render consistently across the various internet browsers was well documented. For example, if you wanted rounded corners or color gradients on certain elements (these are just 2 examples, there are many more) of your website, you needed to construct those elements with individual images and peice them together to form a rounded rectangle. But we are now in the age of 
@@ -64,15 +65,18 @@
     %table.process_image_comp{:cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
       %tr
         %td{:colspan=>"2"}
-          %img{"src"=>"/images/xbv_1_ff.png"}
-          %p ABOVE: Kenderson Site in Mozilla FireFox
+          %a{:href=>"/images/xbv_1_ff.png", :class=>"fancybox"}
+            %img{:src=>"/images/xbv_1_ff.png", :width=>"400px"}
+            %p ABOVE: Kenderson Site in Mozilla FireFox
       %tr
         %td
-          %img{"src"=>"/images/xbv_1_ie8.png"}
-          %p ABOVE: Kenderson Site in IE8 (WITHOUT hybrid approach)
+          %a{:href=>"/images/xbv_1_ie8.png", :class=>"fancybox"}
+            %img{:src=>"/images/xbv_1_ie8.png", :width=>"400px"}
+            %p ABOVE: Kenderson Site in IE8 (WITHOUT hybrid approach)
         %td
-          %img{"src"=>"/images/xbv_1_ie8_fixed.png"}
-          %p ABOVE: Kenderson Site in IE8 (with hybrid approach applied)
+          %a{:href=>"/images/xbv_1_ie8_fixed.png", :class=>"fancybox"}
+            %img{:src=>"/images/xbv_1_ie8_fixed.png", :width=>"400px"}
+            %p ABOVE: Kenderson Site in IE8 (with hybrid approach applied)
     %p In conclusion, the take away from this article is that you (the customer) should be aware these differences when hiring a website designer/developer, and make sure that they are delivering truly matches your expectations. 
   
   / #graceful_degrdation
