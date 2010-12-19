@@ -8,3 +8,24 @@
   #home_small{:style=>"padding-top:120px;"}
     HTML, CSS, & JAVASCRIPT CONSULTING
     
+/   #contact_options_wrap
+/     #contact_nav
+/       %ul
+/     #contact_tabs
+/       .contact_tab{:title=>"Basic Contact Info"}
+/       .contact_tab{:title=>"Social Contacts"}
+/       .contact_tab{:title=>"Contact Form"}
+/       .contact_tab{:title=>"Got QR?"}
+/ :javascript
+/   $(document).ready(function() {
+/     var first_contact_nav_pos_left = $("#contact_nav ul li:first").position().left;
+/     var first_contact_nav_pos_top = $("#contact_nav ul li:first").position().top;
+/     var first_contact_nav_width = $("#contact_nav ul li:first").width() -20;
+/     $('#contact_nav ul').append('<li class="contact_nav_current" style="width:'+first_contact_nav_width+'px;top:'+first_contact_nav_pos_top+'px;left:'+first_contact_nav_pos_left+'px;">&nbsp;</li>');
+/     $('#contact_nav ul li a').click(function() {
+/       var current_position = $(this).position();
+/       var current_width = $(this).width() +20;
+/       $('#contact_nav ul li:last').animate({width: current_width+"px"}, { "duration": 100 });
+/       $('#contact_nav ul li:last').animate({left: current_position.left+"px", top: current_position.top+"px"}, { "duration": 300 } );
+/     });
+/   });
