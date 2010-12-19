@@ -45,15 +45,6 @@ jQuery(document).ready(function($) {
           return '<li><a href="#">'+slide.title+'</a></li>';
       }
   });
-  var first_contact_nav_pos = $("#contact_nav ul li:first").position();
-  var first_contact_nav_width = $("#contact_nav ul li:first").width() -15;
-  $('#contact_nav ul').append('<li class="contact_nav_current" style="width:'+first_contact_nav_width+'px;top:'+first_contact_nav_pos.top+'px;left:'+first_contact_nav_pos.left+'px;">&nbsp;</li>');
-  $('#contact_nav ul li a').click(function() {
-    var current_position = $(this).position();
-    var current_width = $(this).width();
-    $('#contact_nav ul li:last').animate({width: current_width+"px"}, { "duration": 100 });
-    $('#contact_nav ul li:last').animate({left: current_position.left+"px", top: current_position.top+"px"}, { "duration": 300 } );
-  });
   $('#pic_frame').cycle({
        fx:     'scrollHorz',
        speed:  'slow',
