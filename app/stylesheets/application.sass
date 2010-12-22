@@ -55,7 +55,7 @@ body
   padding: 0px
   margin: 0px
   font-weight: normal
-  background-image: -webkit-gradient(radial, 75% -30%, 100, 75% -30%, 1500, color-stop(0%, $radial_start), color-stop(100%, $body_color))
+  background-image: -webkit-gradient(radial, 75% -30%, 200, 75% -30%, 1500, color-stop(0%, $radial_start), color-stop(100%, $body_color))
   background-image: -moz-radial-gradient(75% 0%, circle, $radial_start 0%, $body_color 100%)
   min-height: 1000px
   width: 100%
@@ -206,17 +206,31 @@ a#kenderson_logo
   margin: 0px
 #navigation li a
   display: block
-  padding: 8px 5px 6px 5px
-  margin: 0px 10px
+  padding: 6px 25px 6px 30px
+  margin: 0px 10px 
   text-decoration: none
   font-size: 18px
   color: #fff
   border: none
+  text-shadow: 1px 1px 8px #fff
+#navigation li a#about
+  background: transparent url(/images/menu_icon_k.png) left center no-repeat
+#navigation li a#our_process
+  background: transparent url(/images/menu_icon_process.png) left center no-repeat
+#navigation li a#portfolio
+  background: transparent url(/images/menu_icon_port.png) left center no-repeat
+#navigation li a#lab
+  background: transparent url(/images/menu_icon_lab.png) left center no-repeat
+#navigation li a#connect
+  background: transparent url(/images/menu_icon_connect.png) left center no-repeat
+#navigation li a#blog
+  background: transparent url(/images/menu_icon_blog.png) left center no-repeat
 #navigation li a:hover
   color: $accent_color
+  text-shadow: 1px 1px 6px $accent_color
 #navigation li a.current
   color: $accent_color
-  border-bottom: 1px solid $accent_color
+  text-shadow: 1px 1px 6px $accent_color
 
 // Footer CSS
 
@@ -363,28 +377,27 @@ a#kenderson_logo
   width: 188px
   z-index: 10  
 .image-grid li a .coyne_thumb
-  background: transparent url(/images/coyne_thumb_w.png) top left no-repeat
+  background: transparent url(/images/coyne_thumb_w_1.png) top left no-repeat
 .image-grid li a .legalruled_thumb
-  background: transparent url(/images/legalruled_thumb_w.png) top left no-repeat
+  background: transparent url(/images/legalruled_thumb_w_1.png) top left no-repeat
 .image-grid li a .protegus_thumb
-  background: transparent url(/images/protegus_thumb_w.png) top left no-repeat
+  background: transparent url(/images/protegus_thumb_w_1.png) top left no-repeat
 .image-grid li a .sagwest_thumb
-  background: transparent url(/images/sag_west_thumb_w.png) top left no-repeat
+  background: transparent url(/images/sag_soa_thumb_w_1.png) top left no-repeat
 .image-grid li a .htmlemail_thumb
-  background: transparent url(/images/html_email_thumb_w.png) top left no-repeat
+  background: transparent url(/images/html_email_thumb_w_1.png) top left no-repeat
 .image-grid li a .smhklaw_thumb
-  background: transparent url(/images/smhklaw_thumb_w.png) top left no-repeat
+  background: transparent url(/images/smhklaw_thumb_w_1.png) top left no-repeat
 .image-grid li a .modwedding_thumb
-  background: transparent url(/images/modwedding_thumb_w.png) top left no-repeat
+  background: transparent url(/images/modwedding_thumb_w_1.png) top left no-repeat
 .image-grid li a .socialbuzzpr_thumb
-  background: transparent url(/images/socialbuzzpr_thumb_w.png) top left no-repeat
+  background: transparent url(/images/socialbuzzpr_thumb_w_1.png) top left no-repeat
 .image-grid li a .d3systems_thumb
-  background: transparent url(/images/d3systems_thumb.png) top left no-repeat
+  background: transparent url(/images/d3systems_thumb_w_1.png) top left no-repeat
 .image-grid li a .acsor_thumb
-  background: transparent url(/images/acsor_thumb.png) top left no-repeat
+  background: transparent url(/images/acsor_thumb_w_1.png) top left no-repeat
 .image-grid li a .hbn_thumb
-  background: transparent url(/images/hbn_thumb.png) top left no-repeat
-
+  background: transparent url(/images/hbn_thumb_w_1.png) top left no-repeat
 .image-grid li a:hover .img_block
   width: 171px
   height: 100px
@@ -477,13 +490,13 @@ a#fancybox-close
 #connect_right
   float: right
   width: 305px
-  padding: 25px 0px 0px 0px
-.contact_left_wrap
-
+  padding: 22px 0px 0px 0px
 .contact_right_wrap
   float: right
   display: block
   width: 260px
+*:first-child+html .contact_right_wrap
+  margin: 27px 0px 0px 0px
 .contact_wrap
   margin: 30px 0px
   padding: 5px
@@ -492,23 +505,36 @@ a#fancybox-close
   -moz-border-radius: 5px
   -webkit-border-radius: 5px
   border-radius: 5px
+  z-index: 100
+.no-borderradius .contact_wrap
+  background-color: #fff
+  behavior: url(ie-css3.htc)
 .contact_wrap span
   display: block
   float: left
+  position: relative
   padding: 0px 7px 0px 7px
   margin: -15px 0px 0px 5px
   background-color: #fff
   color: $accent_color
+  z-index: 10000
 .contact_wrap p
+  position: relative
   padding: 5px
   margin: 0px
   clear: left
+  z-index: 10000
 .socontact
+  z-index: 10000
+  position: relative
   float: left
   padding: 15px 10px
 .socontact a
   border: none
   text-decoration: none
+.socontact_centered
+  z-index: 10000
+  position: relative
 
 
 // lab_css
@@ -516,8 +542,6 @@ a#fancybox-close
 .color_toggle
   display: block
   text-align: right
-.backgound_color_select
-
 #accordion h3
   display: block
   padding: 7px 10px
@@ -608,13 +632,21 @@ table.process_image_comp
   background: $body_color
 .addthis_counter.addthis_pill_style:hover, .addthis_counter a.atc_s:hover
   background: $accent_color
+
 // Clearfix CSS
 
-.clearfix 
-  *display: inline-block
-.clearfix:after 
-  content: " "
+.clearfix
+  &:after
+    content: "."
+    display: block
+    clear: both
+    visibility: hidden
+    line-height: 0px
+    height: 0px
+  display: inline-block
+
+html[xmlns] .clearfix
   display: block
-  height: 0
-  clear: both
-  visibility: hidden
+
+* html .clearfix
+  height: 1%
