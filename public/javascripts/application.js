@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
           color: 'black',
           textAlign: 'center',
           tip: 'bottomMiddle',
-          width: { min: 135 }   
+          width: { min: 135 }
         }
       }
       else {
@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
       $.fn.qtip.styles.mystyle = { 
         padding: 0, 
         border: { color: '#ce8429', width: 0 },
-        'background':'##ce8429',
+        'background':'transparent',
         color: 'black',
         textAlign: 'center',
         tip: 'bottomMiddle',
