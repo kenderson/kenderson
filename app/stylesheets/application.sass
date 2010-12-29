@@ -171,7 +171,7 @@ a#kenderson_logo
 .tip_bg
   display: block
   padding: 7px 10px
-  line-height: 1.1
+  line-height: 1.2
   background-color: #CE8429
   background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
   background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
@@ -213,6 +213,7 @@ a#kenderson_logo
   color: #fff
   border: none
   text-shadow: 1px 1px 8px #fff
+
 #navigation li a#about
   background: transparent url(/images/menu_icon_k.png) left center no-repeat
 #navigation li a#our_process
@@ -435,7 +436,16 @@ a#kenderson_logo
 .box_port img
   padding: 20px 0px
   color: $accent_color
-
+.portfolio_linked
+  text-align: center
+  padding: 25px 0px 0px 0px
+.portfolio_linked a
+  border: none
+.portfolio_linked a img
+  margin: -4px 0px
+.about_linked
+  padding: 10px 0px 0px 0px
+  text-align: right
 /*
 /* Mailer CSS
 /*
@@ -632,7 +642,39 @@ table.process_image_comp
   background: $body_color
 .addthis_counter.addthis_pill_style:hover, .addthis_counter a.atc_s:hover
   background: $accent_color
-
+.endorsement_quote_wrap
+  display: block
+  border: 3px solid #ffebc6
+  padding: 15px
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  border-radius: 10px
+  z-index: 100  
+.no-borderradius .endorsement_quote_wrap
+  background-color: #fff
+  behavior: url(ie-css3.htc)
+.endorsement_quote_wrap span
+  font-size: 20px
+  font-style: italic
+  font-family: georgia
+  display: block
+  float: left
+  position: relative
+  padding: 0px 7px 0px 7px
+  margin: -35px 0px 0px 5px
+  background-color: #fff
+  color: $accent_color
+  z-index: 10000
+.endorsement_quote_wrap .endorsement_container
+  position: relative
+  z-index: 1000
+  width: 390px
+  padding: 5px
+  line-height: 1.6
+.endorsement_sig
+  text-align: right
+  margin: 0
+  padding: 15px 10px 0px 0px
 // Clearfix CSS
 
 .clearfix
