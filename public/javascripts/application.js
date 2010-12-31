@@ -56,8 +56,8 @@ jQuery(document).ready(function($) {
       if (ieversion < 9 ){
         $.fn.qtip.styles.mystyle = { 
           padding: 0, 
-          border: { color: '#ce8429', radius: 7 },
-          'background':'#ce8429',
+          border: { color: '#ffaf00', radius: 7 },
+          'background':'#ffaf00',
           color: 'black',
           textAlign: 'center',
           tip: 'bottomMiddle',
@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
       else {
         $.fn.qtip.styles.mystyle = { 
           padding: 0, 
-          border: { color: '#ce8429', width: 0 },
+          border: { color: '#ffaf00', width: 0 },
           'background':'transparent',
           color: 'black',
           textAlign: 'center',
@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
     else {
       $.fn.qtip.styles.mystyle = { 
         padding: 0, 
-        border: { color: '#ce8429', width: 0 },
+        border: { color: '#ffaf00', width: 0 },
         'background':'transparent',
         color: 'black',
         textAlign: 'center',
