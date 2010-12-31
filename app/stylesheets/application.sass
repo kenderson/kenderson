@@ -9,8 +9,8 @@
 
 // Color Swatches
 
-$text_color: #999
-$a_color: #666
+$text_color: #666
+$a_color: #000
 $a_hover_color: #FF8C00
 $accent_color: #ffaf00
 $header_1_color: #ffa200
@@ -77,9 +77,9 @@ h1
   margin: 10px 0px 10px 0px
   padding: 0px
   text-transform: uppercase
-  text-shadow: -1px -1px 1px #e0e0e0
+  text-shadow: 1px 0px 1px #e0e0e0
 .no-boxshadow h1
-  behavior: url(ie-css3.htc)
+  font-weight: bold
 h2
   margin: 10px 0px 5px 0px
   padding: 0px
@@ -527,23 +527,26 @@ a#fancybox-close
   margin: -15px 0px 0px 5px
   background-color: #fff
   color: $accent_color
-  z-index: 10000
+  z-index: 1000
 .contact_wrap p
   position: relative
   padding: 5px
   margin: 0px
   clear: left
-  z-index: 10000
+  z-index: 1000
 .socontact
-  z-index: 10000
+  z-index: 1100
   position: relative
   float: left
   padding: 15px 10px
 .socontact a
+  display: block
+  height: 64px
+  width: 64px
   border: none
   text-decoration: none
 .socontact_centered
-  z-index: 10000
+  z-index: 1000
   position: relative
 
 
