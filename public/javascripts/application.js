@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
     else {
       $.fn.qtip.styles.mystyle = { 
         padding: 0, 
-        border: { color: '#ffaf00', width: 0 },
+        border: { color: '#ce8429', width: 0 },
         'background':'transparent',
         color: 'black',
         textAlign: 'center',
