@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
           color: 'black',
           textAlign: 'center',
           tip: 'bottomMiddle',
-          width: { min: 135 }
+          width: { min: 165 }
         }
       }
       else {
