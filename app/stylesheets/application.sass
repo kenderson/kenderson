@@ -9,9 +9,9 @@
 
 // Color Swatches
 
-$text_color: #999
-$a_color: #666
-$a_hover_color: #FF8C00
+$text_color: #666
+$a_color: #000
+$a_hover_color: #e39c19
 $accent_color: #ffaf00
 $header_1_color: #ffa200
 $error_color: #d94e4e
@@ -61,6 +61,7 @@ body
   width: 100%
 .no-cssgradients body
   background: #010810 url(/images/ie_body_bg.png) top center repeat-x
+  font-weight: bold
 a
   color: $a_color
   text-decoration: none
@@ -77,9 +78,9 @@ h1
   margin: 10px 0px 10px 0px
   padding: 0px
   text-transform: uppercase
-  text-shadow: -1px -1px 1px #e0e0e0
+  text-shadow: 1px 0px 1px #e0e0e0
 .no-boxshadow h1
-  behavior: url(ie-css3.htc)
+  font-weight: bold
 h2
   margin: 10px 0px 5px 0px
   padding: 0px
@@ -122,7 +123,7 @@ h3
   z-index: 10000
   width: 100%
 #ie_flash_wrap
-  width: 900px
+  width: 940px
   margin: 0px auto
 #ie_flash h2, #ie_flash span, #ie_flash a
   color: #fff
@@ -133,7 +134,7 @@ h3
   border-bottom: 1px solid $accent_color
   color: $accent_color
 #ie_flash span
-  font-size: 12px
+  font-size: 14px
   font-weight: normal
 .ie_close
   float: right
@@ -172,7 +173,7 @@ a#kenderson_logo
   display: block
   padding: 7px 10px
   line-height: 1.2
-  background-color: #CE8429
+  background-color: $accent_color
   background-image: -webkit-gradient(linear, 0% 0%,0% 100%, from(#FFB401), to(#CE8429))
   background-image: -moz-linear-gradient(0% 100% 90deg, #CE8429, #FFB401)
   -moz-border-radius: 10px
@@ -213,6 +214,7 @@ a#kenderson_logo
   color: #fff
   border: none
   text-shadow: 1px 1px 8px #fff
+  font-weight: normal
 
 #navigation li a#about
   background: transparent url(/images/menu_icon_k.png) left center no-repeat
@@ -247,6 +249,7 @@ a#kenderson_logo
   line-height: 22px
 #home_twitter_feed
   color: #fff
+  font-weight: normal
   height: 22px
   line-height: 22px
   width: 600px
@@ -258,6 +261,11 @@ a#kenderson_logo
   float: left
 #twitter_div
   margin: 0px 0px 0px 130px
+#twitter_div a
+  color: #fff
+#twitter_div a:hover
+  color: $a_hover_color
+
 // Index_CSS
 
 #home_page
@@ -527,23 +535,26 @@ a#fancybox-close
   margin: -15px 0px 0px 5px
   background-color: #fff
   color: $accent_color
-  z-index: 10000
+  z-index: 1000
 .contact_wrap p
   position: relative
   padding: 5px
   margin: 0px
   clear: left
-  z-index: 10000
+  z-index: 1000
 .socontact
-  z-index: 10000
+  z-index: 1100
   position: relative
   float: left
   padding: 15px 10px
 .socontact a
+  display: block
+  height: 64px
+  width: 64px
   border: none
   text-decoration: none
 .socontact_centered
-  z-index: 10000
+  z-index: 1000
   position: relative
 
 
@@ -629,13 +640,15 @@ table.process_image_comp
   background: #fff url(/images/bio_pic_1_r8.png) top left no-repeat
 .pic_2
   background: #fff url(/images/bio_pic_2_r8.png) top left no-repeat
-.pic_3
-  background: #fff url(/images/bio_pic_3_r8.png) top left no-repeat
+.pic_4
+  background: #fff url(/images/bio_pic_4_r8.png) top left no-repeat
 .addthis_toolbox
   float: right
   display: block
   width: 145px
   padding-top: 40px
+*:first-child+html .addthis_toolbox
+  width: 155px
 .addthis_toolbox a
   border-bottom: none
 .addthis_counter.addthis_pill_style, .addthis_counter a.atc_s
@@ -675,6 +688,7 @@ table.process_image_comp
   text-align: right
   margin: 0
   padding: 15px 10px 0px 0px
+  
 // Clearfix CSS
 
 .clearfix
