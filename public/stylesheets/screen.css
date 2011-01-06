@@ -1,3 +1,111 @@
+<<<<<<< HEAD:public/stylesheets/compiled/screen.css
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+body { line-height: 1; color: black; background: white; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+a img { border: none; }
+
+@import url(shared.css);
+.flash_notice { background: white; }
+
+.flash_notice_wrap { background: #666666; margin: 0px 8px; padding: 10px 3px 10px 8px; border-bottom: 1px solid #dedede; }
+
+.flash_notice_wrap span { float: left; padding: 5px 3px 0px 3px; border-bottom: 1px dotted #6494ad; }
+
+.flash_notice_wrap a { color: #6494ad; }
+
+.flash_notice_text { margin: 0px 0px 0px 90px; padding: 5px; color: #6494ad; }
+
+body { color: #333333; font-family: helvetica; background: #010810 no-repeat; font-size: 13px; padding: 0px; margin: 0px; font-weight: normal; background-image: -webkit-gradient(radial, 75% 0%, 100, 75% 0%, 706, color-stop(0%, #666666), color-stop(100%, #333333)); background-image: -moz-radial-gradient(75% 0%, circle, #666666 0%, #333333 100%); min-height: 800px; }
+
+a { color: #6494ad; text-decoration: none; border-bottom: 1px dotted; }
+
+p { padding: 10px 0px; margin: 0px; line-height: 1.3; }
+
+a:hover { color: #4e7385; }
+
+h1 { color: #adb167; margin: 10px 0px 10px 0px; padding: 0px; font-size: 22px; }
+
+h2 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 18px; color: #adb167; font-style: italic; }
+
+h3 { margin: 10px 0px 5px 0px; padding: 0px; font-size: 16px; }
+
+.accent { color: #ffa200; }
+
+#page_frame { width: 966px; margin: 0px auto 0px auto; padding: 0px; }
+
+#top_header { padding: 0px; margin: 0px; height: 50px; font-size: 24px; }
+
+#top_header span { display: none; }
+
+#content_wrap { padding: 0px; color: #333333; background: #c2c2a3; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; -webkit-box-shadow: -2px -2px 2px black; -moz-box-shadow: -2px -2px 2px black; box-shadow: -2px -2px 2px black; }
+
+#navigation { display: block; }
+
+#navigation ul { float: left; margin: 0px; padding: 20px 0px; list-style: none; }
+
+#navigation li { float: left; padding: 0px; margin: 0px; }
+
+#navigation li a { display: block; padding: 8px 15px 6px 15px; text-decoration: none; font-size: 18px; color: white; border: none; }
+
+#navigation li a:hover { color: #ffa200; }
+
+#navigation li a.current { color: #cccccc; border-bottom: 1px solid #cccccc; }
+
+#page_footer { height: 40px; width: 952px; margin: 0px auto; padding: 0px; }
+
+.contact_me { float: right; }
+
+.contact_me a { display: block; width: 125px; height: 19px; padding: 8px 0px 8px 0px; border: none; margin: 4px 0px 3px 0px; color: white; }
+
+.contact_me a:hover { border: none; }
+
+.small_logo { padding: 0px 5px; }
+
+#copy_right { color: #333333; font-size: 10px; text-align: center; margin: 0px; padding: 5px 0px; }
+
+.copy_right a { text-decoration: none; color: #333333; border: none; }
+
+.copy_right a:hover { color: #999999; }
+
+#home_page { padding: 200px 50px; text-align: right; text-shadow: 1px 0px 3px white; }
+
+#home_page #home_large { font: 40px helvetica; }
+
+#home_page #home_small { font: 15px helvetica; }
+
+#filter { padding: 10px 0px; }
+
+.portfolio_wrap { padding: 20px 10px; }
+
+.image-grid { margin: -20px 0 0 -40px; padding-left: 45px; width: 840px; }
+
+.image-grid:after { content: ""; display: block; height: 0; overflow: hidden; clear: both; }
+
+.image-grid li { width: 170px; margin: 40px 0 0 40px; float: left; text-align: center; font-family: "Helvetica Neue", sans-serif; line-height: 17px; color: #686f74; overflow: hidden; }
+
+.image-grid li img, .image-grid li strong { display: block; }
+
+.image-grid li span { color: #cccccc; }
+
+.box_port { width: 600px; }
+
+.box_port a.centered { display: block; text-align: center; border: none; margin: 0px 15px 20px 15px; }
+
+.box_port span { display: block; }
+
+.box_port img { padding: 20px 0px; }
+=======
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -374,10 +482,50 @@ h3 {
 .box_port img {
   padding: 20px 0px;
 }
+>>>>>>> 3b91dcd4d17ce553565a414bb9f57a019bac49cb:public/stylesheets/screen.css
 
 /* */
 /* Mailer CSS */
 /* */
+<<<<<<< HEAD:public/stylesheets/compiled/screen.css
+#mailer_wrap { width: 500px; }
+
+#mailer_wrap h1 { color: #6494ad; font-size: 20px; padding: 0px 5px 25px 10px; }
+
+.small_mailer_icon { float: right; }
+
+.div_spacer { padding: 10px; }
+
+#mailer_wrap form { border-top: 1px solid #dddddd; padding-top: 10px; }
+
+#mailer_wrap form input, textarea { margin: 0px 0px 0px 10px; padding: 2px; }
+
+#mailer_wrap form textarea { height: 50px; width: 250px; }
+
+#mailer_wrap form label { width: 180px; }
+
+#mailer_wrap form input.error, textarea.error { border-width: 1px; border-style: dotted; border-color: #d94e4e; }
+
+#mailer_wrap form label.error, textarea.error { color: #d94e4e; }
+
+#mailer_wrap form label.error { margin-left: 10px; display: inline-block; }
+
+.ui-datepicker-days-row td { padding: 0px; }
+
+#facebox .footer a { border: none; }
+
+#connect_wrap { padding: 20px; }
+
+.color_toggle { display: block; text-align: right; }
+
+table.process_image_comp { width: 890px; }
+
+.process_image_comp td { text-align: center; }
+
+.clearfix { *display: inline-block; }
+
+.clearfix:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; }
+=======
 /* line 222, ../../app/stylesheets/screen.sass */
 #mailer_wrap {
   width: 500px;
@@ -485,3 +633,4 @@ table.process_image_comp {
   clear: both;
   visibility: hidden;
 }
+>>>>>>> 3b91dcd4d17ce553565a414bb9f57a019bac49cb:public/stylesheets/screen.css

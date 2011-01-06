@@ -1,6 +1,4 @@
 PassengerEnabled on
-PassengerAppRoot /home/kenders/kenderson
-
-ExpiresActive on
+PassengerAppRoot /home/kenders/staging/kenderson
 
 SetOutputFilter DEFLATE
