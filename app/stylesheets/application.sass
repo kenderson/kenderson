@@ -13,7 +13,8 @@ $text_color: #666
 $a_color: #000
 $a_hover_color: #e39c19
 $accent_color: #ffaf00
-$header_1_color: #ffa200
+$header_1_color: #ffaf00
+$header_2_color: #4f6484
 $error_color: #d94e4e
 $green: #64b764
 $body_color: #010810
@@ -74,7 +75,7 @@ a:hover
   color: $a_hover_color
 h1
   color: $header_1_color
-  font: 22px/22px $fancy_font,"Helvetica Neue", arial
+  font: 30px/30px $fancy_font,"Helvetica Neue", arial
   margin: 10px 0px 10px 0px
   padding: 0px
   text-transform: uppercase
@@ -85,7 +86,7 @@ h2
   margin: 10px 0px 5px 0px
   padding: 0px
   font-size: 18px
-  color: $header_1_color
+  color: $header_2_color
   font-style: italic
 h3
   margin: 10px 0px 5px 0px
@@ -194,12 +195,41 @@ a#kenderson_logo
 
 // Navigation CSS
 
+#navigation_arrows
+  float: left
+  display: block
+  height: 38px
+  width: 700px
+.nav_arrow
+  position: absolute
+  display: block
+  height: 38px
+  width: 162px
+#about_arrow
+  display: none
+  background: transparent url(/images/kenderson_nav_arrows.png) 0px 0px no-repeat
+#our_process_arrow
+  background: transparent url(/images/kenderson_nav_arrows.png) 0px -40px no-repeat
+  margin-left: 122px
+  display: none
+#portfolio_arrow
+  background: transparent url(/images/kenderson_nav_arrows.png) 0px -80px no-repeat
+  margin-left: 265px
+  display: none
+#lab_arrow
+  background: transparent url(/images/kenderson_nav_arrows.png) 0px -120px no-repeat
+  margin-left: 410px
+  display: none
+#connect_arrow
+  background: transparent url(/images/kenderson_nav_arrows.png) 0px -160px no-repeat
+  margin-left: 505px
+  display: none
 #navigation
   display: block
 #navigation ul
   float: left
   margin: 0px
-  padding: 40px 0px 35px 0px
+  padding: 0px 0px 35px 0px
   list-style: none
 #navigation li
   float: left
@@ -242,13 +272,13 @@ a#kenderson_logo
 #copy_right
   float: right
   display: block
-  color: #41404d
+  color: #43454e
   font-size: 10px
   margin: 0px
   padding: 0px
   line-height: 22px
 #home_twitter_feed
-  color: #fff
+  color: #73798e
   font-weight: normal
   height: 22px
   line-height: 22px
@@ -257,12 +287,14 @@ a#kenderson_logo
   padding: 0px 10px 0px 25px
   background: transparent url(/images/kenderson_twitter_icon.png) top left no-repeat
 #home_twitter_feed span.accent
-  width: 125px
+  width: 110px
   float: left
+  font-size: 11px
 #twitter_div
-  margin: 0px 0px 0px 130px
+  margin: 0px 0px 0px 115px
+  font-size: 11px
 #twitter_div a
-  color: #fff
+  color: #73798e
 #twitter_div a:hover
   color: $a_hover_color
 
